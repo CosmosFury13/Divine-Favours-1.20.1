@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ##",
+    " ##",
+    " ##"
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:uncut_sapphire"
+    }
+  },
+  "result": {
+    "item": "divinefavours:uncut_sapphire_pillar",
+    "count": 1
+  }
+}

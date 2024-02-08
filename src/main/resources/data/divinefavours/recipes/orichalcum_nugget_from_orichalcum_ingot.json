@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "divinefavours:orichalcum_ingot"
+    }
+  ],
+  "result": {
+    "item": "divinefavours:orichalcum_nugget",
+    "count": 9
+  }
+}

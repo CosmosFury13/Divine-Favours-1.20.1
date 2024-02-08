@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MCM",
+    " # ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:deepslate"
+    },
+    "M": {
+      "item": "divinefavours:mithril_ingot"
+    },
+    "C": {
+      "item": "minecraft:campfire"
+    }
+  },
+  "result": {
+    "item": "divinefavours:brazier_mithril",
+    "count": 1
+  }
+}

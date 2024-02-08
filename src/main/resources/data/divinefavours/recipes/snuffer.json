@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    "   ",
+    "M#M"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "M": {
+      "item": "minecraft:stone_slab"
+    }
+  },
+  "result": {
+    "item": "divinefavours:snuffer",
+    "count": 3
+  }
+}

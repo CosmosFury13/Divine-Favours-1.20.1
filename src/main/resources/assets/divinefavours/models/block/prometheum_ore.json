@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/prometheum/prometheum_ore",
+    "east": "divinefavours:block/prometheum/prometheum_ore",
+    "north": "divinefavours:block/prometheum/prometheum_ore",
+    "particle": "divinefavours:block/prometheum/prometheum_ore",
+    "south": "divinefavours:block/prometheum/prometheum_ore",
+    "up": "divinefavours:block/prometheum/prometheum_ore",
+    "west": "divinefavours:block/prometheum/prometheum_ore"
+  }
+}

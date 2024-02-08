@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "divinefavours:kyber_block"
+    }
+  ],
+  "result": {
+    "item": "divinefavours:kyber",
+    "count": 9
+  }
+}

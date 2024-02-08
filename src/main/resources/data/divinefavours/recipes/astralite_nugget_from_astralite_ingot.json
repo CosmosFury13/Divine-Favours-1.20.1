@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "divinefavours:astralite_ingot"
+    }
+  ],
+  "result": {
+    "item": "divinefavours:astralite_nugget",
+    "count": 9
+  }
+}

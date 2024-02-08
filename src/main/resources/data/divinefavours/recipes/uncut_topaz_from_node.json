@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "divinefavours:uncut_topaz_node"
+    }
+  ],
+  "result": {
+    "item": "divinefavours:uncut_topaz",
+    "count": 3
+  }
+}

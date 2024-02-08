@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/quasarite/quasarite_block",
+    "east": "divinefavours:block/quasarite/quasarite_block",
+    "north": "divinefavours:block/quasarite/quasarite_block",
+    "particle": "divinefavours:block/quasarite/quasarite_block",
+    "south": "divinefavours:block/quasarite/quasarite_block",
+    "up": "divinefavours:block/quasarite/quasarite_block",
+    "west": "divinefavours:block/quasarite/quasarite_block"
+  }
+}

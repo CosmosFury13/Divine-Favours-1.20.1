@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/wyrmstone/wyrmstone_block",
+    "east": "divinefavours:block/wyrmstone/wyrmstone_block",
+    "north": "divinefavours:block/wyrmstone/wyrmstone_block",
+    "particle": "divinefavours:block/wyrmstone/wyrmstone_block",
+    "south": "divinefavours:block/wyrmstone/wyrmstone_block",
+    "up": "divinefavours:block/wyrmstone/wyrmstone_block",
+    "west": "divinefavours:block/wyrmstone/wyrmstone_block"
+  }
+}

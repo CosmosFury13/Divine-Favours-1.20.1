@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/gleamium/gleamium_block",
+    "east": "divinefavours:block/gleamium/gleamium_block",
+    "north": "divinefavours:block/gleamium/gleamium_block",
+    "particle": "divinefavours:block/gleamium/gleamium_block",
+    "south": "divinefavours:block/gleamium/gleamium_block",
+    "up": "divinefavours:block/gleamium/gleamium_block",
+    "west": "divinefavours:block/gleamium/gleamium_block"
+  }
+}

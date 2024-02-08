@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#M#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "M": {
+      "item": "minecraft:dragon_breath"
+    }
+  },
+  "result": {
+    "item": "divinefavours:raw_gleamium_block"
+  }
+}

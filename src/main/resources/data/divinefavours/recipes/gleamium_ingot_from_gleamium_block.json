@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "divinefavours:gleamium_block"
+    }
+  ],
+  "result": {
+    "item": "divinefavours:gleamium_ingot",
+    "count": 9
+  }
+}

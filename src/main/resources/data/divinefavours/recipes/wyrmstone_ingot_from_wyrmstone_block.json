@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "divinefavours:wyrmstone_block"
+    }
+  ],
+  "result": {
+    "item": "divinefavours:wyrmstone",
+    "count": 9
+  }
+}

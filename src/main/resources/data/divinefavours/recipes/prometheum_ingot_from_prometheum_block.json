@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "divinefavours:prometheum_block"
+    }
+  ],
+  "result": {
+    "item": "divinefavours:prometheum_ingot",
+    "count": 9
+  }
+}

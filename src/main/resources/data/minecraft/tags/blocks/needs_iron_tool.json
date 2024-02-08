@@ -1,0 +1,37 @@
+{
+  "values": [
+    "divinefavours:uncut_sapphire_pillar",
+    "divinefavours:uncut_ruby_pillar",
+    "divinefavours:uncut_sapphire_node",
+    "divinefavours:uncut_ruby_node",
+    "divinefavours:uncut_jade_node",
+    "divinefavours:uncut_topaz_node",
+    "divinefavours:uncut_jade_pillar",
+    "divinefavours:uncut_topaz_pillar",
+    "divinefavours:brazier_mithril",
+
+    "divinefavours:brazier_astralite",
+    "divinefavours:brazier_gleamium",
+    "divinefavours:brazier_kyber",
+    "divinefavours:brazier_orichalcum",
+    "divinefavours:brazier_prometheum",
+    "divinefavours:brazier_quasarite",
+    "divinefavours:brazier_wyrmstone",
+    "divinefavours:raw_mithril_block",
+
+    "divinefavours:prometheum_block",
+    "divinefavours:prometheum_ore",
+    "divinefavours:raw_prometheum_block",
+    "divinefavours:quasarite_block",
+    "divinefavours:wyrmstone_block",
+
+    "divinefavours:astralite_block",
+    "divinefavours:raw_astralite_block",
+    "divinefavours:sapphire_altar",
+    "divinefavours:ruby_altar",
+    "divinefavours:jade_altar",
+    "divinefavours:topaz_altar",
+    "divinefavours:crown_altar",
+    "divinefavours:tablet_stand"
+  ]
+}

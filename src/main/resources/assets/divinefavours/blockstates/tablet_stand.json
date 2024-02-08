@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "divinefavours:block/tablet_stand",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "divinefavours:block/tablet_stand",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "divinefavours:block/tablet_stand"
+    },
+    "facing=west": {
+      "model": "divinefavours:block/tablet_stand",
+      "y": 90
+    }
+  }
+}

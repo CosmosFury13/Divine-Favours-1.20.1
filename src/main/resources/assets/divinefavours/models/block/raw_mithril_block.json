@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/mithril/raw_mithril_block",
+    "east": "divinefavours:block/mithril/raw_mithril_block",
+    "north": "divinefavours:block/mithril/raw_mithril_block",
+    "particle": "divinefavours:block/mithril/raw_mithril_block",
+    "south": "divinefavours:block/mithril/raw_mithril_block",
+    "up": "divinefavours:block/mithril/raw_mithril_block",
+    "west": "divinefavours:block/mithril/raw_mithril_block"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/olive/planks",
+    "east": "divinefavours:block/olive/planks",
+    "north": "divinefavours:block/olive/planks",
+    "particle": "divinefavours:block/olive/planks",
+    "south": "divinefavours:block/olive/planks",
+    "up": "divinefavours:block/olive/planks",
+    "west": "divinefavours:block/olive/planks"
+  }
+}

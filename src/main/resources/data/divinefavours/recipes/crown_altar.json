@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "M#P",
+    "#L#",
+    "R#F"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:calcite"
+    },
+    "M": {
+      "item": "divinefavours:uncut_sapphire_pillar"
+    },
+    "F": {
+      "item": "divinefavours:uncut_ruby_pillar"
+    },
+    "P": {
+      "item": "divinefavours:uncut_jade_pillar"
+    },
+    "R": {
+      "item": "divinefavours:uncut_topaz_pillar"
+    },
+    "L": {
+      "item": "divinefavours:gleamium_block"
+    }
+
+  },
+  "result": {
+    "item": "divinefavours:crown_altar"
+  }
+}

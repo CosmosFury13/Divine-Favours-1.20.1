@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ##",
+    " ##",
+    " ##"
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:uncut_topaz"
+    }
+  },
+  "result": {
+    "item": "divinefavours:uncut_topaz_pillar",
+    "count": 1
+  }
+}

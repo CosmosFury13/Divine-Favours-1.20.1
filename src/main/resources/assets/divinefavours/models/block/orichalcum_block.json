@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/orichalcum/orichalcum_block",
+    "east": "divinefavours:block/orichalcum/orichalcum_block",
+    "north": "divinefavours:block/orichalcum/orichalcum_block",
+    "particle": "divinefavours:block/orichalcum/orichalcum_block",
+    "south": "divinefavours:block/orichalcum/orichalcum_block",
+    "up": "divinefavours:block/orichalcum/orichalcum_block",
+    "west": "divinefavours:block/orichalcum/orichalcum_block"
+  }
+}

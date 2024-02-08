@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/mithril/mithril_ore",
+    "east": "divinefavours:block/mithril/mithril_ore",
+    "north": "divinefavours:block/mithril/mithril_ore",
+    "particle": "divinefavours:block/mithril/mithril_ore",
+    "south": "divinefavours:block/mithril/mithril_ore",
+    "up": "divinefavours:block/mithril/mithril_ore",
+    "west": "divinefavours:block/mithril/mithril_ore"
+  }
+}

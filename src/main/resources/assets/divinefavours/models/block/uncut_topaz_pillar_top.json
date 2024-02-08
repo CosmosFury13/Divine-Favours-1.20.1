@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "side": "divinefavours:block/uncut_topaz_pillar_side_top",
+    "bottom": "divinefavours:block/uncut_topaz_pillar_bottom",
+    "top": "divinefavours:block/uncut_topaz_pillar_top"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "divinefavours:block/crown_altar",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "divinefavours:block/crown_altar",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "divinefavours:block/crown_altar"
+    },
+    "facing=west": {
+      "model": "divinefavours:block/crown_altar",
+      "y": 90
+    }
+  }
+}

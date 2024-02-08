@@ -1,0 +1,7 @@
+{
+  "parent": "divinefavours:block/mountain_ash_side_alt",
+  "render_type": "cutout_mipped",
+  "textures": {
+    "line": "divinefavours:block/mountain_ash_line1"
+  }
+}

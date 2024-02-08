@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "divinefavours:block/ruby_altar",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "divinefavours:block/ruby_altar",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "divinefavours:block/ruby_altar"
+    },
+    "facing=west": {
+      "model": "divinefavours:block/ruby_altar",
+      "y": 90
+    }
+  }
+}

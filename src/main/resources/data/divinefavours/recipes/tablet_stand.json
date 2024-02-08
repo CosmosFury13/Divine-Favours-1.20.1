@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#M#",
+    " F ",
+    "PPP"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:calcite"
+    },
+    "M": {
+      "item": "minecraft:clay_ball"
+    },
+    "F": {
+      "item": "minecraft:deepslate"
+    },
+    "P": {
+      "item": "divinefavours:olive_log"
+    }
+
+  },
+  "result": {
+    "item": "divinefavours:tablet_stand"
+  }
+}

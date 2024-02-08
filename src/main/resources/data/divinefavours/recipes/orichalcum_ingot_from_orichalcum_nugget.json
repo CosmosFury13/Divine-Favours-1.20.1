@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:orichalcum_nugget"
+    }
+  },
+  "result": {
+    "item": "divinefavours:orichalcum_ingot"
+  }
+}

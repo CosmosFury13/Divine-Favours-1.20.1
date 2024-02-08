@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:astralite_ingot"
+    }
+  },
+  "result": {
+    "item": "divinefavours:astralite_block"
+  }
+}

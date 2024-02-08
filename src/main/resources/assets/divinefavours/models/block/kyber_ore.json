@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/kyber/kyber_ore",
+    "east": "divinefavours:block/kyber/kyber_ore",
+    "north": "divinefavours:block/kyber/kyber_ore",
+    "particle": "divinefavours:block/kyber/kyber_ore",
+    "south": "divinefavours:block/kyber/kyber_ore",
+    "up": "divinefavours:block/kyber/kyber_ore",
+    "west": "divinefavours:block/kyber/kyber_ore"
+  }
+}

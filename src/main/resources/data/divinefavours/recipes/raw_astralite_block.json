@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#M#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:raw_mithril"
+    },
+    "M": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "result": {
+    "item": "divinefavours:raw_astralite_block"
+  }
+}

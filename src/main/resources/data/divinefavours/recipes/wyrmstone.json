@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MMM",
+    "M#C",
+    "CCC"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "M": {
+      "item": "divinefavours:uncut_sapphire"
+    },
+    "C": {
+      "item": "divinefavours:uncut_ruby"
+    }
+  },
+  "result": {
+    "item": "divinefavours:wyrmstone_block",
+    "count": 1
+  }
+}

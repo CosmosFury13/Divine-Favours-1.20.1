@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "divinefavours:olive_ripe"
+  },
+  "result": "divinefavours:olive_oil"
+}

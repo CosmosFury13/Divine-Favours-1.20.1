@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " # ",
+    " M ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:calcite"
+    },
+    "M": {
+      "item": "divinefavours:uncut_topaz_pillar"
+    }
+  },
+  "result": {
+    "item": "divinefavours:topaz_altar"
+  }
+}

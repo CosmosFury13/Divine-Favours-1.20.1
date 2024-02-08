@@ -1,0 +1,15 @@
+
+
+{
+  "variants": {
+    "lit=false,snuff=false": {
+      "model": "divinefavours:block/brazier_gleamium"
+    },
+    "lit=true,snuff=false": {
+      "model": "divinefavours:block/brazier_gleamium_lit"
+    },
+    "lit=false,snuff=true": {
+      "model": "divinefavours:block/brazier_gleamium_snuffed"
+    }
+  }
+}

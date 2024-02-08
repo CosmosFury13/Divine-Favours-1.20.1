@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MCM",
+    " # ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:deepslate"
+    },
+    "M": {
+      "item": "divinefavours:gleamium_ingot"
+    },
+    "C": {
+      "item": "minecraft:campfire"
+    }
+  },
+  "result": {
+    "item": "divinefavours:brazier_gleamium",
+    "count": 1
+  }
+}

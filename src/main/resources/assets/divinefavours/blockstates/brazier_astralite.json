@@ -1,0 +1,15 @@
+
+
+{
+  "variants": {
+    "lit=false,snuff=false": {
+      "model": "divinefavours:block/brazier_astralite"
+    },
+    "lit=true,snuff=false": {
+      "model": "divinefavours:block/brazier_astralite_lit"
+    },
+    "lit=false,snuff=true": {
+      "model": "divinefavours:block/brazier_astralite_snuffed"
+    }
+  }
+}

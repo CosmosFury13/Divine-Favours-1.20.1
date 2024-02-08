@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:raw_mithril"
+    }
+  },
+  "result": {
+    "item": "divinefavours:raw_mithril_block"
+  }
+}

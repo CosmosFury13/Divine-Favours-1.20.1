@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:gleamium_nugget"
+    }
+  },
+  "result": {
+    "item": "divinefavours:gleamium_ingot"
+  }
+}

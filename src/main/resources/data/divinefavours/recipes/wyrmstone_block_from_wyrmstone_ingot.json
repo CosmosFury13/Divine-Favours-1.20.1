@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:wyrmstone"
+    }
+  },
+  "result": {
+    "item": "divinefavours:wyrmstone_block"
+  }
+}

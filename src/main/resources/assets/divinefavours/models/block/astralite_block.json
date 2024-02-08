@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/astralite/astralite_block",
+    "east": "divinefavours:block/astralite/astralite_block",
+    "north": "divinefavours:block/astralite/astralite_block",
+    "particle": "divinefavours:block/astralite/astralite_block",
+    "south": "divinefavours:block/astralite/astralite_block",
+    "up": "divinefavours:block/astralite/astralite_block",
+    "west": "divinefavours:block/astralite/astralite_block"
+  }
+}

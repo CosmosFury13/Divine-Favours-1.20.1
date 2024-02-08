@@ -1,0 +1,13 @@
+{
+  "parent": "divinefavours:block/gemstone_node_1",
+  "textures": {
+    "1": "divinefavours:block/uncut_topaz_node_side_0",
+    "2": "divinefavours:block/uncut_topaz_node_side_1",
+    "3": "divinefavours:block/uncut_topaz_node_side_2",
+    "4": "divinefavours:block/uncut_topaz_node_side_3",
+    "5": "divinefavours:block/uncut_topaz_node_side_4",
+    "6": "divinefavours:block/uncut_topaz_node_side_5",
+    "7": "divinefavours:block/uncut_topaz_node_side_6",
+    "particle": "divinefavours:block/uncut_topaz_node_side_0"
+  }
+}

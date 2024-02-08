@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MCM",
+    " # ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:deepslate"
+    },
+    "M": {
+      "item": "divinefavours:kyber"
+    },
+    "C": {
+      "item": "minecraft:campfire"
+    }
+  },
+  "result": {
+    "item": "divinefavours:brazier_kyber",
+    "count": 1
+  }
+}

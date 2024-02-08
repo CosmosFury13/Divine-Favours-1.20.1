@@ -1,0 +1,15 @@
+
+
+{
+  "variants": {
+    "lit=false,snuff=false": {
+      "model": "divinefavours:block/brazier_mithril"
+    },
+    "lit=true,snuff=false": {
+      "model": "divinefavours:block/brazier_mithril_lit"
+    },
+    "lit=false,snuff=true": {
+      "model": "divinefavours:block/brazier_mithril_snuffed"
+    }
+  }
+}
