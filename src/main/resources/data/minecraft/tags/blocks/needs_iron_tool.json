@@ -32,6 +32,10 @@
     "divinefavours:jade_altar",
     "divinefavours:topaz_altar",
     "divinefavours:crown_altar",
-    "divinefavours:tablet_stand"
+    "divinefavours:tablet_stand",
+    "divinefavours:silver_ore",
+    "divinefavours:deepslate_silver_ore",
+    "divinefavours:silver_block",
+    "divinefavours:raw_silver_block"
   ]
 }

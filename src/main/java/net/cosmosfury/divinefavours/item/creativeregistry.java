@@ -53,6 +53,10 @@ public class creativeregistry {
                         pOutput.accept(itemregistry.QUASARITE_INGOT.get());
                         pOutput.accept(itemregistry.QUASARITE_NUGGET.get());
                         pOutput.accept(itemregistry.WYRMSTONE.get());
+                        pOutput.accept(itemregistry.SILVER_DUST.get());
+                        pOutput.accept(itemregistry.RAW_SILVER.get());
+                        pOutput.accept(itemregistry.SILVER_INGOT.get());
+                        pOutput.accept(itemregistry.SILVER_NUGGET.get());
 
 
                         pOutput.accept(blockregistry.UNCUT_SAPPHIRE_PILLAR.get());
@@ -100,6 +104,10 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.RAW_PROMETHEUM_BLOCK.get());
                         pOutput.accept(blockregistry.QUASARITE_BLOCK.get());
                         pOutput.accept(blockregistry.WYRMSTONE_BLOCK.get());
+                        pOutput.accept(blockregistry.SILVER_ORE.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_SILVER_ORE.get());
+                        pOutput.accept(blockregistry.SILVER_BLOCK.get());
+                        pOutput.accept(blockregistry.RAW_SILVER_BLOCK.get());
                         pOutput.accept(blockregistry.MOUNTAIN_ASH.get());
 
 

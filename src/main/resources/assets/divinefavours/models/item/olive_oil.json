@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "divinefavours:item/olive_oil"
+    "layer0": "divinefavours:item/new_olive_oil"
   }
 
 }
