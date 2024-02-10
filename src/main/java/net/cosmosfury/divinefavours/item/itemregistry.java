@@ -69,11 +69,15 @@ public class itemregistry {
 
     public static final RegistryObject<Item> OLIVE_OIL = ITEMS.register("olive_oil",
             () -> new Item((new Item.Properties())));
+    public static final RegistryObject<Item> SALT = ITEMS.register("salt",
+            () -> new Item((new Item.Properties())));
 
     public static final RegistryObject<Item> OLIVE_RIPE = ITEMS.register("olive_ripe",
             () -> new Item((new Item.Properties().food(foodregistry.OLIVES))));
     public static final RegistryObject<Item> FIG = ITEMS.register("fig",
             () -> new Item((new Item.Properties().food(foodregistry.FIG))));
+    public static final RegistryObject<Item> MISTLETOE = ITEMS.register("mistletoe",
+            () -> new Item((new Item.Properties().food(foodregistry.MISTLETOE))));
 
     public static final RegistryObject<Item> UNCUT_RUBY = ITEMS.register("uncut_ruby",
             () -> new Item((new Item.Properties())));

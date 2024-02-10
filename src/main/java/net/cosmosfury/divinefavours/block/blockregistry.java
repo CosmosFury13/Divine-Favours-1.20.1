@@ -164,15 +164,18 @@ public class blockregistry {
     public static final RegistryObject<Block> RAW_KYBER_BLOCK = registerBlock("raw_kyber_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
     public static final RegistryObject<Block> KYBER_ORE = registerBlock("kyber_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).strength(3.5f)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
     public static final RegistryObject<Block> ORICHALCUM_BLOCK = registerBlock("orichalcum_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).strength(3.5f)));
     public static final RegistryObject<Block> RAW_ORICHALCUM_BLOCK = registerBlock("raw_orichalcum_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
     public static final RegistryObject<Block> ORICHALCUM_ORE = registerBlock("orichalcum_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).strength(3.5f)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
     public static final RegistryObject<Block> PROMETHEUM_ORE = registerBlock("prometheum_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).strength(3.5f)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
     public static final RegistryObject<Block> PROMETHEUM_BLOCK = registerBlock("prometheum_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).strength(3.5f)));
     public static final RegistryObject<Block> RAW_PROMETHEUM_BLOCK = registerBlock("raw_prometheum_block",
@@ -192,6 +195,12 @@ public class blockregistry {
 
     public static final RegistryObject<Block> RAW_SILVER_BLOCK = registerBlock("raw_silver_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final RegistryObject<Block> SILVER_KALVIS_ALTAR = registerBlock("silver_kalvis_altar",
+            () -> new kalvisaltar());
+    public static final RegistryObject<Block> PROMETHEUM_KALVIS_ALTAR = registerBlock("prometheum_kalvis_altar",
+            () -> new kalvisaltar());
+    public static final RegistryObject<Block> GLEAMIUM_KALVIS_ALTAR = registerBlock("gleamium_kalvis_altar",
+            () -> new kalvisaltar());
 
 
     //public static final RegistryObject<Block> OFFERING_CHEST = registerBlock("offering_chest",

@@ -57,6 +57,8 @@ public class creativeregistry {
                         pOutput.accept(itemregistry.RAW_SILVER.get());
                         pOutput.accept(itemregistry.SILVER_INGOT.get());
                         pOutput.accept(itemregistry.SILVER_NUGGET.get());
+                        pOutput.accept(itemregistry.SALT.get());
+                        pOutput.accept(itemregistry.MISTLETOE.get());
 
 
                         pOutput.accept(blockregistry.UNCUT_SAPPHIRE_PILLAR.get());
@@ -109,6 +111,9 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.SILVER_BLOCK.get());
                         pOutput.accept(blockregistry.RAW_SILVER_BLOCK.get());
                         pOutput.accept(blockregistry.MOUNTAIN_ASH.get());
+                        pOutput.accept(blockregistry.SILVER_KALVIS_ALTAR.get());
+                        pOutput.accept(blockregistry.PROMETHEUM_KALVIS_ALTAR.get());
+                        pOutput.accept(blockregistry.GLEAMIUM_KALVIS_ALTAR.get());
 
 
                     })

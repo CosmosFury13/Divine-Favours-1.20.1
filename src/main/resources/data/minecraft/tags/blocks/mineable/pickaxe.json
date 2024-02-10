@@ -44,6 +44,9 @@
     "divinefavours:silver_ore",
     "divinefavours:deepslate_silver_ore",
     "divinefavours:silver_block",
-    "divinefavours:raw_silver_block"
+    "divinefavours:raw_silver_block",
+    "divinefavours:silver_kalvis_altar",
+    "divinefavours:prometheum_kalvis_altar",
+    "divinefavours:gleamium_kalvis_altar"
   ]
 }
