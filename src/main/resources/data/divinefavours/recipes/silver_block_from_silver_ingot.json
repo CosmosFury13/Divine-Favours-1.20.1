@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:silver_ingot"
+    }
+  },
+  "result": {
+    "item": "divinefavours:silver_block"
+  }
+}

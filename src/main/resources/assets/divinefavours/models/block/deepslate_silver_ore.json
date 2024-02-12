@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/silver/deepslate_silver_ore",
+    "east": "divinefavours:block/silver/deepslate_silver_ore",
+    "north": "divinefavours:block/silver/deepslate_silver_ore",
+    "particle": "divinefavours:block/silver/deepslate_silver_ore",
+    "south": "divinefavours:block/silver/deepslate_silver_ore",
+    "up": "divinefavours:block/silver/deepslate_silver_ore",
+    "west": "divinefavours:block/silver/deepslate_silver_ore"
+  }
+}

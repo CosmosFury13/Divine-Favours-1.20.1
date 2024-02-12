@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "divinefavours:block/prometheum_kalvis_altar",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "divinefavours:block/prometheum_kalvis_altar",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "divinefavours:block/prometheum_kalvis_altar"
+    },
+    "facing=west": {
+      "model": "divinefavours:block/prometheum_kalvis_altar",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/silver/raw_silver_block",
+    "east": "divinefavours:block/silver/raw_silver_block",
+    "north": "divinefavours:block/silver/raw_silver_block",
+    "particle": "divinefavours:block/silver/raw_silver_block",
+    "south": "divinefavours:block/silver/raw_silver_block",
+    "up": "divinefavours:block/silver/raw_silver_block",
+    "west": "divinefavours:block/silver/raw_silver_block"
+  }
+}
