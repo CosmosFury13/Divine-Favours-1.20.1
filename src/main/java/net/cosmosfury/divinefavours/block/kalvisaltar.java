@@ -22,6 +22,7 @@ import net.minecraft.world.phys.BlockHitResult;
 public class kalvisaltar extends HorizontalDirectionalBlock {
     private static final BooleanProperty CHISEL = BooleanProperty.create("chisel");
     private static final BooleanProperty SAW = BooleanProperty.create("saw");
+    private static final BooleanProperty HAMMER = BooleanProperty.create("hammer");
 
     public kalvisaltar() {
         super(Properties.of()
@@ -31,12 +32,12 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
                 .isSuffocating((state, world, pos) -> false)
                 .isRedstoneConductor((state, world, pos) -> false)
                 .sound(SoundType.DEEPSLATE_TILES));
-        this.registerDefaultState(this.stateDefinition.any().setValue(CHISEL, false).setValue(SAW, false).setValue(FACING, Direction.NORTH));
+        this.registerDefaultState(this.stateDefinition.any().setValue(CHISEL, false).setValue(SAW, false).setValue(HAMMER, false).setValue(FACING, Direction.NORTH));
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING).add(CHISEL).add(SAW);
+        builder.add(FACING).add(CHISEL).add(SAW).add(HAMMER);
     }
 
     @Override
@@ -44,7 +45,7 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
         return this.defaultBlockState()
                 .setValue(FACING, pContext.getHorizontalDirection().getOpposite())
                 .setValue(CHISEL, false)
-                .setValue(SAW, false);
+                .setValue(SAW, false).setValue(HAMMER, false);
     }
 
     @Override
@@ -52,7 +53,7 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
         // Get the item in the player's hand
         ItemStack heldItem = pPlayer.getItemInHand(pHand);
         if (!pLevel.isClientSide()) {
-            if (heldItem.getItem() == itemregistry.SAW.get() && pHand == InteractionHand.MAIN_HAND && !pState.getValue(SAW) && !pState.getValue(CHISEL)) {
+            if (heldItem.getItem() == itemregistry.SAW.get() && pHand == InteractionHand.MAIN_HAND && !pState.getValue(SAW) && !pState.getValue(CHISEL) && !pState.getValue(HAMMER)) {
                 // Right-clicked with saw, and saw property is false
                 BlockState sawstate = pState.setValue(SAW, true);
 
@@ -67,7 +68,7 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
                 // Return success for right-click
                 return InteractionResult.SUCCESS;
             }
-            else if (heldItem.getItem() == itemregistry.CHISEL.get() && pHand == InteractionHand.MAIN_HAND && !pState.getValue(CHISEL) && !pState.getValue(SAW)) {
+            else if (heldItem.getItem() == itemregistry.CHISEL.get() && pHand == InteractionHand.MAIN_HAND && !pState.getValue(CHISEL) && !pState.getValue(SAW) && !pState.getValue(HAMMER)) {
                 // Right-clicked with chisel, and chisel property is false
                 BlockState chiselstate = pState.setValue(CHISEL, true);
 
@@ -78,6 +79,21 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
 
                 // Set the block to the new state
                 pLevel.setBlock(pPos, chiselstate, 3);
+
+                // Return success for right-click
+                return InteractionResult.SUCCESS;
+            }
+            else if (heldItem.getItem() == itemregistry.HAMMER.get() && pHand == InteractionHand.MAIN_HAND && !pState.getValue(CHISEL) && !pState.getValue(SAW) && !pState.getValue(HAMMER)) {
+                // Right-clicked with chisel, and chisel property is false
+                BlockState hammerstate = pState.setValue(HAMMER, true);
+
+                // Consume 1 chisel (if not in creative mode)
+                if (!pPlayer.isCreative()) {
+                    heldItem.shrink(1);
+                }
+
+                // Set the block to the new state
+                pLevel.setBlock(pPos, hammerstate, 3);
 
                 // Return success for right-click
                 return InteractionResult.SUCCESS;
@@ -110,6 +126,22 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
 
                 // Set the block to the new state
                 pLevel.setBlock(pPos, sawstate, 3);
+
+                // Return success for right-click
+                return InteractionResult.SUCCESS;
+            }
+            else if (heldItem.isEmpty() && pHand == InteractionHand.MAIN_HAND && pState.getValue(HAMMER)) {
+                // Set SNUFF to false
+                BlockState hammerstate = pState.setValue(HAMMER, false);
+
+
+                // Give 1 snuffer back to the player (if not in creative mode)
+                if (!pPlayer.isCreative()) {
+                    pPlayer.addItem(itemregistry.HAMMER.get().getDefaultInstance());
+                }
+
+                // Set the block to the new state
+                pLevel.setBlock(pPos, hammerstate, 3);
 
                 // Return success for right-click
                 return InteractionResult.SUCCESS;

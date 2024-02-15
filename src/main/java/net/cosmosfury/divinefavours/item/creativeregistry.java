@@ -27,6 +27,7 @@ public class creativeregistry {
                         pOutput.accept(itemregistry.UNCUT_RUBY.get());
                         pOutput.accept(itemregistry.UNCUT_JADE.get());
                         pOutput.accept(itemregistry.UNCUT_TOPAZ.get());
+                        pOutput.accept(itemregistry.UNCUT_JANUS_CRYSTAL.get());
                         pOutput.accept(itemregistry.OLIVE_OIL.get());
                         pOutput.accept(itemregistry.OLIVE_RIPE.get());
                         pOutput.accept(itemregistry.FIG.get());
@@ -61,6 +62,7 @@ public class creativeregistry {
                         pOutput.accept(itemregistry.MISTLETOE.get());
                         pOutput.accept(itemregistry.CHISEL.get());
                         pOutput.accept(itemregistry.SAW.get());
+                        pOutput.accept(itemregistry.HAMMER.get());
 
 
                         pOutput.accept(blockregistry.UNCUT_SAPPHIRE_PILLAR.get());

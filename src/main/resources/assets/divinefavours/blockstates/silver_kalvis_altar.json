@@ -1,19 +1,23 @@
 {
   "variants": {
-    "facing=north,chisel=false,saw=false": { "model": "divinefavours:block/silver_kalvis_altar" },
-    "facing=east,chisel=false,saw=false": { "model": "divinefavours:block/silver_kalvis_altar", "y": 90 },
-    "facing=south,chisel=false,saw=false": { "model": "divinefavours:block/silver_kalvis_altar", "y": 180 },
-    "facing=west,chisel=false,saw=false": { "model": "divinefavours:block/silver_kalvis_altar", "y": 270 },
+    "facing=north,chisel=false,saw=false,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar" },
+    "facing=east,chisel=false,saw=false,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar", "y": 90 },
+    "facing=south,chisel=false,saw=false,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar", "y": 180 },
+    "facing=west,chisel=false,saw=false,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar", "y": 270 },
 
-    "facing=north,chisel=true,saw=false": { "model": "divinefavours:block/silver_kalvis_altar_chisel" },
-    "facing=east,chisel=true,saw=false": { "model": "divinefavours:block/silver_kalvis_altar_chisel", "y": 90 },
-    "facing=south,chisel=true,saw=false": { "model": "divinefavours:block/silver_kalvis_altar_chisel", "y": 180 },
-    "facing=west,chisel=true,saw=false": { "model": "divinefavours:block/silver_kalvis_altar_chisel", "y": 270 },
+    "facing=north,chisel=true,saw=false,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar_chisel" },
+    "facing=east,chisel=true,saw=false,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar_chisel", "y": 90 },
+    "facing=south,chisel=true,saw=false,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar_chisel", "y": 180 },
+    "facing=west,chisel=true,saw=false,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar_chisel", "y": 270 },
 
-    "facing=north,chisel=false,saw=true": { "model": "divinefavours:block/silver_kalvis_altar_saw" },
-    "facing=east,chisel=false,saw=true": { "model": "divinefavours:block/silver_kalvis_altar_saw", "y": 90 },
-    "facing=south,chisel=false,saw=true": { "model": "divinefavours:block/silver_kalvis_altar_saw", "y": 180 },
-    "facing=west,chisel=false,saw=true": { "model": "divinefavours:block/silver_kalvis_altar_saw", "y": 270 }
+    "facing=north,chisel=false,saw=true,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar_saw" },
+    "facing=east,chisel=false,saw=true,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar_saw", "y": 90 },
+    "facing=south,chisel=false,saw=true,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar_saw", "y": 180 },
+    "facing=west,chisel=false,saw=true,hammer=false": { "model": "divinefavours:block/silver_kalvis_altar_saw", "y": 270 },
+
+    "facing=north,chisel=false,saw=false,hammer=true": { "model": "divinefavours:block/silver_kalvis_altar_hammer" },
+    "facing=east,chisel=false,saw=false,hammer=true": { "model": "divinefavours:block/silver_kalvis_altar_hammer", "y": 90 },
+    "facing=south,chisel=false,saw=false,hammer=true": { "model": "divinefavours:block/silver_kalvis_altar_hammer", "y": 180 },
+    "facing=west,chisel=false,saw=false,hammer=true": { "model": "divinefavours:block/silver_kalvis_altar_hammer", "y": 270 }
   }
 }
-

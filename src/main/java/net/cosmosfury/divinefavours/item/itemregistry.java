@@ -16,6 +16,8 @@ public class itemregistry {
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> UNCUT_TOPAZ = ITEMS.register("uncut_topaz",
             () -> new Item((new Item.Properties())));
+    public static final RegistryObject<Item> UNCUT_JANUS_CRYSTAL = ITEMS.register("uncut_janus_crystal",
+            () -> new Item((new Item.Properties().stacksTo(1))));
     public static final RegistryObject<Item> RAW_MITHRIL = ITEMS.register("raw_mithril",
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
@@ -88,6 +90,8 @@ public class itemregistry {
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             () -> new Item((new Item.Properties().stacksTo(1))));
     public static final RegistryObject<Item> SAW = ITEMS.register("saw",
+            () -> new Item((new Item.Properties().stacksTo(1))));
+    public static final RegistryObject<Item> HAMMER = ITEMS.register("hammer",
             () -> new Item((new Item.Properties().stacksTo(1))));
 
     public static void register(IEventBus eventBus) {
