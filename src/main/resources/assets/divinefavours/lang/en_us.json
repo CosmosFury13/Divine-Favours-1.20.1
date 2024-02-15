@@ -35,6 +35,8 @@
   "item.divinefavours.silver_dust": "Silver Dust",
   "item.divinefavours.salt": "Salt",
   "item.divinefavours.mistletoe": "Mistletoe Berries",
+  "item.divinefavours.chisel": "Chisel",
+  "item.divinefavours.saw": "Saw",
 
 
   "block.divinefavours.uncut_sapphire_pillar": "Uncut Sapphire Pillar",
@@ -88,9 +90,9 @@
   "block.divinefavours.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.divinefavours.silver_block": "Block Of Silver",
   "block.divinefavours.raw_silver_block": "Block Of Raw Silver",
-  "block.divinefavours.silver_kalvis_altar": "Silver Kalvis Altar",
-  "block.divinefavours.prometheum_kalvis_altar": "Prometheum Kalvis Altar",
-  "block.divinefavours.gleamium_kalvis_altar": "Gleamium Kalvis Altar",
+  "block.divinefavours.silver_kalvis_altar": "Silver Kalvis Table",
+  "block.divinefavours.prometheum_kalvis_altar": "Prometheum Kalvis Table",
+  "block.divinefavours.gleamium_kalvis_altar": "Gleamium Kalvis Table",
 
   "creativetab.divine_tab": "Divine Favours"
 

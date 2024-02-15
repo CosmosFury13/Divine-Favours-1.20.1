@@ -59,6 +59,8 @@ public class creativeregistry {
                         pOutput.accept(itemregistry.SILVER_NUGGET.get());
                         pOutput.accept(itemregistry.SALT.get());
                         pOutput.accept(itemregistry.MISTLETOE.get());
+                        pOutput.accept(itemregistry.CHISEL.get());
+                        pOutput.accept(itemregistry.SAW.get());
 
 
                         pOutput.accept(blockregistry.UNCUT_SAPPHIRE_PILLAR.get());

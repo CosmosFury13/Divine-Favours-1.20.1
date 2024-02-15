@@ -85,6 +85,10 @@ public class itemregistry {
             () -> new Item((new Item.Properties().durability(20))));
     public static final RegistryObject<Item> SNUFFER = ITEMS.register("snuffer",
             () -> new Item((new Item.Properties())));
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            () -> new Item((new Item.Properties().stacksTo(1))));
+    public static final RegistryObject<Item> SAW = ITEMS.register("saw",
+            () -> new Item((new Item.Properties().stacksTo(1))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,19 +1,19 @@
 {
   "variants": {
-    "facing=east": {
-      "model": "divinefavours:block/gleamium_kalvis_altar",
-      "y": 270
-    },
-    "facing=north": {
-      "model": "divinefavours:block/gleamium_kalvis_altar",
-      "y": 180
-    },
-    "facing=south": {
-      "model": "divinefavours:block/gleamium_kalvis_altar"
-    },
-    "facing=west": {
-      "model": "divinefavours:block/gleamium_kalvis_altar",
-      "y": 90
-    }
+    "facing=north,chisel=false,saw=false": { "model": "divinefavours:block/gleamium_kalvis_altar" },
+    "facing=east,chisel=false,saw=false": { "model": "divinefavours:block/gleamium_kalvis_altar", "y": 90 },
+    "facing=south,chisel=false,saw=false": { "model": "divinefavours:block/gleamium_kalvis_altar", "y": 180 },
+    "facing=west,chisel=false,saw=false": { "model": "divinefavours:block/gleamium_kalvis_altar", "y": 270 },
+
+    "facing=north,chisel=true,saw=false": { "model": "divinefavours:block/gleamium_kalvis_altar_chisel" },
+    "facing=east,chisel=true,saw=false": { "model": "divinefavours:block/gleamium_kalvis_altar_chisel", "y": 90 },
+    "facing=south,chisel=true,saw=false": { "model": "divinefavours:block/gleamium_kalvis_altar_chisel", "y": 180 },
+    "facing=west,chisel=true,saw=false": { "model": "divinefavours:block/gleamium_kalvis_altar_chisel", "y": 270 },
+
+    "facing=north,chisel=false,saw=true": { "model": "divinefavours:block/gleamium_kalvis_altar_saw" },
+    "facing=east,chisel=false,saw=true": { "model": "divinefavours:block/gleamium_kalvis_altar_saw", "y": 90 },
+    "facing=south,chisel=false,saw=true": { "model": "divinefavours:block/gleamium_kalvis_altar_saw", "y": 180 },
+    "facing=west,chisel=false,saw=true": { "model": "divinefavours:block/gleamium_kalvis_altar_saw", "y": 270 }
   }
 }
+
