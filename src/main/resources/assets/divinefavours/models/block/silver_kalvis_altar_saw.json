@@ -5,7 +5,7 @@
     "0": "divinefavours:block/calcite_cut",
     "1": "divinefavours:block/deepslate_cut",
     "2": "divinefavours:block/silver/silver_block",
-    "3": "divinefavours:block/iron_block",
+    "3": "minecraft:block/iron_block",
     "4": "divinefavours:block/olive/planks",
     "5": "divinefavours:block/olive/log",
     "particle": "divinefavours:block/deepslate_cut"
