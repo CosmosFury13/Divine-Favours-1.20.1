@@ -118,6 +118,7 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.SILVER_KALVIS_ALTAR.get());
                         pOutput.accept(blockregistry.PROMETHEUM_KALVIS_ALTAR.get());
                         pOutput.accept(blockregistry.GLEAMIUM_KALVIS_ALTAR.get());
+                        pOutput.accept(blockregistry.JANUS_TABLE.get());
 
 
                     })

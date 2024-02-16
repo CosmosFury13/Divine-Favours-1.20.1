@@ -201,6 +201,8 @@ public class blockregistry {
             () -> new kalvisaltar());
     public static final RegistryObject<Block> GLEAMIUM_KALVIS_ALTAR = registerBlock("gleamium_kalvis_altar",
             () -> new kalvisaltar());
+    public static final RegistryObject<Block> JANUS_TABLE = registerBlock("janus_table",
+            () -> new janustable());
 
 
     //public static final RegistryObject<Block> OFFERING_CHEST = registerBlock("offering_chest",

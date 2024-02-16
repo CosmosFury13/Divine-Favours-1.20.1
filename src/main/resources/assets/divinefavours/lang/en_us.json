@@ -38,6 +38,7 @@
   "item.divinefavours.chisel": "Chisel",
   "item.divinefavours.saw": "Saw",
   "item.divinefavours.hammer": "Hammer",
+  "item.divinefavours.uncut_janus_crystal": "Uncut Janus Crystal",
 
 
   "block.divinefavours.uncut_sapphire_pillar": "Uncut Sapphire Pillar",
@@ -94,6 +95,7 @@
   "block.divinefavours.silver_kalvis_altar": "Silver Kalvis Table",
   "block.divinefavours.prometheum_kalvis_altar": "Prometheum Kalvis Table",
   "block.divinefavours.gleamium_kalvis_altar": "Gleamium Kalvis Table",
+  "block.divinefavours.janus_table": "Janus Altar",
 
   "creativetab.divine_tab": "Divine Favours"
 

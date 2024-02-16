@@ -61,6 +61,7 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
                 if (!pPlayer.isCreative()) {
                     heldItem.shrink(1);
                 }
+                pLevel.playSound(null, pPos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS);
 
                 // Set the block to the new state
                 pLevel.setBlock(pPos, sawstate, 3);
@@ -76,6 +77,7 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
                 if (!pPlayer.isCreative()) {
                     heldItem.shrink(1);
                 }
+                pLevel.playSound(null, pPos, SoundEvents.DEEPSLATE_BRICKS_PLACE, SoundSource.BLOCKS);
 
                 // Set the block to the new state
                 pLevel.setBlock(pPos, chiselstate, 3);
@@ -91,6 +93,7 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
                 if (!pPlayer.isCreative()) {
                     heldItem.shrink(1);
                 }
+                pLevel.playSound(null, pPos, SoundEvents.ANVIL_USE, SoundSource.BLOCKS);
 
                 // Set the block to the new state
                 pLevel.setBlock(pPos, hammerstate, 3);
@@ -107,6 +110,7 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
                 if (!pPlayer.isCreative()) {
                     pPlayer.addItem(itemregistry.CHISEL.get().getDefaultInstance());
                 }
+                pLevel.playSound(null, pPos, SoundEvents.DEEPSLATE_BRICKS_BREAK, SoundSource.BLOCKS);
 
                 // Set the block to the new state
                 pLevel.setBlock(pPos, chiselstate, 3);
@@ -123,6 +127,7 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
                 if (!pPlayer.isCreative()) {
                     pPlayer.addItem(itemregistry.SAW.get().getDefaultInstance());
                 }
+                pLevel.playSound(null, pPos, SoundEvents.WOOD_BREAK, SoundSource.BLOCKS);
 
                 // Set the block to the new state
                 pLevel.setBlock(pPos, sawstate, 3);
@@ -139,6 +144,7 @@ public class kalvisaltar extends HorizontalDirectionalBlock {
                 if (!pPlayer.isCreative()) {
                     pPlayer.addItem(itemregistry.HAMMER.get().getDefaultInstance());
                 }
+                pLevel.playSound(null, pPos, SoundEvents.ANVIL_BREAK, SoundSource.BLOCKS);
 
                 // Set the block to the new state
                 pLevel.setBlock(pPos, hammerstate, 3);

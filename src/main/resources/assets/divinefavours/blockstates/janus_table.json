@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=north,crystal=false": { "model": "divinefavours:block/janus_table" },
+    "facing=east,crystal=false": { "model": "divinefavours:block/janus_table", "y": 90 },
+    "facing=south,crystal=false": { "model": "divinefavours:block/janus_table", "y": 180 },
+    "facing=west,crystal=false": { "model": "divinefavours:block/janus_table", "y": 270 },
+    "facing=north,crystal=true": { "model": "divinefavours:block/full_janus_table" },
+    "facing=east,crystal=true": { "model": "divinefavours:block/full_janus_table", "y": 90 },
+    "facing=south,crystal=true": { "model": "divinefavours:block/full_janus_table", "y": 180 },
+    "facing=west,crystal=true": { "model": "divinefavours:block/full_janus_table", "y": 270 }
+  }
+}
