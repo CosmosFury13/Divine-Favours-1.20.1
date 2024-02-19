@@ -139,6 +139,15 @@ public class blocktaggenerator extends BlockTagsProvider {
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 ;
 
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(blockregistry.OLIVE_LOG.get())
+                .add(blockregistry.OLIVE_WOOD.get())
+                .add(blockregistry.STRIPPED_OLIVE_LOG.get())
+                .add(blockregistry.STRIPPED_OLIVE_WOOD.get());
+
+        this.tag(BlockTags.PLANKS)
+                .add(blockregistry.OLIVE_PLANKS.get());
+
 
     }
 }

@@ -1,6 +1,8 @@
-// 1.20.1	2024-02-19T19:45:34.4346034	Tags for minecraft:block mod id divinefavours
+// 1.20.1	2024-02-19T23:14:18.0195877	Tags for minecraft:block mod id divinefavours
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
+a27e1d8da76e607d36b89744664b7762b6db49fe data/minecraft/tags/blocks/logs_that_burn.json
 aa39f265817341c838ee84837159056818cf8bea data/minecraft/tags/blocks/mineable/pickaxe.json
 9094995d4e3cefc9dc7c6d31abdb9f6875c30956 data/minecraft/tags/blocks/needs_diamond_tool.json
 0804b974f6660904455f78f74a4c062e5a0b8a9b data/minecraft/tags/blocks/needs_iron_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_stone_tool.json
+6df7e1eaf41bfaab7c4940c8393718fb31ec2fd4 data/minecraft/tags/blocks/planks.json

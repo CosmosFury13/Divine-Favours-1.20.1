@@ -80,6 +80,9 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.JADE_ALTAR.get());
                         pOutput.accept(blockregistry.TOPAZ_ALTAR.get());
                         pOutput.accept(blockregistry.OLIVE_PLANKS.get());
+                        pOutput.accept(blockregistry.STRIPPED_OLIVE_LOG.get());
+                        pOutput.accept(blockregistry.OLIVE_WOOD.get());
+                        pOutput.accept(blockregistry.STRIPPED_OLIVE_WOOD.get());
                         pOutput.accept(blockregistry.OLIVE_LOG.get());
                         pOutput.accept(blockregistry.OLIVE_LEAVES.get());
                         pOutput.accept(blockregistry.OLIVE_SAPLING.get());
