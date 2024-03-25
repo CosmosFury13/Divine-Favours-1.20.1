@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "divinefavours:block/olive_beam_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "divinefavours:block/olive_beam"
+    },
+    "axis=z": {
+      "model": "divinefavours:block/olive_beam_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -27,6 +27,8 @@ public class blocktaggenerator extends BlockTagsProvider {
                         blockregistry.UNCUT_JADE_PILLAR.get(),
                         blockregistry.UNCUT_TOPAZ_PILLAR.get(),
                         blockregistry.UNCUT_SAPPHIRE_NODE.get(),
+                        blockregistry.UNCUT_MOONSTONE_PILLAR.get(),
+                        blockregistry.UNCUT_MOONSTONE_NODE.get(),
                         blockregistry.UNCUT_RUBY_NODE.get(),
                         blockregistry.UNCUT_JADE_NODE.get(),
                         blockregistry.UNCUT_TOPAZ_NODE.get(),
@@ -70,7 +72,10 @@ public class blocktaggenerator extends BlockTagsProvider {
                         blockregistry.SILVER_KALVIS_ALTAR.get(),
                         blockregistry.PROMETHEUM_KALVIS_ALTAR.get(),
                         blockregistry.GLEAMIUM_KALVIS_ALTAR.get(),
-                        blockregistry.JANUS_TABLE.get()
+                        blockregistry.JANUS_TABLE.get(),
+                        blockregistry.GRECO_RAILING.get(),
+                        blockregistry.GRECO_STAIRS.get(),
+                        blockregistry.WOODFIRE_OVEN.get()
                 );
 
 
@@ -80,6 +85,8 @@ public class blocktaggenerator extends BlockTagsProvider {
                         blockregistry.UNCUT_SAPPHIRE_PILLAR.get(),
                         blockregistry.UNCUT_RUBY_PILLAR.get(),
                         blockregistry.UNCUT_SAPPHIRE_NODE.get(),
+                        blockregistry.UNCUT_MOONSTONE_PILLAR.get(),
+                        blockregistry.UNCUT_MOONSTONE_NODE.get(),
                         blockregistry.UNCUT_RUBY_NODE.get(),
                         blockregistry.UNCUT_JADE_NODE.get(),
                         blockregistry.UNCUT_TOPAZ_NODE.get(),
@@ -114,7 +121,8 @@ public class blocktaggenerator extends BlockTagsProvider {
                         blockregistry.SILVER_KALVIS_ALTAR.get(),
                         blockregistry.PROMETHEUM_KALVIS_ALTAR.get(),
                         blockregistry.GLEAMIUM_KALVIS_ALTAR.get(),
-                        blockregistry.JANUS_TABLE.get()
+                        blockregistry.JANUS_TABLE.get(),
+                        blockregistry.GRECO_RAILING.get()
                 );
 
 
@@ -134,6 +142,8 @@ public class blocktaggenerator extends BlockTagsProvider {
                 );
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(blockregistry.GRECO_STAIRS.get())
+                .add(blockregistry.WOODFIRE_OVEN.get())
                 ;
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
@@ -143,9 +153,19 @@ public class blocktaggenerator extends BlockTagsProvider {
                 .add(blockregistry.OLIVE_LOG.get())
                 .add(blockregistry.OLIVE_WOOD.get())
                 .add(blockregistry.STRIPPED_OLIVE_LOG.get())
-                .add(blockregistry.STRIPPED_OLIVE_WOOD.get());
+                .add(blockregistry.STRIPPED_OLIVE_WOOD.get())
+                .add(blockregistry.OLIVE_BEAM.get());
 
         this.tag(BlockTags.PLANKS)
+                .add(blockregistry.OLIVE_PLANKS.get());
+
+
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(blockregistry.OLIVE_LOG.get())
+                .add(blockregistry.OLIVE_WOOD.get())
+                .add(blockregistry.STRIPPED_OLIVE_LOG.get())
+                .add(blockregistry.STRIPPED_OLIVE_WOOD.get())
+                .add(blockregistry.OLIVE_BEAM.get())
                 .add(blockregistry.OLIVE_PLANKS.get());
 
 

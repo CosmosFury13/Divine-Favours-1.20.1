@@ -39,6 +39,7 @@
   "item.divinefavours.saw": "Saw",
   "item.divinefavours.hammer": "Hammer",
   "item.divinefavours.uncut_janus_crystal": "Uncut Janus Crystal",
+  "item.divinefavours.uncut_moonstone": "Uncut Moonstone",
 
 
   "block.divinefavours.uncut_sapphire_pillar": "Uncut Sapphire Pillar",
@@ -99,6 +100,14 @@
   "block.divinefavours.prometheum_kalvis_altar": "Prometheum Kalvis Table",
   "block.divinefavours.gleamium_kalvis_altar": "Gleamium Kalvis Table",
   "block.divinefavours.janus_table": "Janus Altar",
+  "block.divinefavours.greco_railing": "Greco Railing",
+  "block.divinefavours.uncut_moonstone_pillar": "Uncut Moonstone Pillar",
+  "block.divinefavours.uncut_moonstone_node": "Uncut Moonstone Node",
+  "block.divinefavours.greco_stairs": "Greco Stairs",
+  "block.divinefavours.olive_beam": "Olive Beam",
+  "block.divinefavours.olive_palisade": "Olive Palisade",
+  "block.divinefavours.woodfire_oven": "Wood Fired Oven",
+
 
   "creativetab.divine_tab": "Divine Favours"
 

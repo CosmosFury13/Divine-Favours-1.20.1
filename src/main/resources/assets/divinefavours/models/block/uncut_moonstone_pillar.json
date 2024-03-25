@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "side": "divinefavours:block/uncut_moonstone_pillar_side",
+    "bottom": "divinefavours:block/uncut_moonstone_pillar_bottom",
+    "top": "divinefavours:block/uncut_moonstone_pillar_top"
+  }
+}

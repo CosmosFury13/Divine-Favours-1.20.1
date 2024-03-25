@@ -41,6 +41,10 @@ public class log extends RotatedPillarBlock {
             if(state.is(blockregistry.OLIVE_WOOD.get())) {
                 return blockregistry.STRIPPED_OLIVE_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
+            if(state.is(blockregistry.OLIVE_BEAM.get())) {
+                return blockregistry.STRIPPED_OLIVE_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
         }
 
         return super.getToolModifiedState(state, context, toolAction, simulate);

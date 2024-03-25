@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "divinefavours:uncut_moonstone_pillar"
+    }
+  ],
+  "result": {
+    "item": "divinefavours:uncut_moonstone",
+    "count": 6
+  }
+}

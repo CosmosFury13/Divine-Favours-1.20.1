@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ##",
+    " ##",
+    " ##"
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:uncut_moonstone"
+    }
+  },
+  "result": {
+    "item": "divinefavours:uncut_moonstone_pillar",
+    "count": 1
+  }
+}

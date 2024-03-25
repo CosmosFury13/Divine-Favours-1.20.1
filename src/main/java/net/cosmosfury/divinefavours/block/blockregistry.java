@@ -2,6 +2,7 @@ package net.cosmosfury.divinefavours.block;
 
 import net.cosmosfury.divinefavours.DivineFavours;
 import net.cosmosfury.divinefavours.item.itemregistry;
+import net.cosmosfury.divinefavours.worldgen.tree.olivetreegrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -13,6 +14,9 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.OakTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,7 +28,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 import static net.cosmosfury.divinefavours.block.brazier.LIT;
-
+import static net.minecraft.world.level.block.Blocks.OAK_PLANKS;
 
 
 public class blockregistry {
@@ -48,6 +52,11 @@ public class blockregistry {
             () -> new node());
     public static final RegistryObject<Block> UNCUT_TOPAZ_NODE = registerBlock("uncut_topaz_node",
             () -> new node());
+    public static final RegistryObject<Block> UNCUT_MOONSTONE_PILLAR = registerBlock("uncut_moonstone_pillar",
+            () -> new pillar());
+
+    public static final RegistryObject<Block> UNCUT_MOONSTONE_NODE = registerBlock("uncut_moonstone_node",
+            () -> new node());
 
     public static final RegistryObject<Block> SAPPHIRE_ALTAR = registerBlock("sapphire_altar",
             () -> new altar());
@@ -66,7 +75,7 @@ public class blockregistry {
             () -> new mountainash(BlockBehaviour.Properties.copy(Blocks.REDSTONE_WIRE).sound(SoundType.STONE).noOcclusion().strength(0.0f, 0.75f)
             ));
     public static final RegistryObject<Block> OLIVE_PLANKS = registerBlock("olive_planks",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
+            () -> new Block(BlockBehaviour.Properties.copy(OAK_PLANKS)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -87,6 +96,10 @@ public class blockregistry {
             () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_OLIVE_LOG = registerBlock("stripped_olive_log",
             () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3)));
+    public static final RegistryObject<Block> OLIVE_BEAM = registerBlock("olive_beam",
+            () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3)));
+    public static final RegistryObject<Block> OLIVE_PALISADE = registerBlock("olive_palisade",
+            () -> new palisade(BlockBehaviour.Properties.of().noOcclusion().mapColor(OAK_PLANKS.defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
     public static final RegistryObject<Block> OLIVE_WOOD = registerBlock("olive_wood",
             () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
     public static final RegistryObject<Block> STRIPPED_OLIVE_WOOD = registerBlock("stripped_olive_wood",
@@ -112,7 +125,7 @@ public class blockregistry {
             });
 
     public static final RegistryObject<Block> OLIVE_SAPLING = registerBlock("olive_sapling",
-            () -> new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new olivetreegrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> BRAZIER_MITHRIL = registerBlock("brazier_mithril",
             () -> new brazier(BlockBehaviour.Properties.of()
@@ -181,6 +194,11 @@ public class blockregistry {
                     .isRedstoneConductor((state, world, pos) -> false)
                     .dynamicShape().lightLevel(state -> state.getValue(LIT) ? 15 : 0),1));
 
+    public static final RegistryObject<Block> WOODFIRE_OVEN = registerBlock("woodfire_oven",
+            () -> new woodfireoven(BlockBehaviour.Properties.of()
+                    .strength(3.0F, 3.0F)
+                    .noOcclusion().requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> MITHRIL_ORE = registerBlock("mithril_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
@@ -245,6 +263,11 @@ public class blockregistry {
     public static final RegistryObject<Block> JANUS_TABLE = registerBlock("janus_table",
             () -> new janustable());
 
+    public static final RegistryObject<Block> GRECO_RAILING = registerBlock("greco_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+
+    public static final RegistryObject<Block> GRECO_STAIRS = registerBlock("greco_stairs",
+            () -> new StairBlock(OAK_PLANKS.defaultBlockState(), BlockBehaviour.Properties.copy(OAK_PLANKS).noOcclusion()));
 
     //public static final RegistryObject<Block> OFFERING_CHEST = registerBlock("offering_chest",
     //        () -> new ChestBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)

@@ -5,6 +5,8 @@
     "divinefavours:uncut_jade_pillar",
     "divinefavours:uncut_topaz_pillar",
     "divinefavours:uncut_sapphire_node",
+    "divinefavours:uncut_moonstone_pillar",
+    "divinefavours:uncut_moonstone_node",
     "divinefavours:uncut_ruby_node",
     "divinefavours:uncut_jade_node",
     "divinefavours:uncut_topaz_node",
@@ -48,6 +50,9 @@
     "divinefavours:silver_kalvis_altar",
     "divinefavours:prometheum_kalvis_altar",
     "divinefavours:gleamium_kalvis_altar",
-    "divinefavours:janus_table"
+    "divinefavours:janus_table",
+    "divinefavours:greco_railing",
+    "divinefavours:greco_stairs",
+    "divinefavours:woodfire_oven"
   ]
 }
