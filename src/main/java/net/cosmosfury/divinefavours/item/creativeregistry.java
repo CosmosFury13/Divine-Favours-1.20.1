@@ -35,6 +35,7 @@ public class creativeregistry {
                         pOutput.accept(itemregistry.RAW_MITHRIL.get());
                         pOutput.accept(itemregistry.MITHRIL_INGOT.get());
                         pOutput.accept(itemregistry.MITHRIL_NUGGET.get());
+                        pOutput.accept(itemregistry.CRUSHED_MITHRIL.get());
                         pOutput.accept(itemregistry.KINDLING.get());
                         pOutput.accept(itemregistry.SNUFFER.get());
                         pOutput.accept(itemregistry.ASTRALITE_INGOT.get());
@@ -46,12 +47,15 @@ public class creativeregistry {
                         pOutput.accept(itemregistry.KYBER_NUGGET.get());
                         pOutput.accept(itemregistry.KYBER.get());
                         pOutput.accept(itemregistry.RAW_KYBER.get());
+                        pOutput.accept(itemregistry.CRUSHED_KYBER.get());
                         pOutput.accept(itemregistry.ORICHALCUM_INGOT.get());
                         pOutput.accept(itemregistry.ORICHALCUM_NUGGET.get());
                         pOutput.accept(itemregistry.RAW_ORICHALCUM.get());
+                        pOutput.accept(itemregistry.CRUSHED_ORICHALCUM.get());
                         pOutput.accept(itemregistry.PROMETHEUM_INGOT.get());
                         pOutput.accept(itemregistry.PROMETHEUM_NUGGET.get());
                         pOutput.accept(itemregistry.RAW_PROMETHEUM.get());
+                        pOutput.accept(itemregistry.CRUSHED_PROMETHEUM.get());
                         pOutput.accept(itemregistry.QUASARITE_INGOT.get());
                         pOutput.accept(itemregistry.QUASARITE_NUGGET.get());
                         pOutput.accept(itemregistry.WYRMSTONE.get());
@@ -59,6 +63,7 @@ public class creativeregistry {
                         pOutput.accept(itemregistry.RAW_SILVER.get());
                         pOutput.accept(itemregistry.SILVER_INGOT.get());
                         pOutput.accept(itemregistry.SILVER_NUGGET.get());
+                        pOutput.accept(itemregistry.CRUSHED_SILVER.get());
                         pOutput.accept(itemregistry.SALT.get());
                         pOutput.accept(itemregistry.MISTLETOE.get());
                         pOutput.accept(itemregistry.CHISEL.get());
@@ -131,6 +136,8 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.OLIVE_BEAM.get());
                         pOutput.accept(blockregistry.OLIVE_PALISADE.get());
                         pOutput.accept(blockregistry.WOODFIRE_OVEN.get());
+                        pOutput.accept(blockregistry.VERTICAL_OLIVE_PLANKS.get());
+                        pOutput.accept(blockregistry.OLIVE_DOUBLE_HERRINGBONE_PLANKS.get());
 
 
                     })

@@ -157,7 +157,9 @@ public class blocktaggenerator extends BlockTagsProvider {
                 .add(blockregistry.OLIVE_BEAM.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(blockregistry.OLIVE_PLANKS.get());
+                .add(blockregistry.OLIVE_PLANKS.get())
+                .add(blockregistry.VERTICAL_OLIVE_PLANKS.get())
+                .add(blockregistry.OLIVE_DOUBLE_HERRINGBONE_PLANKS.get());
 
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
@@ -166,6 +168,9 @@ public class blocktaggenerator extends BlockTagsProvider {
                 .add(blockregistry.STRIPPED_OLIVE_LOG.get())
                 .add(blockregistry.STRIPPED_OLIVE_WOOD.get())
                 .add(blockregistry.OLIVE_BEAM.get())
+                .add(blockregistry.VERTICAL_OLIVE_PLANKS.get())
+                .add(blockregistry.OLIVE_DOUBLE_HERRINGBONE_PLANKS.get())
+                .add(blockregistry.OLIVE_PALISADE.get())
                 .add(blockregistry.OLIVE_PLANKS.get());
 
 

@@ -26,6 +26,9 @@ public class itemregistry {
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> MITHRIL_NUGGET = ITEMS.register("mithril_nugget",
             () -> new Item((new Item.Properties())));
+
+    public static final RegistryObject<Item> CRUSHED_MITHRIL = ITEMS.register("crushed_mithril",
+            () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> RAW_ASTRALITE = ITEMS.register("raw_astralite",
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> ASTRALITE_INGOT = ITEMS.register("astralite_ingot",
@@ -44,17 +47,23 @@ public class itemregistry {
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> KYBER_NUGGET = ITEMS.register("kyber_nugget",
             () -> new Item((new Item.Properties())));
+    public static final RegistryObject<Item> CRUSHED_KYBER = ITEMS.register("crushed_kyber",
+            () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> RAW_ORICHALCUM = ITEMS.register("raw_orichalcum",
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> ORICHALCUM_INGOT = ITEMS.register("orichalcum_ingot",
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> ORICHALCUM_NUGGET = ITEMS.register("orichalcum_nugget",
             () -> new Item((new Item.Properties())));
+    public static final RegistryObject<Item> CRUSHED_ORICHALCUM = ITEMS.register("crushed_orichalcum",
+            () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> RAW_PROMETHEUM = ITEMS.register("raw_prometheum",
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> PROMETHEUM_INGOT = ITEMS.register("prometheum_ingot",
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> PROMETHEUM_NUGGET = ITEMS.register("prometheum_nugget",
+            () -> new Item((new Item.Properties())));
+    public static final RegistryObject<Item> CRUSHED_PROMETHEUM = ITEMS.register("crushed_prometheum",
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> QUASARITE_NUGGET = ITEMS.register("quasarite_nugget",
             () -> new Item((new Item.Properties())));
@@ -67,6 +76,8 @@ public class itemregistry {
     public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> SILVER_NUGGET = ITEMS.register("silver_nugget",
+            () -> new Item((new Item.Properties())));
+    public static final RegistryObject<Item> CRUSHED_SILVER = ITEMS.register("crushed_silver",
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> WYRMSTONE = ITEMS.register("wyrmstone",
             () -> new Item((new Item.Properties())));

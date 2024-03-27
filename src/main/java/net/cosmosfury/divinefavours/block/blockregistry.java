@@ -91,6 +91,40 @@ public class blockregistry {
                     return 5;
                 }}
     );
+    public static final RegistryObject<Block> VERTICAL_OLIVE_PLANKS = registerBlock("vertical_olive_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }}
+    );
+    public static final RegistryObject<Block> OLIVE_DOUBLE_HERRINGBONE_PLANKS = registerBlock("olive_double_herringbone_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }}
+    );
 
     public static final RegistryObject<Block> OLIVE_LOG = registerBlock("olive_log",
             () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));

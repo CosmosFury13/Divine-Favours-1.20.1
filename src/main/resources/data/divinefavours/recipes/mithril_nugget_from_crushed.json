@@ -1,0 +1,14 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "divinefavours:crushed_mithril"
+    }
+  ],
+  "results": [
+    {
+      "count": 9,
+      "item": "divinefavours:mithril_nugget"
+    }
+  ]
+}

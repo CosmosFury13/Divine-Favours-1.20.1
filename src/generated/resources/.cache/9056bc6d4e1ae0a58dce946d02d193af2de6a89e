@@ -1,9 +1,9 @@
-// 1.20.1	2024-03-25T20:46:54.4087503	Tags for minecraft:block mod id divinefavours
+// 1.20.1	2024-03-26T11:48:21.4700732	Tags for minecraft:block mod id divinefavours
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
 7656e411a06d07d3e0c2c460a9cd50741cdad6dc data/minecraft/tags/blocks/logs_that_burn.json
-5fa6ced422fd2f2f370a0b17f99dc3a3d7a0f65e data/minecraft/tags/blocks/mineable/axe.json
+dff09bf4e63b12b87bae2019d52a733b1a861632 data/minecraft/tags/blocks/mineable/axe.json
 03049f338abc5139105b7d1c77a61950106618e9 data/minecraft/tags/blocks/mineable/pickaxe.json
 9094995d4e3cefc9dc7c6d31abdb9f6875c30956 data/minecraft/tags/blocks/needs_diamond_tool.json
 e2c872f36f5a7cc63354079480d17b5705c05c28 data/minecraft/tags/blocks/needs_iron_tool.json
 67dc1a7011b058ba34bb623c6564da636ff498db data/minecraft/tags/blocks/needs_stone_tool.json
-6df7e1eaf41bfaab7c4940c8393718fb31ec2fd4 data/minecraft/tags/blocks/planks.json
+da11cc1c3ccf8345e9c3c930f8ac129ab41e9d52 data/minecraft/tags/blocks/planks.json

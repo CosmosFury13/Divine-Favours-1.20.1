@@ -1,9 +1,12 @@
 package net.cosmosfury.divinefavours.worldgen;
 import net.cosmosfury.divinefavours.DivineFavours;
+import net.cosmosfury.divinefavours.block.blockregistry;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
@@ -21,6 +24,8 @@ public class placedfeatures {
     public static final ResourceKey<PlacedFeature> KYBER_ORE_PLACED_KEY = registerKey("kyber_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_PROMETHEUM_ORE_PLACED_KEY = registerKey("nether_prometheum_ore_placed");
     public static final ResourceKey<PlacedFeature> SILVER_ORE_PLACED_KEY = registerKey("silver_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> OLIVE_PLACED_KEY = registerKey("olive_placed");
 
 
 
@@ -42,6 +47,11 @@ public class placedfeatures {
         register(context, KYBER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(configuredfeatures.OVERWORLD_KYBER_ORE_KEY),
                 oreplacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+
+        register(context, OLIVE_PLACED_KEY, configuredFeatures.getOrThrow(configuredfeatures.OLIVE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.01f, 1),
+                        blockregistry.OLIVE_SAPLING.get()));
     }
 
 
