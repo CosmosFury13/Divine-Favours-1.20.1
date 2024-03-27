@@ -68,10 +68,10 @@ public class configuredfeatures {
 
         register(context, OLIVE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(blockregistry.OLIVE_LOG.get()),
-                new StraightTrunkPlacer(5,3,0),
+                new StraightTrunkPlacer(4,2,0),
 
                 BlockStateProvider.simple(blockregistry.OLIVE_LEAVES.get()),
-                new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F) {
+                new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F) {
                 },
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());

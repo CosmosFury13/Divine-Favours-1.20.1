@@ -232,6 +232,9 @@ public class blockregistry {
             () -> new woodfireoven(BlockBehaviour.Properties.of()
                     .strength(3.0F, 3.0F)
                     .noOcclusion().requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SCROLL = registerBlock("scroll",
+            () -> new scroll(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)
+                    .noOcclusion().sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> MITHRIL_ORE = registerBlock("mithril_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)

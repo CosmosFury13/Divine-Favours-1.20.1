@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-26T23:28:57.7959474	Registries
+// 1.20.1	2024-03-27T00:46:08.1372548	Registries
 dbe71274c5a35bda77809a2bdc4cb1864d37b1d3 data/divinefavours/forge/biome_modifier/add_kyber_ore.json
 a0e55b001e2343dcf21097fa31adb8c8f147423b data/divinefavours/forge/biome_modifier/add_mithril_ore.json
 17e335897f5cc32903e4ae6bb3060d3c77b01ede data/divinefavours/forge/biome_modifier/add_nether_orichalcum_ore.json
@@ -9,7 +9,7 @@ a0e55b001e2343dcf21097fa31adb8c8f147423b data/divinefavours/forge/biome_modifier
 13d2fad92e28d971bd58ac37130c37d202ee4f20 data/divinefavours/worldgen/configured_feature/mithril_ore.json
 62e4ba4db55126e1e50ad24f00cab852bde133c5 data/divinefavours/worldgen/configured_feature/nether_orichalcum_ore.json
 15e999eb81260d0b9cdc58949f4572af91e0eecd data/divinefavours/worldgen/configured_feature/nether_prometheum_ore.json
-8a497c08ff4878b22d2a16bd391a0d1451b4edeb data/divinefavours/worldgen/configured_feature/olive.json
+8d3937b95b1712c1a2ab6736da33b238e7daca10 data/divinefavours/worldgen/configured_feature/olive.json
 8c9e3c6d39bf3468c28fbdc6441a06d38f5037e4 data/divinefavours/worldgen/configured_feature/silver_ore.json
 73d489c10875bd5306ab400973eb7b065ba5d0a5 data/divinefavours/worldgen/placed_feature/kyber_ore_placed.json
 bf5aca50b6066a57df240d92feba0dceba1c0bcf data/divinefavours/worldgen/placed_feature/mithril_ore_placed.json

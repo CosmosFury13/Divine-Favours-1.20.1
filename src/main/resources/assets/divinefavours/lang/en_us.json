@@ -81,7 +81,6 @@
   "block.divinefavours.uncut_ruby_node": "Uncut Ruby Node",
   "block.divinefavours.uncut_jade_node": "Uncut Jade Node",
   "block.divinefavours.uncut_topaz_node": "Uncut Topaz Node",
-  "block.divinefavours.snuffed": "snuffed",
   "block.divinefavours.astralite_block": "Astralite Block",
   "block.divinefavours.raw_astralite_block": "Raw Astralite Block",
   "block.divinefavours.gleamium_block": "Gleamium Block",
@@ -114,6 +113,7 @@
   "block.divinefavours.olive_beam": "Olive Beam",
   "block.divinefavours.olive_palisade": "Olive Palisade",
   "block.divinefavours.woodfire_oven": "Wood Fired Oven",
+  "block.divinefavours.scroll": "Scroll",
 
 
   "creativetab.divine_tab": "Divine Favours"

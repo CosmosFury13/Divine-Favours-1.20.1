@@ -138,6 +138,7 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.WOODFIRE_OVEN.get());
                         pOutput.accept(blockregistry.VERTICAL_OLIVE_PLANKS.get());
                         pOutput.accept(blockregistry.OLIVE_DOUBLE_HERRINGBONE_PLANKS.get());
+                        pOutput.accept(blockregistry.SCROLL.get());
 
 
                     })
