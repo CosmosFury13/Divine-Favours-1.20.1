@@ -2,6 +2,7 @@ package net.cosmosfury.divinefavours.block;
 
 import net.cosmosfury.divinefavours.DivineFavours;
 import net.cosmosfury.divinefavours.item.itemregistry;
+import net.cosmosfury.divinefavours.worldgen.tree.hawthornetreegrower;
 import net.cosmosfury.divinefavours.worldgen.tree.olivetreegrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -160,6 +161,30 @@ public class blockregistry {
 
     public static final RegistryObject<Block> OLIVE_SAPLING = registerBlock("olive_sapling",
             () -> new SaplingBlock(new olivetreegrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+    public static final RegistryObject<Block> HAWTHORNE_LEAVES = registerBlock("hawthorne_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES))
+            {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
+
+    public static final RegistryObject<Block> HAWTHORNE_SAPLING = registerBlock("hawthorne_sapling",
+            () -> new SaplingBlock(new hawthornetreegrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> HAWTHORNE_LOG = registerBlock("hawthorne_log",
+            () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
 
     public static final RegistryObject<Block> BRAZIER_MITHRIL = registerBlock("brazier_mithril",
             () -> new brazier(BlockBehaviour.Properties.of()

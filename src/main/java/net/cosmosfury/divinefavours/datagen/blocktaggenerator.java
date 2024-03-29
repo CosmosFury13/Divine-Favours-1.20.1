@@ -172,7 +172,8 @@ public class blocktaggenerator extends BlockTagsProvider {
                 .add(blockregistry.OLIVE_DOUBLE_HERRINGBONE_PLANKS.get())
                 .add(blockregistry.OLIVE_PALISADE.get())
                 .add(blockregistry.SCROLL.get())
-                .add(blockregistry.OLIVE_PLANKS.get());
+                .add(blockregistry.OLIVE_PLANKS.get())
+                .add(blockregistry.HAWTHORNE_LOG.get());
 
 
     }

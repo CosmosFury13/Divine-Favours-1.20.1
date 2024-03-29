@@ -26,6 +26,7 @@ public class placedfeatures {
     public static final ResourceKey<PlacedFeature> SILVER_ORE_PLACED_KEY = registerKey("silver_ore_placed");
 
     public static final ResourceKey<PlacedFeature> OLIVE_PLACED_KEY = registerKey("olive_placed");
+    public static final ResourceKey<PlacedFeature> HAWTHORNE_PLACED_KEY = registerKey("hawthorne_placed");
 
 
 
@@ -52,6 +53,10 @@ public class placedfeatures {
         register(context, OLIVE_PLACED_KEY, configuredFeatures.getOrThrow(configuredfeatures.OLIVE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.01f, 1),
                         blockregistry.OLIVE_SAPLING.get()));
+
+        register(context, HAWTHORNE_PLACED_KEY, configuredFeatures.getOrThrow(configuredfeatures.HAWTHORNE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.01f, 1),
+                        blockregistry.HAWTHORNE_SAPLING.get()));
     }
 
 

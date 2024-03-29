@@ -95,6 +95,9 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.OLIVE_LOG.get());
                         pOutput.accept(blockregistry.OLIVE_LEAVES.get());
                         pOutput.accept(blockregistry.OLIVE_SAPLING.get());
+                        pOutput.accept(blockregistry.HAWTHORNE_LOG.get());
+                        pOutput.accept(blockregistry.HAWTHORNE_LEAVES.get());
+                        pOutput.accept(blockregistry.HAWTHORNE_SAPLING.get());
                         pOutput.accept(blockregistry.BRAZIER_MITHRIL.get());
                         pOutput.accept(blockregistry.BRAZIER_PROMETHEUM.get());
                         pOutput.accept(blockregistry.BRAZIER_GLEAMIUM.get());
