@@ -186,6 +186,51 @@ public class blockregistry {
     public static final RegistryObject<Block> HAWTHORNE_LOG = registerBlock("hawthorne_log",
             () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
 
+    public static final RegistryObject<Block> VERTICAL_HAWTHORNE_PLANKS = registerBlock("vertical_hawthorne_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }}
+    );
+    public static final RegistryObject<Block> HAWTHORNE_DOUBLE_HERRINGBONE_PLANKS = registerBlock("hawthorne_double_herringbone_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }}
+    );
+    public static final RegistryObject<Block> STRIPPED_HAWTHORNE_LOG = registerBlock("stripped_hawthorne_log",
+            () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3)));
+    public static final RegistryObject<Block> HAWTHORNE_BEAM = registerBlock("hawthorne_beam",
+            () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3)));
+    public static final RegistryObject<Block> HAWTHORNE_PALISADE = registerBlock("hawthorne_palisade",
+            () -> new palisade(BlockBehaviour.Properties.of().noOcclusion().mapColor(OAK_PLANKS.defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistryObject<Block> HAWTHORNE_WOOD = registerBlock("hawthorne_wood",
+            () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> STRIPPED_HAWTHORNE_WOOD = registerBlock("stripped_hawthorne_wood",
+            () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3)));
+
     public static final RegistryObject<Block> BRAZIER_MITHRIL = registerBlock("brazier_mithril",
             () -> new brazier(BlockBehaviour.Properties.of()
                     .strength(3.0F, 3.0F)

@@ -22,12 +22,14 @@ import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSi
 import net.minecraft.world.level.levelgen.feature.foliageplacers.*;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
 import java.util.List;
+import java.util.OptionalInt;
 import java.util.function.ObjLongConsumer;
 
 public class configuredfeatures {
@@ -66,22 +68,20 @@ public class configuredfeatures {
 
         register(context, OLIVE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(blockregistry.OLIVE_LOG.get()),
-                new StraightTrunkPlacer(4,2,0),
+                new FancyTrunkPlacer(3, 11, 0),
 
                 BlockStateProvider.simple(blockregistry.OLIVE_LEAVES.get()),
-                new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F) {
-                },
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
 
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
 
         register(context, HAWTHORNE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(blockregistry.HAWTHORNE_LOG.get()),
-                new StraightTrunkPlacer(6,4,0),
+                new FancyTrunkPlacer(3, 11, 0),
 
                 BlockStateProvider.simple(blockregistry.HAWTHORNE_LEAVES.get()),
-                new PineFoliagePlacer(ConstantInt.of(1), ConstantInt.of(1), UniformInt.of(3, 4)),
-
-                new TwoLayersFeatureSize(2, 0, 2)).build());
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
+                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
 
 
     }

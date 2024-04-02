@@ -95,9 +95,22 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.OLIVE_LOG.get());
                         pOutput.accept(blockregistry.OLIVE_LEAVES.get());
                         pOutput.accept(blockregistry.OLIVE_SAPLING.get());
+                        pOutput.accept(blockregistry.OLIVE_BEAM.get());
+                        pOutput.accept(blockregistry.OLIVE_PALISADE.get());
+                        pOutput.accept(blockregistry.WOODFIRE_OVEN.get());
+                        pOutput.accept(blockregistry.VERTICAL_OLIVE_PLANKS.get());
+                        pOutput.accept(blockregistry.OLIVE_DOUBLE_HERRINGBONE_PLANKS.get());
                         pOutput.accept(blockregistry.HAWTHORNE_LOG.get());
+                        pOutput.accept(blockregistry.STRIPPED_HAWTHORNE_LOG.get());
                         pOutput.accept(blockregistry.HAWTHORNE_LEAVES.get());
                         pOutput.accept(blockregistry.HAWTHORNE_SAPLING.get());
+                        pOutput.accept(blockregistry.HAWTHORNE_WOOD.get());
+                        pOutput.accept(blockregistry.STRIPPED_HAWTHORNE_WOOD.get());
+                        pOutput.accept(blockregistry.HAWTHORNE_BEAM.get());
+                        pOutput.accept(blockregistry.HAWTHORNE_PALISADE.get());
+                        pOutput.accept(blockregistry.WOODFIRE_OVEN.get());
+                        pOutput.accept(blockregistry.VERTICAL_HAWTHORNE_PLANKS.get());
+                        pOutput.accept(blockregistry.HAWTHORNE_DOUBLE_HERRINGBONE_PLANKS.get());
                         pOutput.accept(blockregistry.BRAZIER_MITHRIL.get());
                         pOutput.accept(blockregistry.BRAZIER_PROMETHEUM.get());
                         pOutput.accept(blockregistry.BRAZIER_GLEAMIUM.get());
@@ -136,11 +149,6 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.JANUS_TABLE.get());
                         pOutput.accept(blockregistry.GRECO_RAILING.get());
                         pOutput.accept(blockregistry.GRECO_STAIRS.get());
-                        pOutput.accept(blockregistry.OLIVE_BEAM.get());
-                        pOutput.accept(blockregistry.OLIVE_PALISADE.get());
-                        pOutput.accept(blockregistry.WOODFIRE_OVEN.get());
-                        pOutput.accept(blockregistry.VERTICAL_OLIVE_PLANKS.get());
-                        pOutput.accept(blockregistry.OLIVE_DOUBLE_HERRINGBONE_PLANKS.get());
                         pOutput.accept(blockregistry.SCROLL.get());
 
 
