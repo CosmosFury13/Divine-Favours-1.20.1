@@ -38,6 +38,14 @@ public class configuredfeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KYBER_ORE_KEY = registerKey("kyber_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_PROMETHEUM_ORE_KEY = registerKey("nether_prometheum_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILVER_ORE_KEY = registerKey("silver_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RUBY_ORE_KEY = registerKey("ruby_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_JADE_ORE_KEY = registerKey("jade_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_TOPAZ_ORE_KEY = registerKey("topaz_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MOONSTONE_ORE_KEY = registerKey("moonstone_ore");
+
+
+
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> OLIVE_KEY = registerKey("olive");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HAWTHORNE_KEY = registerKey("hawthorne");

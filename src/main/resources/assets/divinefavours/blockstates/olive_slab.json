@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "divinefavours:block/olive_slab"
+    },
+    "type=double": {
+      "model": "divinefavours:block/olive_planks"
+    },
+    "type=top": {
+      "model": "divinefavours:block/olive_slab_top"
+    }
+  }
+}

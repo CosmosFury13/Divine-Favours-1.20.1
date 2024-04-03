@@ -24,6 +24,11 @@ public class placedfeatures {
     public static final ResourceKey<PlacedFeature> KYBER_ORE_PLACED_KEY = registerKey("kyber_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_PROMETHEUM_ORE_PLACED_KEY = registerKey("nether_prometheum_ore_placed");
     public static final ResourceKey<PlacedFeature> SILVER_ORE_PLACED_KEY = registerKey("silver_ore_placed");
+    public static final ResourceKey<PlacedFeature> RUBY_ORE_PLACED_KEY = registerKey("ruby_ore_placed");
+    public static final ResourceKey<PlacedFeature> SAPPHIRE_ORE_PLACED_KEY = registerKey("sapphire_ore_placed");
+    public static final ResourceKey<PlacedFeature> JADE_ORE_PLACED_KEY = registerKey("jade_ore_placed");
+    public static final ResourceKey<PlacedFeature> TOPAZ_ORE_PLACED_KEY = registerKey("topaz_ore_placed");
+    public static final ResourceKey<PlacedFeature> MOONSTONE_ORE_PLACED_KEY = registerKey("moonstone_ore_placed");
 
     public static final ResourceKey<PlacedFeature> OLIVE_PLACED_KEY = registerKey("olive_placed");
     public static final ResourceKey<PlacedFeature> HAWTHORNE_PLACED_KEY = registerKey("hawthorne_placed");

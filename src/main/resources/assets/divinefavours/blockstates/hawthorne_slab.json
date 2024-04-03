@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "divinefavours:block/hawthorne_slab"
+    },
+    "type=double": {
+      "model": "divinefavours:block/hawthorne_planks"
+    },
+    "type=top": {
+      "model": "divinefavours:block/hawthorne_slab_top"
+    }
+  }
+}

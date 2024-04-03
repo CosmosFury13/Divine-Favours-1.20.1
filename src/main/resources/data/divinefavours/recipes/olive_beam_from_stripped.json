@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  #",
+    "  #",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:stripped_olive_log"
+    }
+  },
+  "result": {
+    "item": "divinefavours:olive_beam",
+    "count": 2
+  }
+}

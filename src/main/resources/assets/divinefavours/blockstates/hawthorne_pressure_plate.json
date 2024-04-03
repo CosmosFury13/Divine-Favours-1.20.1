@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "divinefavours:block/hawthorne_pressure_plate"
+    },
+    "powered=true": {
+      "model": "divinefavours:block/hawthorne_pressure_plate_down"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "divinefavours:hawthorne_log"
+    }
+  ],
+  "result": {
+    "item": "divinefavours:hawthorne_planks",
+    "count": 4
+  }
+}

@@ -47,8 +47,8 @@
                 },
                 {
                   "chances": [
-                    0.025,
-                    0.00625,
+                    0.05,
+                    0.0625,
                     0.083333336,
                     0.1
                   ],
@@ -173,9 +173,9 @@
             },
             {
               "chances": [
-                0.05,
+                0.005,
                 0.0055555557,
-                0.0625,
+                0.00625,
                 0.008333334,
                 0.025
               ],
@@ -189,5 +189,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "divinefavours:hawthorne_leaves"
+  "random_sequence": "minecraft:blocks/oak_leaves"
 }

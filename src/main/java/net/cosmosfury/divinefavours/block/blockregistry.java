@@ -6,6 +6,7 @@ import net.cosmosfury.divinefavours.worldgen.tree.hawthornetreegrower;
 import net.cosmosfury.divinefavours.worldgen.tree.olivetreegrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.OakTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
@@ -161,6 +163,29 @@ public class blockregistry {
 
     public static final RegistryObject<Block> OLIVE_SAPLING = registerBlock("olive_sapling",
             () -> new SaplingBlock(new olivetreegrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> OLIVE_STAIRS = registerBlock("olive_stairs",
+            () -> new StairBlock(() -> blockregistry.OLIVE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(OAK_PLANKS).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> OLIVE_SLAB = registerBlock("olive_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(OAK_PLANKS).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> OLIVE_BUTTON = registerBlock("olive_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> OLIVE_PRESSURE_PLATE = registerBlock("olive_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD),
+                    BlockSetType.OAK));
+
+    public static final RegistryObject<Block> OLIVE_FENCE = registerBlock("olive_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> OLIVE_FENCE_GATE = registerBlock("olive_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD), SoundEvents.WOODEN_DOOR_OPEN, SoundEvents.WOODEN_DOOR_CLOSE));
+
+
+    public static final RegistryObject<Block> OLIVE_DOOR = registerBlock("olive_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> OLIVE_TRAPDOOR = registerBlock("olive_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
 
     public static final RegistryObject<Block> HAWTHORNE_LEAVES = registerBlock("hawthorne_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES))
@@ -185,6 +210,23 @@ public class blockregistry {
             () -> new SaplingBlock(new hawthornetreegrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> HAWTHORNE_LOG = registerBlock("hawthorne_log",
             () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> HAWTHORNE_PLANKS = registerBlock("hawthorne_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }}
+    );
 
     public static final RegistryObject<Block> VERTICAL_HAWTHORNE_PLANKS = registerBlock("vertical_hawthorne_planks",
             () -> new Block(BlockBehaviour.Properties.copy(OAK_PLANKS)) {
@@ -230,6 +272,29 @@ public class blockregistry {
             () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
     public static final RegistryObject<Block> STRIPPED_HAWTHORNE_WOOD = registerBlock("stripped_hawthorne_wood",
             () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3)));
+    public static final RegistryObject<Block> HAWTHORNE_STAIRS = registerBlock("hawthorne_stairs",
+            () -> new StairBlock(() -> blockregistry.OLIVE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(OAK_PLANKS).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> HAWTHORNE_SLAB = registerBlock("hawthorne_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(OAK_PLANKS).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> HAWTHORNE_BUTTON = registerBlock("hawthorne_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> HAWTHORNE_PRESSURE_PLATE = registerBlock("hawthorne_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD),
+                    BlockSetType.OAK));
+
+    public static final RegistryObject<Block> HAWTHORNE_FENCE = registerBlock("hawthorne_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> HAWTHORNE_FENCE_GATE = registerBlock("hawthorne_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD), SoundEvents.WOODEN_DOOR_OPEN, SoundEvents.WOODEN_DOOR_CLOSE));
+
+
+    public static final RegistryObject<Block> HAWTHORNE_DOOR = registerBlock("hawthorne_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> HAWTHORNE_TRAPDOOR = registerBlock("hawthorne_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
 
     public static final RegistryObject<Block> BRAZIER_MITHRIL = registerBlock("brazier_mithril",
             () -> new brazier(BlockBehaviour.Properties.of()

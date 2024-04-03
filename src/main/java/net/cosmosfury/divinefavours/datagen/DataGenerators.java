@@ -22,9 +22,8 @@ public class DataGenerators {
 
 
 
-        blocktaggenerator blocktaggenerator = generator.addProvider(event.includeServer(),
+        blocktaggenerator blockTagGenerator = generator.addProvider(event.includeServer(),
                 new blocktaggenerator(packOutput, lookupProvider, existingFileHelper));
-
-        generator.addProvider(event.includeServer(), new worldgenprovider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new itemtaggenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
     }
 }

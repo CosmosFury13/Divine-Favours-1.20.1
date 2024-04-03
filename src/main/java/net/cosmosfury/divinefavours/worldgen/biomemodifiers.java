@@ -20,6 +20,11 @@ public class biomemodifiers {
     public static final ResourceKey<BiomeModifier> ADD_OVERWORLD_KYBER_ORE = registerKey("add_kyber_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_PROMETHEUM_ORE = registerKey("add_nether_prometheum_ore");
     public static final ResourceKey<BiomeModifier> ADD_OVERWORLD_SILVER_ORE = registerKey("add_silver_ore");
+    public static final ResourceKey<BiomeModifier> ADD_OVERWORLD_RUBY_ORE = registerKey("add_ruby_ore");
+    public static final ResourceKey<BiomeModifier> ADD_OVERWORLD_SAPPHIRE_ORE = registerKey("add_sapphire_ore");
+    public static final ResourceKey<BiomeModifier> ADD_OVERWORLD_JADE_ORE = registerKey("add_jade_ore");
+    public static final ResourceKey<BiomeModifier> ADD_OVERWORLD_TOPAZ_ORE = registerKey("add_topaz_ore");
+    public static final ResourceKey<BiomeModifier> ADD_OVERWORLD_MOONSTONE_ORE = registerKey("add_moonstone_ore");
 
     public static final ResourceKey<BiomeModifier> ADD_TREE_OLIVE = registerKey("add_tree_olive");
     public static final ResourceKey<BiomeModifier> ADD_TREE_HAWTHORNE = registerKey("add_tree_hawthorne");

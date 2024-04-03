@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "divinefavours:olive_beam"
+    }
+  ],
+  "result": {
+    "item": "divinefavours:olive_planks",
+    "count": 4
+  }
+}

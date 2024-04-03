@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  #",
+    "  #",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:stripped_hawthorne_log"
+    }
+  },
+  "result": {
+    "item": "divinefavours:hawthorne_beam",
+    "count": 2
+  }
+}
