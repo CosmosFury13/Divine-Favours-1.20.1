@@ -52,19 +52,19 @@ public class railingblock extends Block implements ProperWaterloggedBlock, IWren
 
     private static final VoxelShape VOXEL_NORTH = Block.box(
             0d, 0d, 0d,
-            16d, 14d, 2d
+            16d, 16d, 2d
     );
     private static final VoxelShape VOXEL_SOUTH = Block.box(
             0d, 0d, 14d,
-            16d, 14d, 16d
+            16d, 16d, 16d
     );
     private static final VoxelShape VOXEL_EAST = Block.box(
             14d, 0d, 0d,
-            16d, 14d, 16d
+            16d, 16d, 16d
     );
     private static final VoxelShape VOXEL_WEST = Block.box(
             0d, 0d, 0d,
-            2d, 14d, 16d
+            2d, 16d, 16d
     );
 
     public static final BooleanProperty NORTH_FENCE = BlockStateProperties.NORTH;
@@ -163,6 +163,12 @@ public class railingblock extends Block implements ProperWaterloggedBlock, IWren
 
         return super.use(state, world, pos, player, hand, hit);
     }
+
+
+
+
+
+
     @Override
     public InteractionResult onSneakWrenched (BlockState state, UseOnContext context) {
         BlockPos pos   = context.getClickedPos();

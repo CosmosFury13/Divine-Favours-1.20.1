@@ -163,11 +163,7 @@ public class blocktaggenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.PLANKS)
                 .add(blockregistry.OLIVE_PLANKS.get())
-                .add(blockregistry.VERTICAL_OLIVE_PLANKS.get())
-                .add(blockregistry.OLIVE_DOUBLE_HERRINGBONE_PLANKS.get())
-                .add(blockregistry.HAWTHORNE_PLANKS.get())
-                .add(blockregistry.VERTICAL_HAWTHORNE_PLANKS.get())
-                .add(blockregistry.HAWTHORNE_DOUBLE_HERRINGBONE_PLANKS.get());
+                .add(blockregistry.HAWTHORNE_PLANKS.get());
 
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
@@ -177,8 +173,6 @@ public class blocktaggenerator extends BlockTagsProvider {
                 .add(blockregistry.STRIPPED_OLIVE_LOG.get())
                 .add(blockregistry.STRIPPED_OLIVE_WOOD.get())
                 .add(blockregistry.OLIVE_BEAM.get())
-                .add(blockregistry.VERTICAL_OLIVE_PLANKS.get())
-                .add(blockregistry.OLIVE_DOUBLE_HERRINGBONE_PLANKS.get())
                 .add(blockregistry.OLIVE_PALISADE.get())
                 .add(blockregistry.SCROLL.get())
                 .add(blockregistry.OLIVE_PLANKS.get())
@@ -188,8 +182,6 @@ public class blocktaggenerator extends BlockTagsProvider {
                 .add(blockregistry.STRIPPED_HAWTHORNE_LOG.get())
                 .add(blockregistry.STRIPPED_HAWTHORNE_WOOD.get())
                 .add(blockregistry.HAWTHORNE_BEAM.get())
-                .add(blockregistry.VERTICAL_HAWTHORNE_PLANKS.get())
-                .add(blockregistry.HAWTHORNE_DOUBLE_HERRINGBONE_PLANKS.get())
                 .add(blockregistry.HAWTHORNE_PALISADE.get())
                 .add(blockregistry.OLIVE_STAIRS.get())
                 .add(blockregistry.OLIVE_SLAB.get())

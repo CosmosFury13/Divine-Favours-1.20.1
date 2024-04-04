@@ -25,11 +25,7 @@ public class itemtaggenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.PLANKS)
                 .add(blockregistry.OLIVE_PLANKS.get().asItem())
-                .add(blockregistry.VERTICAL_OLIVE_PLANKS.get().asItem())
-                .add(blockregistry.OLIVE_DOUBLE_HERRINGBONE_PLANKS.get().asItem())
-                .add(blockregistry.HAWTHORNE_PLANKS.get().asItem())
-                .add(blockregistry.VERTICAL_HAWTHORNE_PLANKS.get().asItem())
-                .add(blockregistry.HAWTHORNE_DOUBLE_HERRINGBONE_PLANKS.get().asItem());
+                .add(blockregistry.HAWTHORNE_PLANKS.get().asItem());
 
     }
 }

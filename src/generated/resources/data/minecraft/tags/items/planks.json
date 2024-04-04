@@ -1,10 +1,6 @@
 {
   "values": [
     "divinefavours:olive_planks",
-    "divinefavours:vertical_olive_planks",
-    "divinefavours:olive_double_herringbone_planks",
-    "divinefavours:hawthorne_planks",
-    "divinefavours:vertical_hawthorne_planks",
-    "divinefavours:hawthorne_double_herringbone_planks"
+    "divinefavours:hawthorne_planks"
   ]
 }

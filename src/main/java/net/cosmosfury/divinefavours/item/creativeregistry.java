@@ -106,8 +106,6 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.OLIVE_DOOR.get());
                         pOutput.accept(blockregistry.OLIVE_TRAPDOOR.get());
                         pOutput.accept(blockregistry.WOODFIRE_OVEN.get());
-                        pOutput.accept(blockregistry.VERTICAL_OLIVE_PLANKS.get());
-                        pOutput.accept(blockregistry.OLIVE_DOUBLE_HERRINGBONE_PLANKS.get());
                         pOutput.accept(blockregistry.HAWTHORNE_LOG.get());
                         pOutput.accept(blockregistry.STRIPPED_HAWTHORNE_LOG.get());
                         pOutput.accept(blockregistry.HAWTHORNE_LEAVES.get());
@@ -126,8 +124,6 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.HAWTHORNE_TRAPDOOR.get());
                         pOutput.accept(blockregistry.WOODFIRE_OVEN.get());
                         pOutput.accept(blockregistry.HAWTHORNE_PLANKS.get());
-                        pOutput.accept(blockregistry.VERTICAL_HAWTHORNE_PLANKS.get());
-                        pOutput.accept(blockregistry.HAWTHORNE_DOUBLE_HERRINGBONE_PLANKS.get());
                         pOutput.accept(blockregistry.BRAZIER_MITHRIL.get());
                         pOutput.accept(blockregistry.BRAZIER_PROMETHEUM.get());
                         pOutput.accept(blockregistry.BRAZIER_GLEAMIUM.get());
