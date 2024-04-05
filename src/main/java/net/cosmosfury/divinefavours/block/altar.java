@@ -25,7 +25,7 @@ public class altar extends HorizontalDirectionalBlock {
                 .isViewBlocking((state, world, pos) -> false)
                 .isSuffocating((state, world, pos) -> false)
                 .isRedstoneConductor((state, world, pos) -> false)
-                .sound(SoundType.DEEPSLATE_TILES));
+                .sound(SoundType.DEEPSLATE_TILES).lightLevel((i) -> 9).emissiveRendering((state, level, pos) -> true));
     }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {

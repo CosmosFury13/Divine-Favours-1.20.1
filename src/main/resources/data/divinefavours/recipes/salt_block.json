@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    "## ",
+    "## "
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:salt"
+    }
+  },
+  "result": {
+    "item": "divinefavours:salt_block"
+  }
+}

@@ -2,28 +2,31 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "M#P",
-    "#L#",
-    "R#F"
+    "FJP",
+    "MLR",
+    "###"
   ],
   "key": {
     "#": {
       "item": "minecraft:calcite"
     },
     "M": {
-      "item": "divinefavours:uncut_sapphire_pillar"
+      "item": "divinefavours:uncut_sapphire"
     },
     "F": {
-      "item": "divinefavours:uncut_ruby_pillar"
+      "item": "divinefavours:uncut_ruby"
     },
     "P": {
-      "item": "divinefavours:uncut_jade_pillar"
+      "item": "divinefavours:uncut_jade"
     },
     "R": {
-      "item": "divinefavours:uncut_topaz_pillar"
+      "item": "divinefavours:uncut_topaz"
     },
     "L": {
-      "item": "divinefavours:gleamium_block"
+      "item": "divinefavours:olive_log"
+    },
+    "J": {
+      "item": "divinefavours:uncut_moonstone_pillar"
     }
 
   },

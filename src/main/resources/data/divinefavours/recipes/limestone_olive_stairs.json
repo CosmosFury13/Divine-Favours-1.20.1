@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#  ",
+    "M# ",
+    "MM#"
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:olive_planks"
+    },
+    "M": {
+      "item": "create:cut_limestone"
+    }
+  },
+  "result": {
+    "item": "divinefavours:greco_stairs",
+    "count": 4
+  }
+}

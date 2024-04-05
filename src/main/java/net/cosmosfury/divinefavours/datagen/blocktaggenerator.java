@@ -75,7 +75,8 @@ public class blocktaggenerator extends BlockTagsProvider {
                         blockregistry.JANUS_TABLE.get(),
                         blockregistry.GRECO_RAILING.get(),
                         blockregistry.GRECO_STAIRS.get(),
-                        blockregistry.WOODFIRE_OVEN.get()
+                        blockregistry.WOODFIRE_OVEN.get(),
+                        blockregistry.AMPHORA.get()
                 );
 
 
@@ -199,6 +200,8 @@ public class blocktaggenerator extends BlockTagsProvider {
                 .add(blockregistry.HAWTHORNE_FENCE_GATE.get())
                 .add(blockregistry.HAWTHORNE_DOOR.get())
                 .add(blockregistry.HAWTHORNE_TRAPDOOR.get());
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(blockregistry.SALT_BLOCK.get());
 
 
         this.tag(BlockTags.FENCES)

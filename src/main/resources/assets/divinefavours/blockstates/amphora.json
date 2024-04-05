@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=east": { "model": "divinefavours:block/empty_amphora", "y": 90 },
+    "facing=west": { "model": "divinefavours:block/empty_amphora", "y": 270 },
+    "facing=south": { "model": "divinefavours:block/empty_amphora", "y": 180 },
+    "facing=north": { "model": "divinefavours:block/empty_amphora", "y": 0 }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "divinefavours:block/salt_block",
+    "east": "divinefavours:block/salt_block",
+    "north": "divinefavours:block/salt_block",
+    "particle": "divinefavours:block/salt_block",
+    "south": "divinefavours:block/salt_block",
+    "up": "divinefavours:block/salt_block",
+    "west": "divinefavours:block/salt_block"
+  }
+}

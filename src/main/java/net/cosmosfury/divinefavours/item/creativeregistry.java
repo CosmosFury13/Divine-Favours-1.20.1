@@ -163,6 +163,8 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.GRECO_RAILING.get());
                         pOutput.accept(blockregistry.GRECO_STAIRS.get());
                         pOutput.accept(blockregistry.SCROLL.get());
+                        pOutput.accept(blockregistry.SALT_BLOCK.get());
+                        pOutput.accept(blockregistry.AMPHORA.get());
 
 
                     })

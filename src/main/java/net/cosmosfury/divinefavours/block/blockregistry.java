@@ -374,6 +374,11 @@ public class blockregistry {
 
     public static final RegistryObject<Block> GRECO_STAIRS = registerBlock("greco_stairs",
             () -> new StairBlock(OAK_PLANKS.defaultBlockState(), BlockBehaviour.Properties.copy(OAK_PLANKS).noOcclusion()));
+    public static final RegistryObject<Block> SALT_BLOCK = registerBlock("salt_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
+
+    public static final RegistryObject<Block> AMPHORA = registerBlock("amphora",
+            () -> new amphora(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion().dynamicShape().sound(SoundType.DECORATED_POT)));
 
     //public static final RegistryObject<Block> OFFERING_CHEST = registerBlock("offering_chest",
     //        () -> new ChestBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)

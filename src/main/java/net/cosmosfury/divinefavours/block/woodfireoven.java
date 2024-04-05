@@ -41,4 +41,5 @@ public class woodfireoven extends HorizontalDirectionalBlock {
         return this.defaultBlockState()
                 .setValue(FACING, pContext.getHorizontalDirection().getOpposite());
     }
+    //change texture for stobne at the bottom and packed mud at top, integrate with FD
 }
