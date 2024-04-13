@@ -1,0 +1,39 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "divinefavours:block/andesite_simple_railing_h",
+                "y": 90
+            },
+            "when": {
+                "north": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/andesite_simple_railing_h",
+                "y": -90
+            },
+            "when": {
+                "south": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/andesite_simple_railing_h",
+                "y": 180
+            },
+            "when": {
+                "east": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/andesite_simple_railing_h"
+            },
+            "when": {
+                "west": "true"
+            }
+        }
+    ]
+}

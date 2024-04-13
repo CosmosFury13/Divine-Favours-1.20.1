@@ -72,6 +72,7 @@ public class creativeregistry {
 
 
 
+
                         pOutput.accept(blockregistry.UNCUT_SAPPHIRE_PILLAR.get());
                         pOutput.accept(blockregistry.UNCUT_SAPPHIRE_NODE.get());
                         pOutput.accept(blockregistry.UNCUT_RUBY_PILLAR.get());
@@ -160,11 +161,158 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.PROMETHEUM_KALVIS_ALTAR.get());
                         pOutput.accept(blockregistry.GLEAMIUM_KALVIS_ALTAR.get());
                         pOutput.accept(blockregistry.JANUS_TABLE.get());
-                        pOutput.accept(blockregistry.GRECO_RAILING.get());
-                        pOutput.accept(blockregistry.GRECO_STAIRS.get());
                         pOutput.accept(blockregistry.SCROLL.get());
                         pOutput.accept(blockregistry.SALT_BLOCK.get());
                         pOutput.accept(blockregistry.AMPHORA.get());
+                        pOutput.accept(blockregistry.UNCUT_RUBY_TORCH.get());
+                        pOutput.accept(blockregistry.UNCUT_JADE_TORCH.get());
+                        pOutput.accept(blockregistry.UNCUT_SAPPHIRE_TORCH.get());
+                        pOutput.accept(blockregistry.UNCUT_TOPAZ_TORCH.get());
+                        pOutput.accept(blockregistry.UNCUT_MOONSTONE_TORCH.get());
+                        pOutput.accept(blockregistry.ANDESITE_ARCHED_RAILING.get());
+                        pOutput.accept(blockregistry.ANDESITE_ARCHED_RAILING_A.get());
+                        pOutput.accept(blockregistry.ANDESITE_ARCHED_RAILING_B.get());
+                        pOutput.accept(blockregistry.ANDESITE_ARCHED_RAILING_C.get());
+                        pOutput.accept(blockregistry.ANDESITE_ARCHED_RAILING_D.get());
+                        pOutput.accept(blockregistry.ANDESITE_ARCHED_RAILING_E.get());
+                        pOutput.accept(blockregistry.ANDESITE_ARCHED_RAILING_F.get());
+                        pOutput.accept(blockregistry.ANDESITE_ARCHED_RAILING_G.get());
+                        pOutput.accept(blockregistry.ANDESITE_ARCHED_RAILING_H.get());
+                        pOutput.accept(blockregistry.ANDESITE_ARCHED_RAILING_I.get());
+
+                        pOutput.accept(blockregistry.ANDESITE_GLASS_RAILING.get());
+                        pOutput.accept(blockregistry.ANDESITE_GLASS_RAILING_A.get());
+                        pOutput.accept(blockregistry.ANDESITE_GLASS_RAILING_B.get());
+                        pOutput.accept(blockregistry.ANDESITE_GLASS_RAILING_C.get());
+                        pOutput.accept(blockregistry.ANDESITE_GLASS_RAILING_D.get());
+                        pOutput.accept(blockregistry.ANDESITE_GLASS_RAILING_E.get());
+                        pOutput.accept(blockregistry.ANDESITE_GLASS_RAILING_F.get());
+                        pOutput.accept(blockregistry.ANDESITE_GLASS_RAILING_G.get());
+                        pOutput.accept(blockregistry.ANDESITE_GLASS_RAILING_H.get());
+                        pOutput.accept(blockregistry.ANDESITE_GLASS_RAILING_I.get());
+
+                        pOutput.accept(blockregistry.ANDESITE_SIMPLE_RAILING.get());
+                        pOutput.accept(blockregistry.ANDESITE_SIMPLE_RAILING_A.get());
+                        pOutput.accept(blockregistry.ANDESITE_SIMPLE_RAILING_B.get());
+                        pOutput.accept(blockregistry.ANDESITE_SIMPLE_RAILING_C.get());
+                        pOutput.accept(blockregistry.ANDESITE_SIMPLE_RAILING_D.get());
+                        pOutput.accept(blockregistry.ANDESITE_SIMPLE_RAILING_E.get());
+                        pOutput.accept(blockregistry.ANDESITE_SIMPLE_RAILING_F.get());
+                        pOutput.accept(blockregistry.ANDESITE_SIMPLE_RAILING_G.get());
+                        pOutput.accept(blockregistry.ANDESITE_SIMPLE_RAILING_H.get());
+                        pOutput.accept(blockregistry.ANDESITE_SIMPLE_RAILING_I.get());
+
+                        pOutput.accept(blockregistry.BRICK_ARCHED_RAILING.get());
+                        pOutput.accept(blockregistry.BRICK_ARCHED_RAILING_A.get());
+                        pOutput.accept(blockregistry.BRICK_ARCHED_RAILING_B.get());
+                        pOutput.accept(blockregistry.BRICK_ARCHED_RAILING_C.get());
+                        pOutput.accept(blockregistry.BRICK_ARCHED_RAILING_D.get());
+                        pOutput.accept(blockregistry.BRICK_ARCHED_RAILING_E.get());
+                        pOutput.accept(blockregistry.BRICK_ARCHED_RAILING_F.get());
+                        pOutput.accept(blockregistry.BRICK_ARCHED_RAILING_G.get());
+                        pOutput.accept(blockregistry.BRICK_ARCHED_RAILING_H.get());
+                        pOutput.accept(blockregistry.BRICK_ARCHED_RAILING_I.get());
+
+                        pOutput.accept(blockregistry.BRICK_GLASS_RAILING.get());
+                        pOutput.accept(blockregistry.BRICK_GLASS_RAILING_A.get());
+                        pOutput.accept(blockregistry.BRICK_GLASS_RAILING_B.get());
+                        pOutput.accept(blockregistry.BRICK_GLASS_RAILING_C.get());
+                        pOutput.accept(blockregistry.BRICK_GLASS_RAILING_D.get());
+                        pOutput.accept(blockregistry.BRICK_GLASS_RAILING_E.get());
+                        pOutput.accept(blockregistry.BRICK_GLASS_RAILING_F.get());
+                        pOutput.accept(blockregistry.BRICK_GLASS_RAILING_G.get());
+                        pOutput.accept(blockregistry.BRICK_GLASS_RAILING_H.get());
+                        pOutput.accept(blockregistry.BRICK_GLASS_RAILING_I.get());
+
+                        pOutput.accept(blockregistry.BRICK_SIMPLE_RAILING.get());
+                        pOutput.accept(blockregistry.BRICK_SIMPLE_RAILING_A.get());
+                        pOutput.accept(blockregistry.BRICK_SIMPLE_RAILING_B.get());
+                        pOutput.accept(blockregistry.BRICK_SIMPLE_RAILING_C.get());
+                        pOutput.accept(blockregistry.BRICK_SIMPLE_RAILING_D.get());
+                        pOutput.accept(blockregistry.BRICK_SIMPLE_RAILING_E.get());
+                        pOutput.accept(blockregistry.BRICK_SIMPLE_RAILING_F.get());
+                        pOutput.accept(blockregistry.BRICK_SIMPLE_RAILING_G.get());
+                        pOutput.accept(blockregistry.BRICK_SIMPLE_RAILING_H.get());
+                        pOutput.accept(blockregistry.BRICK_SIMPLE_RAILING_I.get());
+
+                        pOutput.accept(blockregistry.DEEPSLATE_ARCHED_RAILING.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_ARCHED_RAILING_A.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_ARCHED_RAILING_B.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_ARCHED_RAILING_C.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_ARCHED_RAILING_D.get());
+
+                        pOutput.accept(blockregistry.DEEPSLATE_GLASS_RAILING.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_GLASS_RAILING_A.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_GLASS_RAILING_B.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_GLASS_RAILING_C.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_GLASS_RAILING_D.get());
+
+                        pOutput.accept(blockregistry.DEEPSLATE_SIMPLE_RAILING.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_SIMPLE_RAILING_A.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_SIMPLE_RAILING_B.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_SIMPLE_RAILING_C.get());
+                        pOutput.accept(blockregistry.DEEPSLATE_SIMPLE_RAILING_D.get());
+
+                        pOutput.accept(blockregistry.LIMESTONE_ARCHED_RAILING.get());
+                        pOutput.accept(blockregistry.LIMESTONE_ARCHED_RAILING_A.get());
+                        pOutput.accept(blockregistry.LIMESTONE_ARCHED_RAILING_B.get());
+                        pOutput.accept(blockregistry.LIMESTONE_ARCHED_RAILING_C.get());
+                        pOutput.accept(blockregistry.LIMESTONE_ARCHED_RAILING_D.get());
+                        pOutput.accept(blockregistry.LIMESTONE_ARCHED_RAILING_E.get());
+                        pOutput.accept(blockregistry.LIMESTONE_ARCHED_RAILING_F.get());
+                        pOutput.accept(blockregistry.LIMESTONE_ARCHED_RAILING_G.get());
+                        pOutput.accept(blockregistry.LIMESTONE_ARCHED_RAILING_H.get());
+                        pOutput.accept(blockregistry.LIMESTONE_ARCHED_RAILING_I.get());
+
+                        pOutput.accept(blockregistry.LIMESTONE_GLASS_RAILING.get());
+                        pOutput.accept(blockregistry.LIMESTONE_GLASS_RAILING_A.get());
+                        pOutput.accept(blockregistry.LIMESTONE_GLASS_RAILING_B.get());
+                        pOutput.accept(blockregistry.LIMESTONE_GLASS_RAILING_C.get());
+                        pOutput.accept(blockregistry.LIMESTONE_GLASS_RAILING_D.get());
+                        pOutput.accept(blockregistry.LIMESTONE_GLASS_RAILING_E.get());
+                        pOutput.accept(blockregistry.LIMESTONE_GLASS_RAILING_F.get());
+                        pOutput.accept(blockregistry.LIMESTONE_GLASS_RAILING_G.get());
+                        pOutput.accept(blockregistry.LIMESTONE_GLASS_RAILING_H.get());
+                        pOutput.accept(blockregistry.LIMESTONE_GLASS_RAILING_I.get());
+
+                        pOutput.accept(blockregistry.LIMESTONE_SIMPLE_RAILING.get());
+                        pOutput.accept(blockregistry.LIMESTONE_SIMPLE_RAILING_A.get());
+                        pOutput.accept(blockregistry.LIMESTONE_SIMPLE_RAILING_B.get());
+                        pOutput.accept(blockregistry.LIMESTONE_SIMPLE_RAILING_C.get());
+                        pOutput.accept(blockregistry.LIMESTONE_SIMPLE_RAILING_D.get());
+                        pOutput.accept(blockregistry.LIMESTONE_SIMPLE_RAILING_E.get());
+                        pOutput.accept(blockregistry.LIMESTONE_SIMPLE_RAILING_F.get());
+                        pOutput.accept(blockregistry.LIMESTONE_SIMPLE_RAILING_G.get());
+                        pOutput.accept(blockregistry.LIMESTONE_SIMPLE_RAILING_H.get());
+                        pOutput.accept(blockregistry.LIMESTONE_SIMPLE_RAILING_I.get());
+
+                        pOutput.accept(blockregistry.MUD_BRICK_ARCHED_RAILING.get());
+                        pOutput.accept(blockregistry.MUD_BRICK_ARCHED_RAILING_A.get());
+
+
+                        pOutput.accept(blockregistry.MUD_BRICK_GLASS_RAILING.get());
+                        pOutput.accept(blockregistry.MUD_BRICK_GLASS_RAILING_A.get());
+
+
+                        pOutput.accept(blockregistry.MUD_BRICK_SIMPLE_RAILING.get());
+                        pOutput.accept(blockregistry.MUD_BRICK_SIMPLE_RAILING_A.get());
+
+
+                        pOutput.accept(blockregistry.STONE_ARCHED_RAILING.get());
+                        pOutput.accept(blockregistry.STONE_ARCHED_RAILING_A.get());
+                        pOutput.accept(blockregistry.STONE_ARCHED_RAILING_B.get());
+                        pOutput.accept(blockregistry.STONE_ARCHED_RAILING_C.get());
+
+                        pOutput.accept(blockregistry.STONE_GLASS_RAILING.get());
+                        pOutput.accept(blockregistry.STONE_GLASS_RAILING_A.get());
+                        pOutput.accept(blockregistry.STONE_GLASS_RAILING_B.get());
+                        pOutput.accept(blockregistry.STONE_GLASS_RAILING_C.get());
+
+                        pOutput.accept(blockregistry.STONE_SIMPLE_RAILING.get());
+                        pOutput.accept(blockregistry.STONE_SIMPLE_RAILING_A.get());
+                        pOutput.accept(blockregistry.STONE_SIMPLE_RAILING_B.get());
+                        pOutput.accept(blockregistry.STONE_SIMPLE_RAILING_C.get());
+
 
 
                     })

@@ -6,6 +6,7 @@ import net.cosmosfury.divinefavours.worldgen.tree.hawthornetreegrower;
 import net.cosmosfury.divinefavours.worldgen.tree.olivetreegrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -20,6 +21,7 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -369,16 +371,294 @@ public class blockregistry {
     public static final RegistryObject<Block> JANUS_TABLE = registerBlock("janus_table",
             () -> new janustable());
 
-    public static final RegistryObject<Block> GRECO_RAILING = registerBlock("greco_railing",
+    public static final RegistryObject<Block> LIMESTONE_ARCHED_RAILING = registerBlock("limestone_arched_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_GLASS_RAILING = registerBlock("limestone_glass_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_SIMPLE_RAILING = registerBlock("limestone_simple_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_ARCHED_RAILING = registerBlock("deepslate_arched_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_GLASS_RAILING = registerBlock("deepslate_glass_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_GLASS_RAILING_A = registerBlock("deepslate_glass_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_GLASS_RAILING_B = registerBlock("deepslate_glass_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_GLASS_RAILING_C = registerBlock("deepslate_glass_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_GLASS_RAILING_D = registerBlock("deepslate_glass_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_ARCHED_RAILING_A = registerBlock("deepslate_arched_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_ARCHED_RAILING_B = registerBlock("deepslate_arched_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_ARCHED_RAILING_C = registerBlock("deepslate_arched_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_ARCHED_RAILING_D = registerBlock("deepslate_arched_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+
+    public static final RegistryObject<Block> DEEPSLATE_SIMPLE_RAILING_A = registerBlock("deepslate_simple_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_SIMPLE_RAILING_B = registerBlock("deepslate_simple_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_SIMPLE_RAILING_C = registerBlock("deepslate_simple_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_SIMPLE_RAILING_D = registerBlock("deepslate_simple_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_SIMPLE_RAILING = registerBlock("deepslate_simple_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_ARCHED_RAILING = registerBlock("andesite_arched_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_GLASS_RAILING = registerBlock("andesite_glass_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_SIMPLE_RAILING = registerBlock("andesite_simple_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_ARCHED_RAILING = registerBlock("brick_arched_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_GLASS_RAILING = registerBlock("brick_glass_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_SIMPLE_RAILING = registerBlock("brick_simple_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> MUD_BRICK_ARCHED_RAILING = registerBlock("mud_brick_arched_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> MUD_BRICK_GLASS_RAILING = registerBlock("mud_brick_glass_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> MUD_BRICK_SIMPLE_RAILING = registerBlock("mud_brick_simple_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> MUD_BRICK_ARCHED_RAILING_A = registerBlock("mud_brick_arched_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> MUD_BRICK_GLASS_RAILING_A = registerBlock("mud_brick_glass_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> MUD_BRICK_SIMPLE_RAILING_A = registerBlock("mud_brick_simple_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_ARCHED_RAILING = registerBlock("stone_arched_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_GLASS_RAILING = registerBlock("stone_glass_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_SIMPLE_RAILING = registerBlock("stone_simple_railing",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_GLASS_RAILING_A = registerBlock("andesite_glass_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_GLASS_RAILING_B = registerBlock("andesite_glass_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_GLASS_RAILING_C = registerBlock("andesite_glass_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_GLASS_RAILING_D = registerBlock("andesite_glass_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_GLASS_RAILING_E = registerBlock("andesite_glass_railing_e",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_GLASS_RAILING_F = registerBlock("andesite_glass_railing_f",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_GLASS_RAILING_G = registerBlock("andesite_glass_railing_g",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_GLASS_RAILING_H = registerBlock("andesite_glass_railing_h",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_GLASS_RAILING_I = registerBlock("andesite_glass_railing_i",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+
+    public static final RegistryObject<Block> ANDESITE_ARCHED_RAILING_A = registerBlock("andesite_arched_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_ARCHED_RAILING_B = registerBlock("andesite_arched_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_ARCHED_RAILING_C = registerBlock("andesite_arched_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_ARCHED_RAILING_D = registerBlock("andesite_arched_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_ARCHED_RAILING_E = registerBlock("andesite_arched_railing_e",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_ARCHED_RAILING_F = registerBlock("andesite_arched_railing_f",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_ARCHED_RAILING_G = registerBlock("andesite_arched_railing_g",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_ARCHED_RAILING_H = registerBlock("andesite_arched_railing_h",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_ARCHED_RAILING_I = registerBlock("andesite_arched_railing_i",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_SIMPLE_RAILING_A = registerBlock("andesite_simple_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_SIMPLE_RAILING_B = registerBlock("andesite_simple_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_SIMPLE_RAILING_C = registerBlock("andesite_simple_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_SIMPLE_RAILING_D = registerBlock("andesite_simple_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_SIMPLE_RAILING_E = registerBlock("andesite_simple_railing_e",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_SIMPLE_RAILING_F = registerBlock("andesite_simple_railing_f",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_SIMPLE_RAILING_G = registerBlock("andesite_simple_railing_g",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_SIMPLE_RAILING_H = registerBlock("andesite_simple_railing_h",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ANDESITE_SIMPLE_RAILING_I = registerBlock("andesite_simple_railing_i",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_GLASS_RAILING_A = registerBlock("brick_glass_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_GLASS_RAILING_B = registerBlock("brick_glass_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_GLASS_RAILING_C = registerBlock("brick_glass_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_GLASS_RAILING_D = registerBlock("brick_glass_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_GLASS_RAILING_E = registerBlock("brick_glass_railing_e",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_GLASS_RAILING_F = registerBlock("brick_glass_railing_f",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_GLASS_RAILING_G = registerBlock("brick_glass_railing_g",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_GLASS_RAILING_H = registerBlock("brick_glass_railing_h",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_GLASS_RAILING_I = registerBlock("brick_glass_railing_i",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+
+    public static final RegistryObject<Block> BRICK_ARCHED_RAILING_A = registerBlock("brick_arched_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_ARCHED_RAILING_B = registerBlock("brick_arched_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_ARCHED_RAILING_C = registerBlock("brick_arched_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_ARCHED_RAILING_D = registerBlock("brick_arched_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_ARCHED_RAILING_E = registerBlock("brick_arched_railing_e",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_ARCHED_RAILING_F = registerBlock("brick_arched_railing_f",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_ARCHED_RAILING_G = registerBlock("brick_arched_railing_g",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_ARCHED_RAILING_H = registerBlock("brick_arched_railing_h",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_ARCHED_RAILING_I = registerBlock("brick_arched_railing_i",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+
+    public static final RegistryObject<Block> BRICK_SIMPLE_RAILING_A = registerBlock("brick_simple_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_SIMPLE_RAILING_B = registerBlock("brick_simple_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_SIMPLE_RAILING_C = registerBlock("brick_simple_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_SIMPLE_RAILING_D = registerBlock("brick_simple_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_SIMPLE_RAILING_E = registerBlock("brick_simple_railing_e",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_SIMPLE_RAILING_F = registerBlock("brick_simple_railing_f",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_SIMPLE_RAILING_G = registerBlock("brick_simple_railing_g",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_SIMPLE_RAILING_H = registerBlock("brick_simple_railing_h",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BRICK_SIMPLE_RAILING_I = registerBlock("brick_simple_railing_i",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.BRICKS).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_GLASS_RAILING_A = registerBlock("limestone_glass_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_GLASS_RAILING_B = registerBlock("limestone_glass_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_GLASS_RAILING_C = registerBlock("limestone_glass_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_GLASS_RAILING_D = registerBlock("limestone_glass_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_GLASS_RAILING_E = registerBlock("limestone_glass_railing_e",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_GLASS_RAILING_F = registerBlock("limestone_glass_railing_f",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_GLASS_RAILING_G = registerBlock("limestone_glass_railing_g",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_GLASS_RAILING_H = registerBlock("limestone_glass_railing_h",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_GLASS_RAILING_I = registerBlock("limestone_glass_railing_i",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+
+    public static final RegistryObject<Block> LIMESTONE_ARCHED_RAILING_A = registerBlock("limestone_arched_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_ARCHED_RAILING_B = registerBlock("limestone_arched_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_ARCHED_RAILING_C = registerBlock("limestone_arched_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_ARCHED_RAILING_D = registerBlock("limestone_arched_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_ARCHED_RAILING_E = registerBlock("limestone_arched_railing_e",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_ARCHED_RAILING_F = registerBlock("limestone_arched_railing_f",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_ARCHED_RAILING_G = registerBlock("limestone_arched_railing_g",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_ARCHED_RAILING_H = registerBlock("limestone_arched_railing_h",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_ARCHED_RAILING_I = registerBlock("limestone_arched_railing_i",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+
+    public static final RegistryObject<Block> LIMESTONE_SIMPLE_RAILING_A = registerBlock("limestone_simple_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_SIMPLE_RAILING_B = registerBlock("limestone_simple_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_SIMPLE_RAILING_C = registerBlock("limestone_simple_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_SIMPLE_RAILING_D = registerBlock("limestone_simple_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_SIMPLE_RAILING_E = registerBlock("limestone_simple_railing_e",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_SIMPLE_RAILING_F = registerBlock("limestone_simple_railing_f",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_SIMPLE_RAILING_G = registerBlock("limestone_simple_railing_g",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_SIMPLE_RAILING_H = registerBlock("limestone_simple_railing_h",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> LIMESTONE_SIMPLE_RAILING_I = registerBlock("limestone_simple_railing_i",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_GLASS_RAILING_A = registerBlock("stone_glass_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_GLASS_RAILING_B = registerBlock("stone_glass_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_GLASS_RAILING_C = registerBlock("stone_glass_railing_c",
             () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
 
-    public static final RegistryObject<Block> GRECO_STAIRS = registerBlock("greco_stairs",
+    public static final RegistryObject<Block> STONE_ARCHED_RAILING_A = registerBlock("stone_arched_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_ARCHED_RAILING_B = registerBlock("stone_arched_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_ARCHED_RAILING_C = registerBlock("stone_arched_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+
+    public static final RegistryObject<Block> STONE_SIMPLE_RAILING_A = registerBlock("stone_simple_railing_a",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_SIMPLE_RAILING_B = registerBlock("stone_simple_railing_b",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_SIMPLE_RAILING_C = registerBlock("stone_simple_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+
+
+
+
+
+
+
+    public static final RegistryObject<Block> LIMESTONE_STAIRS = registerBlock("limestone_stairs",
             () -> new StairBlock(OAK_PLANKS.defaultBlockState(), BlockBehaviour.Properties.copy(OAK_PLANKS).noOcclusion()));
     public static final RegistryObject<Block> SALT_BLOCK = registerBlock("salt_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
 
     public static final RegistryObject<Block> AMPHORA = registerBlock("amphora",
             () -> new amphora(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion().dynamicShape().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> UNCUT_RUBY_TORCH = registerBlock("uncut_ruby_torch",
+            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().instabreak().lightLevel((p_152692_) -> {
+                return 12;
+            }).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> UNCUT_JADE_TORCH = registerBlock("uncut_jade_torch",
+            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().instabreak().lightLevel((p_152692_) -> {
+                return 12;
+            }).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> UNCUT_SAPPHIRE_TORCH = registerBlock("uncut_sapphire_torch",
+            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().instabreak().lightLevel((p_152692_) -> {
+                return 12;
+            }).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> UNCUT_TOPAZ_TORCH = registerBlock("uncut_topaz_torch",
+            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().instabreak().lightLevel((p_152692_) -> {
+                return 12;
+            }).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> UNCUT_MOONSTONE_TORCH = registerBlock("uncut_moonstone_torch",
+            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().instabreak().lightLevel((p_152692_) -> {
+                return 12;
+            }).sound(SoundType.WOOD).noOcclusion()));
 
     //public static final RegistryObject<Block> OFFERING_CHEST = registerBlock("offering_chest",
     //        () -> new ChestBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)

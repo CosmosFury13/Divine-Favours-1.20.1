@@ -1,0 +1,27 @@
+
+{
+  "variants": {
+    "facing=down": {
+      "model": "divinefavours:block/uncut_moonstone_torch",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "divinefavours:block/uncut_moonstone_wall_torch"
+    },
+    "facing=north": {
+      "model": "divinefavours:block/uncut_moonstone_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "divinefavours:block/uncut_moonstone_wall_torch",
+      "y": 90
+    },
+    "facing=up": {
+      "model": "divinefavours:block/uncut_moonstone_torch"
+    },
+    "facing=west": {
+      "model": "divinefavours:block/uncut_moonstone_wall_torch",
+      "y": 180
+    }
+  }
+}

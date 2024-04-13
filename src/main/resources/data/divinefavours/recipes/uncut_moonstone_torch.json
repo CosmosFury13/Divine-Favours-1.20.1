@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " # ",
+    " M ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:uncut_moonstone"
+    },
+    "M": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "divinefavours:uncut_moonstone_torch",
+    "count": 4
+  }
+}

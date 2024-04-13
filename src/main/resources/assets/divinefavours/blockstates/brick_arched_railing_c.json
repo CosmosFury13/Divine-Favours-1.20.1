@@ -1,0 +1,39 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "divinefavours:block/brick_arched_railing_c",
+                "y": 90
+            },
+            "when": {
+                "north": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/brick_arched_railing_c",
+                "y": -90
+            },
+            "when": {
+                "south": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/brick_arched_railing_c",
+                "y": 180
+            },
+            "when": {
+                "east": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/brick_arched_railing_c"
+            },
+            "when": {
+                "west": "true"
+            }
+        }
+    ]
+}

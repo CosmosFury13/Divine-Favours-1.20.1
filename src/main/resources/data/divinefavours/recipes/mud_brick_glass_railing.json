@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "minecraft:mud_bricks"
+  },
+  "result": "divinefavours:mud_brick_glass_railing"
+
+}

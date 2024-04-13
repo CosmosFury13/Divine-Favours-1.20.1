@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "create:cut_deepslate"
+  },
+  "result": "divinefavours:deepslate_arched_railing"
+
+}

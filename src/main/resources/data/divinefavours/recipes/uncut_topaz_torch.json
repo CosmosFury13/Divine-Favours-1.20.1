@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " # ",
+    " M ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "divinefavours:uncut_topaz"
+    },
+    "M": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "divinefavours:uncut_topaz_torch",
+    "count": 4
+  }
+}

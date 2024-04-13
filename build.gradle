@@ -127,6 +127,13 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    repositories {
+        maven {
+            // url of the maven that hosts Aquacultures files
+            url "https://girafi.dk/maven/"
+        }
+    }
+
 }
 
 dependencies {
@@ -141,6 +148,7 @@ dependencies {
     implementation fg.deobf("com.simibubi.create:create-${mc_version}:${create_version}:slim") { transitive = false }
     implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
     implementation fg.deobf("curse.maven:farmers-delight-398521:${farmersdelight_version}")
+//    implementation fg.deobf("com.teammetallurgy.aquaculture:aquaculture2_${mc_version}:${mc_version}-${aquaculture_version}")
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     

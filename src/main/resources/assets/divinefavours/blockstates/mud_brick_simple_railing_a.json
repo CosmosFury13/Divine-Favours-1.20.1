@@ -1,0 +1,39 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "divinefavours:block/mud_brick_simple_railing_a",
+                "y": 90
+            },
+            "when": {
+                "north": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/mud_brick_simple_railing_a",
+                "y": -90
+            },
+            "when": {
+                "south": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/mud_brick_simple_railing_a",
+                "y": 180
+            },
+            "when": {
+                "east": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/mud_brick_simple_railing_a"
+            },
+            "when": {
+                "west": "true"
+            }
+        }
+    ]
+}

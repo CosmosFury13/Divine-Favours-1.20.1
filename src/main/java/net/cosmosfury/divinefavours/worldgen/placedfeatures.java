@@ -50,11 +50,11 @@ public class placedfeatures {
 
 
         register(context, OLIVE_PLACED_KEY, configuredFeatures.getOrThrow(configuredfeatures.OLIVE_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.00001f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.00000001f, 1),
                         blockregistry.OLIVE_SAPLING.get()));
 
         register(context, HAWTHORNE_PLACED_KEY, configuredFeatures.getOrThrow(configuredfeatures.HAWTHORNE_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.00001f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.00000001f, 1),
                         blockregistry.HAWTHORNE_SAPLING.get()));
     }
 

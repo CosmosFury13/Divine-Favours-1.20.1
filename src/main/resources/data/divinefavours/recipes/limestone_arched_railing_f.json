@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "count": 4,
+    "ingredient": {
+        "item": "create:limestone"
+    },
+    "result": "divinefavours:limestone_arched_railing_f"
+}

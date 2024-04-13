@@ -1,0 +1,39 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "divinefavours:block/stone_glass_railing",
+        "y": 90
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "divinefavours:block/stone_glass_railing",
+        "y": -90
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "divinefavours:block/stone_glass_railing",
+        "y": 180
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "divinefavours:block/stone_glass_railing"
+      },
+      "when": {
+        "west": "true"
+      }
+    }
+  ]
+}

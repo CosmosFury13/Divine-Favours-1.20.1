@@ -1,0 +1,39 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "divinefavours:block/limestone_simple_railing_e",
+                "y": 90
+            },
+            "when": {
+                "north": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/limestone_simple_railing_e",
+                "y": -90
+            },
+            "when": {
+                "south": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/limestone_simple_railing_e",
+                "y": 180
+            },
+            "when": {
+                "east": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "divinefavours:block/limestone_simple_railing_e"
+            },
+            "when": {
+                "west": "true"
+            }
+        }
+    ]
+}
