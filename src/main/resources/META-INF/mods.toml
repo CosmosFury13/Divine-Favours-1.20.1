@@ -53,12 +53,8 @@ mandatory=true
 versionRange="[1.2.3,)"
 ordering="NONE"
 side="BOTH"
-#[[dependencies.${mod_id}]]
-#modId="minecraft"
-#mandatory=true
-#versionRange="[1.20.1]"
-#ordering="NONE"
-#side="BOTH"
+
+
 [[dependencies.${mod_id}]]
     modId="minecraft"
     mandatory=true

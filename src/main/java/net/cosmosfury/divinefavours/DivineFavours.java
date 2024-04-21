@@ -5,6 +5,7 @@ import net.cosmosfury.divinefavours.block.blockregistry;
 //import net.cosmosfury.divinefavours.block.entity.blockentityregistry;
 import net.cosmosfury.divinefavours.item.creativeregistry;
 import net.cosmosfury.divinefavours.item.itemregistry;
+import net.cosmosfury.divinefavours.sounds.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -52,6 +53,7 @@ public class DivineFavours
         blockregistry.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
         itemregistry.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         creativeregistry.register(modEventBus);
         //blockentityregistry.register(modEventBus);

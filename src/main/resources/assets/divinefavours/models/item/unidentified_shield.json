@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "divinefavours:item/armor/unidentified_shield",
+    "layer1": "divinefavours:item/armor/unidentified_shield_overlay"
+  }
+}

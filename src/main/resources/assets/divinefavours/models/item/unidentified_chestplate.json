@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "divinefavours:item/armor/chestplate",
+    "layer1": "divinefavours:item/armor/chestplate_overlay"
+  }
+}

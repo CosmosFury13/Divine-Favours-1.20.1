@@ -32,6 +32,15 @@ public class creativeregistry {
                         pOutput.accept(itemregistry.OLIVE_OIL.get());
                         pOutput.accept(itemregistry.OLIVE_RIPE.get());
                         pOutput.accept(itemregistry.FIG.get());
+                        pOutput.accept(itemregistry.ORANGE.get());
+                        pOutput.accept(itemregistry.LEMON.get());
+                        pOutput.accept(itemregistry.WALNUT.get());
+                        pOutput.accept(itemregistry.AUBERGINE.get());
+                        pOutput.accept(itemregistry.CUCUMBER.get());
+                        pOutput.accept(itemregistry.COFFEE_BEANS.get());
+                        pOutput.accept(itemregistry.RAW_CALAMARI.get());
+                        pOutput.accept(itemregistry.GRAPES.get());
+                        pOutput.accept(itemregistry.CORN.get());
                         pOutput.accept(itemregistry.RAW_MITHRIL.get());
                         pOutput.accept(itemregistry.MITHRIL_INGOT.get());
                         pOutput.accept(itemregistry.MITHRIL_NUGGET.get());
@@ -69,6 +78,13 @@ public class creativeregistry {
                         pOutput.accept(itemregistry.CHISEL.get());
                         pOutput.accept(itemregistry.SAW.get());
                         pOutput.accept(itemregistry.HAMMER.get());
+                        pOutput.accept(itemregistry.UNIDENTIFIED_CHESTPLATE.get());
+                        pOutput.accept(itemregistry.UNIDENTIFIED_HELMET.get());
+                        pOutput.accept(itemregistry.UNIDENTIFIED_BOOTS.get());
+                        pOutput.accept(itemregistry.UNIDENTIFIED_LEGGINGS.get());
+                        pOutput.accept(itemregistry.UNIDENTIFIED_PICKAXE.get());
+                        pOutput.accept(itemregistry.UNIDENTIFIED_SHIELD.get());
+                        pOutput.accept(itemregistry.UNIDENTIFIED_SWORD.get());
 
 
 
@@ -106,7 +122,6 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.OLIVE_FENCE_GATE.get());
                         pOutput.accept(blockregistry.OLIVE_DOOR.get());
                         pOutput.accept(blockregistry.OLIVE_TRAPDOOR.get());
-                        pOutput.accept(blockregistry.WOODFIRE_OVEN.get());
                         pOutput.accept(blockregistry.HAWTHORNE_LOG.get());
                         pOutput.accept(blockregistry.STRIPPED_HAWTHORNE_LOG.get());
                         pOutput.accept(blockregistry.HAWTHORNE_LEAVES.get());
@@ -123,7 +138,6 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.HAWTHORNE_FENCE_GATE.get());
                         pOutput.accept(blockregistry.HAWTHORNE_DOOR.get());
                         pOutput.accept(blockregistry.HAWTHORNE_TRAPDOOR.get());
-                        pOutput.accept(blockregistry.WOODFIRE_OVEN.get());
                         pOutput.accept(blockregistry.HAWTHORNE_PLANKS.get());
                         pOutput.accept(blockregistry.BRAZIER_MITHRIL.get());
                         pOutput.accept(blockregistry.BRAZIER_PROMETHEUM.get());

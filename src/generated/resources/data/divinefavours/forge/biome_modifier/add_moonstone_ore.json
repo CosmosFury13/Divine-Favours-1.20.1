@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:has_structure/ancient_city",
+  "features": "divinefavours:moonstone_ore_placed",
+  "step": "underground_ores"
+}

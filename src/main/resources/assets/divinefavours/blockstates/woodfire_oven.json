@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=east": { "model": "divinefavours:block/woodfire_oven", "y": 90 },
-    "facing=west": { "model": "divinefavours:block/woodfire_oven", "y": 270 },
-    "facing=south": { "model": "divinefavours:block/woodfire_oven", "y": 180 },
-    "facing=north": { "model": "divinefavours:block/woodfire_oven", "y": 0 }
-  }
-}

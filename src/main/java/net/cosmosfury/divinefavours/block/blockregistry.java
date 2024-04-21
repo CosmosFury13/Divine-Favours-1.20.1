@@ -299,10 +299,7 @@ public class blockregistry {
                     .isRedstoneConductor((state, world, pos) -> false)
                     .dynamicShape().lightLevel(state -> state.getValue(LIT) ? 15 : 0),1));
 
-    public static final RegistryObject<Block> WOODFIRE_OVEN = registerBlock("woodfire_oven",
-            () -> new woodfireoven(BlockBehaviour.Properties.of()
-                    .strength(3.0F, 3.0F)
-                    .noOcclusion().requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> SCROLL = registerBlock("scroll",
             () -> new scroll(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)
                     .noOcclusion().sound(SoundType.WOOD)));
@@ -644,19 +641,19 @@ public class blockregistry {
                 return 12;
             }).sound(SoundType.WOOD).noOcclusion()));
     public static final RegistryObject<Block> UNCUT_JADE_TORCH = registerBlock("uncut_jade_torch",
-            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().instabreak().lightLevel((p_152692_) -> {
+            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().noCollission().instabreak().lightLevel((p_152692_) -> {
                 return 12;
             }).sound(SoundType.WOOD).noOcclusion()));
     public static final RegistryObject<Block> UNCUT_SAPPHIRE_TORCH = registerBlock("uncut_sapphire_torch",
-            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().instabreak().lightLevel((p_152692_) -> {
+            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().noCollission().instabreak().lightLevel((p_152692_) -> {
                 return 12;
             }).sound(SoundType.WOOD).noOcclusion()));
     public static final RegistryObject<Block> UNCUT_TOPAZ_TORCH = registerBlock("uncut_topaz_torch",
-            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().instabreak().lightLevel((p_152692_) -> {
+            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().noCollission().instabreak().lightLevel((p_152692_) -> {
                 return 12;
             }).sound(SoundType.WOOD).noOcclusion()));
     public static final RegistryObject<Block> UNCUT_MOONSTONE_TORCH = registerBlock("uncut_moonstone_torch",
-            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().instabreak().lightLevel((p_152692_) -> {
+            () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().noCollission().instabreak().lightLevel((p_152692_) -> {
                 return 12;
             }).sound(SoundType.WOOD).noOcclusion()));
 

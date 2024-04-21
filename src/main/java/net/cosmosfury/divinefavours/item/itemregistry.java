@@ -97,6 +97,24 @@ public class itemregistry {
             () -> new Item((new Item.Properties().food(foodregistry.FIG))));
     public static final RegistryObject<Item> MISTLETOE = ITEMS.register("mistletoe",
             () -> new Item((new Item.Properties().food(foodregistry.MISTLETOE))));
+    public static final RegistryObject<Item> ORANGE = ITEMS.register("orange",
+            () -> new Item((new Item.Properties().food(foodregistry.ORANGE))));
+    public static final RegistryObject<Item> LEMON = ITEMS.register("lemon",
+            () -> new Item((new Item.Properties().food(foodregistry.LEMON))));
+    public static final RegistryObject<Item> WALNUT = ITEMS.register("walnut",
+            () -> new Item((new Item.Properties().food(foodregistry.WALNUT))));
+    public static final RegistryObject<Item> GRAPES = ITEMS.register("grapes",
+            () -> new Item((new Item.Properties().food(foodregistry.GRAPES))));
+    public static final RegistryObject<Item> COFFEE_BEANS = ITEMS.register("coffee_beans",
+            () -> new Item((new Item.Properties().food(foodregistry.COFFEE_BEANS))));
+    public static final RegistryObject<Item> CUCUMBER = ITEMS.register("cucumber",
+            () -> new Item((new Item.Properties().food(foodregistry.CUCUMBER))));
+    public static final RegistryObject<Item> AUBERGINE = ITEMS.register("aubergine",
+            () -> new Item((new Item.Properties().food(foodregistry.AUBERGINE))));
+    public static final RegistryObject<Item> CORN = ITEMS.register("corn",
+            () -> new Item((new Item.Properties().food(foodregistry.CORN))));
+    public static final RegistryObject<Item> RAW_CALAMARI = ITEMS.register("raw_calamari",
+            () -> new Item((new Item.Properties().food(foodregistry.RAW_CALAMARI))));
 
     public static final RegistryObject<Item> UNCUT_RUBY = ITEMS.register("uncut_ruby",
             () -> new Item((new Item.Properties())));
@@ -110,6 +128,21 @@ public class itemregistry {
             () -> new Item((new Item.Properties().stacksTo(1))));
     public static final RegistryObject<Item> HAMMER = ITEMS.register("hammer",
             () -> new Item((new Item.Properties().stacksTo(1))));
+
+    public static final RegistryObject<Item> UNIDENTIFIED_CHESTPLATE = ITEMS.register("unidentified_chestplate",
+            () -> new unidentifiedchestplateitem((new Item.Properties().stacksTo(1))));
+    public static final RegistryObject<Item> UNIDENTIFIED_HELMET = ITEMS.register("unidentified_helmet",
+            () -> new unidentifiedhelmetitem((new Item.Properties().stacksTo(1))));
+    public static final RegistryObject<Item> UNIDENTIFIED_LEGGINGS = ITEMS.register("unidentified_leggings",
+            () -> new unidentifiedpantsitem((new Item.Properties().stacksTo(1))));
+    public static final RegistryObject<Item> UNIDENTIFIED_BOOTS = ITEMS.register("unidentified_boots",
+            () -> new unidentifiedbootsitem((new Item.Properties().stacksTo(1))));
+    public static final RegistryObject<Item> UNIDENTIFIED_PICKAXE = ITEMS.register("unidentified_pickaxe",
+            () -> new unidentifiedpickitem((new Item.Properties().stacksTo(1))));
+    public static final RegistryObject<Item> UNIDENTIFIED_SHIELD = ITEMS.register("unidentified_shield",
+            () -> new unidentifiedshielditem((new Item.Properties().stacksTo(1))));
+    public static final RegistryObject<Item> UNIDENTIFIED_SWORD = ITEMS.register("unidentified_sword",
+            () -> new unidentifiedsworditem((new Item.Properties().stacksTo(1))));
 
 
 

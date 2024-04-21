@@ -1,0 +1,13 @@
+{
+  "raffle": {
+    "subtitles": "sounds.divinefavours.raffle",
+    "sounds": [
+      "divinefavours:raffle"
+    ]
+  },
+  "identification": {
+    "subtitle": "sounds.divinefavours.identification",
+    "sounds": [
+      "divinefavours:sound_identification"
+    ]
+  }}

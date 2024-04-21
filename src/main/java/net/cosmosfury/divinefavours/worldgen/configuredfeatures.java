@@ -32,6 +32,12 @@ public class configuredfeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_PROMETHEUM_ORE_KEY = registerKey("nether_prometheum_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILVER_ORE_KEY = registerKey("silver_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RUBY_ORE_KEY = registerKey("ruby_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> JADE_ORE_KEY = registerKey("jade_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TOPAZ_ORE_KEY = registerKey("topaz_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MOONSTONE_ORE_KEY = registerKey("moonstone_ore");
+
 
 
 
@@ -50,6 +56,12 @@ public class configuredfeatures {
         List<OreConfiguration.TargetBlockState> overworldSilverOres = List.of(OreConfiguration.target(stoneReplaceable,
                         blockregistry.SILVER_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, blockregistry.DEEPSLATE_SILVER_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> overworldRubyOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        blockregistry.UNCUT_RUBY_PILLAR.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, blockregistry.UNCUT_RUBY_PILLAR.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> overworldSapphireOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        blockregistry.UNCUT_SAPPHIRE_PILLAR.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, blockregistry.UNCUT_SAPPHIRE_PILLAR.get().defaultBlockState()));
 
         register(context, OVERWORLD_MITHRIL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldMithrilOres, 9));
         register(context, OVERWORLD_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSilverOres, 9));
@@ -59,6 +71,15 @@ public class configuredfeatures {
                 blockregistry.KYBER_ORE.get().defaultBlockState(), 9));
         register(context, NETHER_PROMETHEUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplacables,
                 blockregistry.PROMETHEUM_ORE.get().defaultBlockState(), 9));
+
+        register(context, RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(overworldRubyOres,6));
+        register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres,6));
+        register(context, JADE_ORE_KEY, Feature.ORE, new OreConfiguration(stoneReplaceable,
+                blockregistry.UNCUT_JADE_PILLAR.get().defaultBlockState(), 4));
+        register(context, TOPAZ_ORE_KEY, Feature.ORE, new OreConfiguration(stoneReplaceable,
+                blockregistry.UNCUT_TOPAZ_PILLAR.get().defaultBlockState(), 4));
+        register(context, MOONSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(deepslateReplaceables,
+                blockregistry.UNCUT_MOONSTONE_PILLAR.get().defaultBlockState(), 2));
 
 
 

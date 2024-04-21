@@ -27,5 +27,6 @@ public class itemtaggenerator extends ItemTagsProvider {
                 .add(blockregistry.OLIVE_PLANKS.get().asItem())
                 .add(blockregistry.HAWTHORNE_PLANKS.get().asItem());
 
+
     }
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "divinefavours:item/armor/boots",
+    "layer1": "divinefavours:item/armor/boots_overlay"
+  }
+}
