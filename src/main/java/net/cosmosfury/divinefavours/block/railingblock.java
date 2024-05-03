@@ -179,7 +179,7 @@ public class railingblock extends Block implements ProperWaterloggedBlock, IWren
         var x = subbox.x;
         var z = subbox.z;
 
-        if (level instanceof ClientLevel) return InteractionResult.PASS;
+        if (level.isClientSide()) return InteractionResult.PASS;
 
         //check if the top face is wrenched, remove side
         if (face == Direction.UP) {

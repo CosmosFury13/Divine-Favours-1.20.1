@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "minecraft:stone"
+  },
+  "result": "divinefavours:stone_arched_railing_d"
+}

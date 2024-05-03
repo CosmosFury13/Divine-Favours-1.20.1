@@ -2,14 +2,17 @@
 //- make aquaducts as retexturd create pipes
 //- create the variants for the railings and decorations
 //- create new models for decorations
-//- complete stairs with railings - make inverted ones for the wood variants
+//- make inverted ones for the wood variants
 // decorative pedatstal
 // - signs and botas for wood types
 // - cyclopean walls
+// clean up railing texture
+// add railings to corner stairs
 
 
 //mat combos - limestone/logs 10 - deepslate/gem variants 5 - mud-bricks/stone-bricks 2 reverse palette- bricks/stripped 10
-// - andesite/planks 10 - stone/ create stone variants 4 (asurive,ochrum,veridium,crimsite)- calcite/blackstone and basalt
+// - andesite/planks 10 - stone/ create stone variants 6 (asurive,ochrum,veridium,crimsite,scoria,scorchia)- calcite/deepslate tiles and basalt and primarine/netherite ad kyber  7 - basalt/calcite and primarine 4
+//deepslate tiles/metals 12 all of mine except kyber + iron/copper/gold/diamond
 
 // rollable armor and tools - can find rollabel armor for a level iron/gold/diamond wit set stats or can craft the tool but will have empty stats that can be upgraded in the kalvis
 //with minerals

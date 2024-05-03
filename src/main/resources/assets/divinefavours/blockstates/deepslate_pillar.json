@@ -1,0 +1,33 @@
+{
+  "variants": {
+    "facing=up,bottom=true,top=false": { "model": "divinefavours:block/deepslate_pillar_bottom" },
+    "facing=up,bottom=false,top=true": { "model": "divinefavours:block/deepslate_pillar_top" },
+    "facing=up,bottom=true,top=true": { "model": "divinefavours:block/deepslate_pillar_lone" },
+    "facing=up,bottom=false,top=false": { "model": "divinefavours:block/deepslate_pillar_middle" }, 
+
+    "facing=down,bottom=true,top=false": { "model": "divinefavours:block/deepslate_pillar_bottom", "y": 180 },
+    "facing=down,bottom=false,top=true": { "model": "divinefavours:block/deepslate_pillar_top", "y": 180 },
+    "facing=down,bottom=true,top=true": { "model": "divinefavours:block/deepslate_pillar_lone", "y": 180  },
+    "facing=down,bottom=false,top=false": { "model": "divinefavours:block/deepslate_pillar_middle", "y": 180 },
+
+    "facing=north,bottom=true,top=false": { "model": "divinefavours:block/deepslate_pillar_bottom", "x": 90 },
+    "facing=north,bottom=false,top=true": { "model": "divinefavours:block/deepslate_pillar_top", "x": 90 },
+    "facing=north,bottom=true,top=true": { "model": "divinefavours:block/deepslate_pillar_lone", "x": 90  },
+    "facing=north,bottom=false,top=false": { "model": "divinefavours:block/deepslate_pillar_middle", "x": 90 },
+
+    "facing=south,bottom=true,top=false": { "model": "divinefavours:block/deepslate_pillar_bottom", "x": 270 },
+    "facing=south,bottom=false,top=true": { "model": "divinefavours:block/deepslate_pillar_top", "x": 270 },
+    "facing=south,bottom=true,top=true": { "model": "divinefavours:block/deepslate_pillar_lone", "x": 270  },
+    "facing=south,bottom=false,top=false": { "model": "divinefavours:block/deepslate_pillar_middle", "x": 270 },
+
+    "facing=west,bottom=true,top=false": { "model": "divinefavours:block/deepslate_pillar_top", "x": 90, "y": 90 },
+    "facing=west,bottom=false,top=true": { "model": "divinefavours:block/deepslate_pillar_bottom", "x": 90, "y": 90 },
+    "facing=west,bottom=true,top=true": { "model": "divinefavours:block/deepslate_pillar_lone", "x": 90, "y": 90 },
+    "facing=west,bottom=false,top=false": { "model": "divinefavours:block/deepslate_pillar_middle", "x": 90, "y": 90 },
+
+    "facing=east,bottom=true,top=false": { "model": "divinefavours:block/deepslate_pillar_bottom", "x": 270, "y": 270 },
+    "facing=east,bottom=false,top=true": { "model": "divinefavours:block/deepslate_pillar_top", "x": 270, "y": 270 },
+    "facing=east,bottom=true,top=true": { "model": "divinefavours:block/deepslate_pillar_lone", "x": 270, "y": 270  },
+    "facing=east,bottom=false,top=false": { "model": "divinefavours:block/deepslate_pillar_middle", "x": 270, "y": 270 }
+  }
+}

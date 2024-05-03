@@ -105,6 +105,7 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.RUBY_ALTAR.get());
                         pOutput.accept(blockregistry.JADE_ALTAR.get());
                         pOutput.accept(blockregistry.TOPAZ_ALTAR.get());
+                        pOutput.accept(blockregistry.LIMESTONE_STAIRS.get());
                         pOutput.accept(blockregistry.OLIVE_PLANKS.get());
                         pOutput.accept(blockregistry.STRIPPED_OLIVE_LOG.get());
                         pOutput.accept(blockregistry.OLIVE_WOOD.get());
@@ -316,16 +317,24 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.STONE_ARCHED_RAILING_A.get());
                         pOutput.accept(blockregistry.STONE_ARCHED_RAILING_B.get());
                         pOutput.accept(blockregistry.STONE_ARCHED_RAILING_C.get());
+                        pOutput.accept(blockregistry.STONE_ARCHED_RAILING_D.get());
+                        pOutput.accept(blockregistry.STONE_ARCHED_RAILING_E.get());
 
                         pOutput.accept(blockregistry.STONE_GLASS_RAILING.get());
                         pOutput.accept(blockregistry.STONE_GLASS_RAILING_A.get());
                         pOutput.accept(blockregistry.STONE_GLASS_RAILING_B.get());
                         pOutput.accept(blockregistry.STONE_GLASS_RAILING_C.get());
+                        pOutput.accept(blockregistry.STONE_GLASS_RAILING_D.get());
+                        pOutput.accept(blockregistry.STONE_GLASS_RAILING_E.get());
 
                         pOutput.accept(blockregistry.STONE_SIMPLE_RAILING.get());
                         pOutput.accept(blockregistry.STONE_SIMPLE_RAILING_A.get());
                         pOutput.accept(blockregistry.STONE_SIMPLE_RAILING_B.get());
                         pOutput.accept(blockregistry.STONE_SIMPLE_RAILING_C.get());
+                        pOutput.accept(blockregistry.STONE_SIMPLE_RAILING_D.get());
+                        pOutput.accept(blockregistry.STONE_SIMPLE_RAILING_E.get());
+
+                        pOutput.accept(blockregistry.DEEPSLATE_PILLAR.get());
 
 
 

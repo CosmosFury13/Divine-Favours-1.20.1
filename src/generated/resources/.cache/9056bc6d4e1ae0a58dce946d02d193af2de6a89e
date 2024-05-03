@@ -1,12 +1,12 @@
-// 1.20.1	2024-04-13T23:36:30.6347403	Tags for minecraft:block mod id divinefavours
+// 1.20.1	2024-04-25T15:49:15.9146432	Tags for minecraft:block mod id divinefavours
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
 f84bc0cbed1da169ee2020196562ac0424bda269 data/minecraft/tags/blocks/fences.json
 1f854718fea627e94914a5383b061d7526158082 data/minecraft/tags/blocks/fence_gates.json
 8cc4c00dbfed28444f4cc2fba0a2165382f4aa00 data/minecraft/tags/blocks/logs_that_burn.json
 5557103f5c29497601337bedda64550b11044a8a data/minecraft/tags/blocks/mineable/axe.json
-14440f02511dc0de5f71ffc2fa691496bb3bc54d data/minecraft/tags/blocks/mineable/pickaxe.json
+2217c3636863cf4001681851fa15b897cf2eb5c3 data/minecraft/tags/blocks/mineable/pickaxe.json
 3c2c8fc01301e25e609d04d155f44441753a13c4 data/minecraft/tags/blocks/mineable/shovel.json
 9094995d4e3cefc9dc7c6d31abdb9f6875c30956 data/minecraft/tags/blocks/needs_diamond_tool.json
-336214540be6a8cc1c712dd14a99a12613442e7e data/minecraft/tags/blocks/needs_iron_tool.json
-286907c3a6827fa8384ff57f4a6e5988658cf7f0 data/minecraft/tags/blocks/needs_stone_tool.json
+e30337784de30d34b36145692ad5c3c8f0681570 data/minecraft/tags/blocks/needs_iron_tool.json
+a081ada3a82aeca31a2a4d80b43b4c8da28977a5 data/minecraft/tags/blocks/needs_stone_tool.json
 9b10de557abd93e0ed67d01edf05010f7a3d2d0a data/minecraft/tags/blocks/planks.json

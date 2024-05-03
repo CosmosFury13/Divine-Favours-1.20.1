@@ -33,6 +33,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 import static net.cosmosfury.divinefavours.block.brazier.LIT;
+import static net.minecraft.world.level.block.Blocks.DEEPSLATE;
 import static net.minecraft.world.level.block.Blocks.OAK_PLANKS;
 
 
@@ -608,6 +609,10 @@ public class blockregistry {
             () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
     public static final RegistryObject<Block> STONE_GLASS_RAILING_C = registerBlock("stone_glass_railing_c",
             () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_GLASS_RAILING_D = registerBlock("stone_glass_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_GLASS_RAILING_E = registerBlock("stone_glass_railing_e",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
 
     public static final RegistryObject<Block> STONE_ARCHED_RAILING_A = registerBlock("stone_arched_railing_a",
             () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
@@ -615,12 +620,20 @@ public class blockregistry {
             () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
     public static final RegistryObject<Block> STONE_ARCHED_RAILING_C = registerBlock("stone_arched_railing_c",
             () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_ARCHED_RAILING_D = registerBlock("stone_arched_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_ARCHED_RAILING_E = registerBlock("stone_arched_railing_e",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
 
     public static final RegistryObject<Block> STONE_SIMPLE_RAILING_A = registerBlock("stone_simple_railing_a",
             () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
     public static final RegistryObject<Block> STONE_SIMPLE_RAILING_B = registerBlock("stone_simple_railing_b",
             () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
     public static final RegistryObject<Block> STONE_SIMPLE_RAILING_C = registerBlock("stone_simple_railing_c",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_SIMPLE_RAILING_D = registerBlock("stone_simple_railing_d",
+            () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
+    public static final RegistryObject<Block> STONE_SIMPLE_RAILING_E = registerBlock("stone_simple_railing_e",
             () -> new railingblock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2.0f).noOcclusion()));
 
 
@@ -630,9 +643,12 @@ public class blockregistry {
 
 
     public static final RegistryObject<Block> LIMESTONE_STAIRS = registerBlock("limestone_stairs",
-            () -> new StairBlock(OAK_PLANKS.defaultBlockState(), BlockBehaviour.Properties.copy(OAK_PLANKS).noOcclusion()));
+            () -> new stairtrial(OAK_PLANKS.defaultBlockState(),BlockBehaviour.Properties.copy(OAK_PLANKS).noOcclusion()));
     public static final RegistryObject<Block> SALT_BLOCK = registerBlock("salt_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
+
+    public static final RegistryObject<Block> DEEPSLATE_PILLAR = registerBlock("deepslate_pillar",
+            () -> new column(BlockBehaviour.Properties.copy(DEEPSLATE).lightLevel((i) -> 2).emissiveRendering((state, level, pos) -> true)));
 
     public static final RegistryObject<Block> AMPHORA = registerBlock("amphora",
             () -> new amphora(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion().dynamicShape().sound(SoundType.DECORATED_POT)));

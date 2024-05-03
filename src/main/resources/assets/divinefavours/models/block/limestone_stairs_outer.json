@@ -3,7 +3,7 @@
 	"parent": "block/cube",
 	"textures": {
 		"0": "divinefavours:block/marble",
-		"1": "divinefavours:block/olive/planks",
+		"1": "divinefavours:block/olive/log",
 		"particle": "divinefavours:block/marble"
 	},
 	"elements": [

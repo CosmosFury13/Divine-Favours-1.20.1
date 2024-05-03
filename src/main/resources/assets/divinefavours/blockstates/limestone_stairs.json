@@ -1,209 +1,600 @@
 {
-  "variants": {
-    "facing=east,half=bottom,shape=inner_left": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "y": 270
+  "multipart": [
+    {
+      "when": {
+        "facing": "east",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs",
+        "uvlock": true,
+        "y": 0
+      }
     },
-    "facing=east,half=bottom,shape=inner_right": {
-      "model": "divinefavours:block/limestone_stairs_inner"
+    {
+      "when": {
+        "facing": "west",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs",
+        "uvlock": true,
+        "y": 180
+      }
     },
-    "facing=east,half=bottom,shape=outer_left": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "y": 270
+    {
+      "when": {
+        "facing": "south",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs",
+        "uvlock": true,
+        "y": 90
+      }
     },
-    "facing=east,half=bottom,shape=outer_right": {
-      "model": "divinefavours:block/limestone_stairs_outer"
+    {
+      "when": {
+        "facing": "north",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs",
+        "uvlock": true,
+        "y": 270
+      }
     },
-    "facing=east,half=bottom,shape=straight": {
-      "model": "divinefavours:block/limestone_stairs"
+    {
+      "when": {
+        "facing": "east",
+        "half": "bottom",
+        "shape": "inner_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "y": 270
+      }
     },
-    "facing=east,half=top,shape=inner_left": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "x": 180
+    {
+      "when": {
+        "facing": "west",
+        "half": "bottom",
+        "shape": "inner_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "y": 90
+      }
     },
-    "facing=east,half=top,shape=inner_right": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "x": 180,
-      "y": 90
+    {
+      "when": {
+        "facing": "south",
+        "half": "bottom",
+        "shape": "inner_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "y": 0
+      }
     },
-    "facing=east,half=top,shape=outer_left": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "x": 180
+    {
+      "when": {
+        "facing": "north",
+        "half": "bottom",
+        "shape": "inner_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "y": 180
+      }
     },
-    "facing=east,half=top,shape=outer_right": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "x": 180,
-      "y": 90
+    {
+      "when": {
+        "facing": "east",
+        "half": "bottom",
+        "shape": "inner_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "y": 0
+      }
     },
-    "facing=east,half=top,shape=straight": {
-      "model": "divinefavours:block/limestone_stairs",
-      "uvlock": true,
-      "x": 180
+    {
+      "when": {
+        "facing": "west",
+        "half": "bottom",
+        "shape": "inner_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "y": 180
+      }
     },
-    "facing=north,half=bottom,shape=inner_left": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "y": 180
+    {
+      "when": {
+        "facing": "south",
+        "half": "bottom",
+        "shape": "inner_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "y": 90
+      }
     },
-    "facing=north,half=bottom,shape=inner_right": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "y": 270
+    {
+      "when": {
+        "facing": "north",
+        "half": "bottom",
+        "shape": "inner_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "y": 270
+      }
     },
-    "facing=north,half=bottom,shape=outer_left": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "y": 180
+    {
+      "when": {
+        "facing": "east",
+        "half": "bottom",
+        "shape": "outer_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "y": 270
+      }
     },
-    "facing=north,half=bottom,shape=outer_right": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "y": 270
+    {
+      "when": {
+        "facing": "west",
+        "half": "bottom",
+        "shape": "outer_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "y": 90
+      }
     },
-    "facing=north,half=bottom,shape=straight": {
-      "model": "divinefavours:block/limestone_stairs",
-      "uvlock": true,
-      "y": 270
+    {
+      "when": {
+        "facing": "south",
+        "half": "bottom",
+        "shape": "outer_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "y": 0
+      }
     },
-    "facing=north,half=top,shape=inner_left": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "x": 180,
-      "y": 270
+    {
+      "when": {
+        "facing": "north",
+        "half": "bottom",
+        "shape": "outer_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "y": 180
+      }
     },
-    "facing=north,half=top,shape=inner_right": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "x": 180
+    {
+      "when": {
+        "facing": "east",
+        "half": "bottom",
+        "shape": "outer_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "y": 0
+      }
     },
-    "facing=north,half=top,shape=outer_left": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "x": 180,
-      "y": 270
+    {
+      "when": {
+        "facing": "west",
+        "half": "bottom",
+        "shape": "outer_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "y": 180
+      }
     },
-    "facing=north,half=top,shape=outer_right": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "x": 180
+    {
+      "when": {
+        "facing": "south",
+        "half": "bottom",
+        "shape": "outer_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "y": 90
+      }
     },
-    "facing=north,half=top,shape=straight": {
-      "model": "divinefavours:block/limestone_stairs",
-      "uvlock": true,
-      "x": 180,
-      "y": 270
+    {
+      "when": {
+        "facing": "north",
+        "half": "bottom",
+        "shape": "outer_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "y": 270
+      }
     },
-    "facing=south,half=bottom,shape=inner_left": {
-      "model": "divinefavours:block/limestone_stairs_inner"
+    {
+      "when": {
+        "facing": "east",
+        "half": "top",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs",
+        "uvlock": true,
+        "y": 0,
+        "x": 180
+      }
     },
-    "facing=south,half=bottom,shape=inner_right": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "y": 90
+    {
+      "when": {
+        "facing": "west",
+        "half": "top",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs",
+        "uvlock": true,
+        "x": 180,
+        "y": 180
+      }
     },
-    "facing=south,half=bottom,shape=outer_left": {
-      "model": "divinefavours:block/limestone_stairs_outer"
+    {
+      "when": {
+        "facing": "south",
+        "half": "top",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs",
+        "uvlock": true,
+        "x": 180,
+        "y": 90
+      }
     },
-    "facing=south,half=bottom,shape=outer_right": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "y": 90
+    {
+      "when": {
+        "facing": "north",
+        "half": "top",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs",
+        "uvlock": true,
+        "x": 180,
+        "y": 270
+      }
     },
-    "facing=south,half=bottom,shape=straight": {
-      "model": "divinefavours:block/limestone_stairs",
-      "uvlock": true,
-      "y": 90
+    {
+      "when": {
+        "facing": "east",
+        "half": "top",
+        "shape": "inner_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "x": 180,
+        "y": 0
+      }
     },
-    "facing=south,half=top,shape=inner_left": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "x": 180,
-      "y": 90
+    {
+      "when": {
+        "facing": "west",
+        "half": "top",
+        "shape": "inner_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "x": 180,
+        "y": 180
+      }
     },
-    "facing=south,half=top,shape=inner_right": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "x": 180,
-      "y": 180
+    {
+      "when": {
+        "facing": "south",
+        "half": "top",
+        "shape": "inner_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "x": 180,
+        "y": 90
+      }
     },
-    "facing=south,half=top,shape=outer_left": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "x": 180,
-      "y": 90
+    {
+      "when": {
+        "facing": "north",
+        "half": "top",
+        "shape": "inner_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "x": 180,
+        "y": 270
+      }
     },
-    "facing=south,half=top,shape=outer_right": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "x": 180,
-      "y": 180
+    {
+      "when": {
+        "facing": "east",
+        "half": "top",
+        "shape": "inner_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "x": 180,
+        "y": 90
+      }
     },
-    "facing=south,half=top,shape=straight": {
-      "model": "divinefavours:block/limestone_stairs",
-      "uvlock": true,
-      "x": 180,
-      "y": 90
+    {
+      "when": {
+        "facing": "west",
+        "half": "top",
+        "shape": "inner_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "x": 180,
+        "y": 180
+      }
     },
-    "facing=west,half=bottom,shape=inner_left": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "y": 90
+    {
+      "when": {
+        "facing": "south",
+        "half": "top",
+        "shape": "inner_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "x": 180,
+        "y": 270
+      }
     },
-    "facing=west,half=bottom,shape=inner_right": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "y": 180
+    {
+      "when": {
+        "facing": "north",
+        "half": "top",
+        "shape": "inner_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_inner",
+        "uvlock": true,
+        "x": 180,
+        "y": 0
+      }
     },
-    "facing=west,half=bottom,shape=outer_left": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "y": 90
+    {
+      "when": {
+        "facing": "east",
+        "half": "top",
+        "shape": "outer_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "x": 180,
+        "y": 0
+      }
     },
-    "facing=west,half=bottom,shape=outer_right": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "y": 180
+    {
+      "when": {
+        "facing": "west",
+        "half": "top",
+        "shape": "outer_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "x": 180,
+        "y": 180
+      }
     },
-    "facing=west,half=bottom,shape=straight": {
-      "model": "divinefavours:block/limestone_stairs",
-      "uvlock": true,
-      "y": 180
+    {
+      "when": {
+        "facing": "south",
+        "half": "top",
+        "shape": "outer_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "x": 180,
+        "y": 90
+      }
     },
-    "facing=west,half=top,shape=inner_left": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "x": 180,
-      "y": 180
+    {
+      "when": {
+        "facing": "north",
+        "half": "top",
+        "shape": "outer_left"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "x": 180,
+        "y": 270
+      }
     },
-    "facing=west,half=top,shape=inner_right": {
-      "model": "divinefavours:block/limestone_stairs_inner",
-      "uvlock": true,
-      "x": 180,
-      "y": 270
+    {
+      "when": {
+        "facing": "east",
+        "half": "top",
+        "shape": "outer_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "x": 180,
+        "y": 90
+      }
     },
-    "facing=west,half=top,shape=outer_left": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "x": 180,
-      "y": 180
+    {
+      "when": {
+        "facing": "west",
+        "half": "top",
+        "shape": "outer_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "x": 180,
+        "y": 270
+      }
     },
-    "facing=west,half=top,shape=outer_right": {
-      "model": "divinefavours:block/limestone_stairs_outer",
-      "uvlock": true,
-      "x": 180,
-      "y": 270
+    {
+      "when": {
+        "facing": "south",
+        "half": "top",
+        "shape": "outer_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "x": 180,
+        "y": 180
+      }
     },
-    "facing=west,half=top,shape=straight": {
-      "model": "divinefavours:block/limestone_stairs",
-      "uvlock": true,
-      "x": 180,
-      "y": 180
+    {
+      "when": {
+        "facing": "north",
+        "half": "top",
+        "shape": "outer_right"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_stairs_outer",
+        "uvlock": true,
+        "x": 180,
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "railing_left": "true",
+        "facing": "east",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_simple_railing_stairs_left",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "railing_right": "true",
+        "facing": "east",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_simple_railing_stairs_right",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "railing_left": "true",
+        "facing": "west",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_simple_railing_stairs_left",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "railing_right": "true",
+        "facing": "west",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_simple_railing_stairs_right",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "railing_left": "true",
+        "facing": "south",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_simple_railing_stairs_left",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "railing_right": "true",
+        "facing": "south",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_simple_railing_stairs_right",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "railing_left": "true",
+        "facing": "north",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_simple_railing_stairs_left",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "railing_right": "true",
+        "facing": "north",
+        "half": "bottom",
+        "shape": "straight"
+      },
+      "apply": {
+        "model": "divinefavours:block/limestone_simple_railing_stairs_right",
+        "y": 180
+      }
     }
-  }
+  ]
 }

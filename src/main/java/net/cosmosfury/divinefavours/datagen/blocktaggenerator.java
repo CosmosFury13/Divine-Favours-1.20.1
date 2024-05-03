@@ -185,6 +185,12 @@ public class blocktaggenerator extends BlockTagsProvider {
                         blockregistry.STONE_SIMPLE_RAILING_A.get(),
                         blockregistry.STONE_SIMPLE_RAILING_B.get(),
                         blockregistry.STONE_SIMPLE_RAILING_C.get(),
+                        blockregistry.STONE_ARCHED_RAILING_D.get(),
+                        blockregistry.STONE_ARCHED_RAILING_E.get(),
+                        blockregistry.STONE_GLASS_RAILING_D.get(),
+                        blockregistry.STONE_GLASS_RAILING_E.get(),
+                        blockregistry.STONE_SIMPLE_RAILING_D.get(),
+                        blockregistry.STONE_SIMPLE_RAILING_E.get(),
                         blockregistry.DEEPSLATE_ARCHED_RAILING_A.get(),
                         blockregistry.DEEPSLATE_ARCHED_RAILING_B.get(),
                         blockregistry.DEEPSLATE_ARCHED_RAILING_C.get(),
@@ -197,7 +203,7 @@ public class blocktaggenerator extends BlockTagsProvider {
                         blockregistry.MUD_BRICK_ARCHED_RAILING_A.get(),
                         blockregistry.MUD_BRICK_SIMPLE_RAILING_A.get(),
                         blockregistry.LIMESTONE_STAIRS.get(),
-                        blockregistry.WOODFIRE_OVEN.get(),
+                        blockregistry.DEEPSLATE_PILLAR.get(),
                         blockregistry.AMPHORA.get()
                 );
 
@@ -367,7 +373,14 @@ public class blocktaggenerator extends BlockTagsProvider {
                         blockregistry.DEEPSLATE_SIMPLE_RAILING_D.get(),
                         blockregistry.MUD_BRICK_GLASS_RAILING_A.get(),
                         blockregistry.MUD_BRICK_ARCHED_RAILING_A.get(),
-                        blockregistry.MUD_BRICK_SIMPLE_RAILING_A.get()
+                        blockregistry.MUD_BRICK_SIMPLE_RAILING_A.get(),
+                        blockregistry.STONE_ARCHED_RAILING_D.get(),
+                        blockregistry.STONE_ARCHED_RAILING_E.get(),
+                        blockregistry.STONE_GLASS_RAILING_D.get(),
+                        blockregistry.STONE_GLASS_RAILING_E.get(),
+                        blockregistry.STONE_SIMPLE_RAILING_D.get(),
+                        blockregistry.STONE_SIMPLE_RAILING_E.get(),
+                        blockregistry.DEEPSLATE_PILLAR.get()
 
                 );
 
@@ -389,7 +402,6 @@ public class blocktaggenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(blockregistry.LIMESTONE_STAIRS.get())
-                .add(blockregistry.WOODFIRE_OVEN.get())
                 ;
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
