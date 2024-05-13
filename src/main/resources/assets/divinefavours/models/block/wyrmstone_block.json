@@ -1,12 +1,22 @@
 {
-  "parent": "minecraft:block/cube",
-  "textures": {
-    "down": "divinefavours:block/wyrmstone/wyrmstone_block",
-    "east": "divinefavours:block/wyrmstone/wyrmstone_block",
-    "north": "divinefavours:block/wyrmstone/wyrmstone_block",
-    "particle": "divinefavours:block/wyrmstone/wyrmstone_block",
-    "south": "divinefavours:block/wyrmstone/wyrmstone_block",
-    "up": "divinefavours:block/wyrmstone/wyrmstone_block",
-    "west": "divinefavours:block/wyrmstone/wyrmstone_block"
-  }
+	"credit": "Made with Blockbench",
+	"parent": "block/cube",
+	"textures": {
+		"0": "divinefavours:block/wyrmstone/wyrmstone_block",
+		"particle": "divinefavours:block/wyrmstone/wyrmstone_block"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#0"},
+				"east": {"uv": [0, 16, 16, 0], "texture": "#0"},
+				"south": {"uv": [16, 16, 0, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [16, 0, 0, 16], "texture": "#0"}
+			}
+		}
+	]
 }

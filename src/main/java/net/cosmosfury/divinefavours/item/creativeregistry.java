@@ -67,7 +67,6 @@ public class creativeregistry {
                         pOutput.accept(itemregistry.CRUSHED_PROMETHEUM.get());
                         pOutput.accept(itemregistry.QUASARITE_INGOT.get());
                         pOutput.accept(itemregistry.QUASARITE_NUGGET.get());
-                        pOutput.accept(itemregistry.WYRMSTONE.get());
                         pOutput.accept(itemregistry.SILVER_DUST.get());
                         pOutput.accept(itemregistry.RAW_SILVER.get());
                         pOutput.accept(itemregistry.SILVER_INGOT.get());
@@ -146,7 +145,6 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.BRAZIER_KYBER.get());
                         pOutput.accept(blockregistry.BRAZIER_ORICHALCUM.get());
                         pOutput.accept(blockregistry.BRAZIER_ASTRALITE.get());
-                        pOutput.accept(blockregistry.BRAZIER_WYRMSTONE.get());
                         pOutput.accept(blockregistry.BRAZIER_QUASARITE.get());
                         pOutput.accept(blockregistry.MITHRIL_ORE.get());
                         pOutput.accept(blockregistry.DEEPSLATE_MITHRIL_ORE.get());
@@ -166,7 +164,6 @@ public class creativeregistry {
                         pOutput.accept(blockregistry.PROMETHEUM_ORE.get());
                         pOutput.accept(blockregistry.RAW_PROMETHEUM_BLOCK.get());
                         pOutput.accept(blockregistry.QUASARITE_BLOCK.get());
-                        pOutput.accept(blockregistry.WYRMSTONE_BLOCK.get());
                         pOutput.accept(blockregistry.SILVER_ORE.get());
                         pOutput.accept(blockregistry.DEEPSLATE_SILVER_ORE.get());
                         pOutput.accept(blockregistry.SILVER_BLOCK.get());

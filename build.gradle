@@ -127,12 +127,7 @@ repositories {
             includeGroup "curse.maven"
         }
     }
-    repositories {
-        maven {
-            // url of the maven that hosts Aquacultures files
-            url "https://girafi.dk/maven/"
-        }
-    }
+
 
 }
 

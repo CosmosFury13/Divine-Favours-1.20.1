@@ -83,8 +83,7 @@ public class itemregistry {
             () -> new Item((new Item.Properties())));
     public static final RegistryObject<Item> CRUSHED_SILVER = ITEMS.register("crushed_silver",
             () -> new Item((new Item.Properties())));
-    public static final RegistryObject<Item> WYRMSTONE = ITEMS.register("wyrmstone",
-            () -> new Item((new Item.Properties())));
+
 
     public static final RegistryObject<Item> OLIVE_OIL = ITEMS.register("olive_oil",
             () -> new Item((new Item.Properties())));

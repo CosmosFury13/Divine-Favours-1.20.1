@@ -8,18 +8,34 @@
 // - cyclopean walls
 // clean up railing texture
 // add railings to corner stairs
+// make new palisades of the materials below to go middle of block
 
 
 //mat combos - limestone/logs 10 - deepslate/gem variants 5 - mud-bricks/stone-bricks 2 reverse palette- bricks/stripped 10
-// - andesite/planks 10 - stone/ create stone variants 6 (asurive,ochrum,veridium,crimsite,scoria,scorchia)- calcite/deepslate tiles and basalt and primarine/netherite ad kyber  7 - basalt/calcite and primarine 4
+// - andesite/planks 10 - stone/ create stone variants 6 (asurive,ochrum,veridium,crimsite,scoria,scorchia)- calcite/deepslate tiles and basalt and primarine/netherite and kyber  7 - basalt/calcite and primarine 4
 //deepslate tiles/metals 12 all of mine except kyber + iron/copper/gold/diamond
 
 // rollable armor and tools - can find rollabel armor for a level iron/gold/diamond wit set stats or can craft the tool but will have empty stats that can be upgraded in the kalvis
 //with minerals
 
-// make so silver kalis to upgrade iron level/ prom for gold and gleam for diamond
+// make so silver kalis to upgrade iron level/ prom for gold and gleam for diamond_
+
+// change wyrm stone to be a col9our changer between ~16 colours make like a pillar blocck to change colour based on how far up the pillar
 
 
+// add patterns to amphora - triangle ringle of alternaing upside dowm
 
-
-
+// make obols pressed silver nuggets then get them blessed by charon to get cool death effects
+//to change wyrm stone
+//color_values = [
+//  "#d20117", "#e63a0e", "#f97205", "#ffaa00", "#ffb900", "#ffa500",
+//  "#ffb500", "#ffbf00", "#ffcc00", "#ffd700", "#e3e51a", "#c5d52f",
+//  "#a4c543", "#81b557", "#228b22", "#1f9149", "#179971", "#0ca59b",
+//  "#009e60", "#10aa4e", "#20b53e", "#31c02e", "#32cd3f", "#3cc951",
+//  "#47d663", "#52e375", "#5df087", "#00ffff", "#18fcf0", "#30f8e0",
+//  "#48f3d0", "#60efc0", "#0082cc", "#197cad", "#32678e", "#4b608f",
+//  "#3e75b7", "#4365a4", "#485693", "#4d4782", "#4a0a8a", "#6a16a5",
+//  "#8a22c0", "#aa2edc", "#d84cf1", "#df3db8", "#e62e80", "#ed1f47",
+//  "#ff004d", "#f70038", "#ed0023", "#e20017", "#d9000f", "#d20117",
+//  "#e63a0e", "#f97205", "#ffaa00", "#ffb900",
+//]

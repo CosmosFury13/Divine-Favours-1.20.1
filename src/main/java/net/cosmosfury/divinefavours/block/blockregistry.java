@@ -291,14 +291,7 @@ public class blockregistry {
                     .isSuffocating((state, world, pos) -> false)
                     .isRedstoneConductor((state, world, pos) -> false)
                     .dynamicShape().lightLevel(state -> state.getValue(LIT) ? 15 : 0),1));
-    public static final RegistryObject<Block> BRAZIER_WYRMSTONE = registerBlock("brazier_wyrmstone",
-            () -> new brazier(BlockBehaviour.Properties.of()
-                    .strength(3.0F, 3.0F)
-                    .noOcclusion()
-                    .isViewBlocking((state, world, pos) -> false)
-                    .isSuffocating((state, world, pos) -> false)
-                    .isRedstoneConductor((state, world, pos) -> false)
-                    .dynamicShape().lightLevel(state -> state.getValue(LIT) ? 15 : 0),1));
+
 
 
     public static final RegistryObject<Block> SCROLL = registerBlock("scroll",
@@ -347,8 +340,7 @@ public class blockregistry {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
     public static final RegistryObject<Block> QUASARITE_BLOCK = registerBlock("quasarite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).strength(3.5f)));
-    public static final RegistryObject<Block> WYRMSTONE_BLOCK = registerBlock("wyrmstone_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+
     public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
