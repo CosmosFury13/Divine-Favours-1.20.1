@@ -664,6 +664,9 @@ public class blockregistry {
             () -> new gemtorchblock(BlockBehaviour.Properties.of().forceSolidOff().noCollission().instabreak().lightLevel((p_152692_) -> {
                 return 12;
             }).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> PLUTUS_CHEST = registerBlock("plutus_chest",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(3.5f).noOcclusion()
+                    .isViewBlocking((state, world, pos) -> false)));
 
     //public static final RegistryObject<Block> OFFERING_CHEST = registerBlock("offering_chest",
     //        () -> new ChestBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)

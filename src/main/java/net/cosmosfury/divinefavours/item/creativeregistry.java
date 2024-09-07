@@ -333,6 +333,8 @@ public class creativeregistry {
 
                         pOutput.accept(blockregistry.DEEPSLATE_PILLAR.get());
 
+                        pOutput.accept(blockregistry.PLUTUS_CHEST.get());
+
 
 
                     })

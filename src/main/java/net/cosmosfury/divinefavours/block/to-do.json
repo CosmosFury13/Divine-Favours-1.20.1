@@ -4,13 +4,20 @@
 //- create new models for decorations
 //- make inverted ones for the wood variants
 // decorative pedatstal
-// - signs and botas for wood types
 // - cyclopean walls
 // clean up railing texture
 // add railings to corner stairs
 // make new palisades of the materials below to go middle of block
+// add privacy glass that can switch to normal glass
+// added depen on oh the biomes change code to use that texture and not mine
+// remove my trees
+//change the recipes
+//biomeswevegone:block/ebony/planks, biomeswevegone:block/ebony/log, biomeswevegone:block/ebony/log_top, biomeswevegone:block/ebony/stripped_log, biomeswevegone:block/ebony/stripped_log_top,
+//biomeswevegone:block/maple/planks, biomeswevegone:block/maple/log, biomeswevegone:block/maple/log_top, biomeswevegone:block/maple/stripped_log, biomeswevegone:block/maple/stripped_log_top,
 
-// add the create molten code to make al metals a fluid and add molds to make ingots/tools/armor
+// add in use with copycat so no need to create variants of railing and stairs 
+
+
 
 
 //mat combos - limestone/logs 10 - deepslate/gem variants 5 - mud-bricks/stone-bricks 2 reverse palette- bricks/stripped 10
@@ -22,7 +29,7 @@
 
 // make so silver kalis to upgrade iron level/ prom for gold and gleam for diamond_
 
-// change wyrm stone to be a col9our changer between ~16 colours make like a pillar blocck to change colour based on how far up the pillar
+
 
 
 // add patterns to amphora - triangle ringle of alternaing upside dowm

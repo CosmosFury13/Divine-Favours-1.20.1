@@ -144,6 +144,16 @@ dependencies {
     implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
     implementation fg.deobf("curse.maven:farmers-delight-398521:${farmersdelight_version}")
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    implementation fg.deobf("curse.maven:tfmg-693815:5659703")
+    implementation fg.deobf("curse.maven:aquaculture-60028:5585290")
+    implementation fg.deobf("curse.maven:oh-the-biomes-weve-gone-1070751:5699092")
+    implementation fg.deobf("curse.maven:corgilib-693313:5691268")
+    implementation fg.deobf("curse.maven:geckolib-388172:5675221")
+    implementation fg.deobf("curse.maven:oh-the-trees-youll-grow-962544:5693539")
+    implementation fg.deobf("curse.maven:terrablender-563928:5378180")
+
+
+
 
     
 

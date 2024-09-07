@@ -21,7 +21,6 @@
     "divinefavours:brazier_orichalcum",
     "divinefavours:brazier_prometheum",
     "divinefavours:brazier_quasarite",
-    "divinefavours:brazier_wyrmstone",
     "divinefavours:orichalcum_block",
     "divinefavours:astralite_block",
     "divinefavours:raw_astralite_block",
@@ -36,7 +35,6 @@
     "divinefavours:prometheum_ore",
     "divinefavours:raw_prometheum_block",
     "divinefavours:quasarite_block",
-    "divinefavours:wyrmstone_block",
     "divinefavours:sapphire_altar",
     "divinefavours:ruby_altar",
     "divinefavours:jade_altar",
@@ -182,6 +180,7 @@
     "divinefavours:mud_brick_simple_railing_a",
     "divinefavours:limestone_stairs",
     "divinefavours:deepslate_pillar",
-    "divinefavours:amphora"
+    "divinefavours:amphora",
+    "divinefavours:plutus_chest"
   ]
 }

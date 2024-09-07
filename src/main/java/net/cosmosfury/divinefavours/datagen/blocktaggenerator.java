@@ -202,7 +202,8 @@ public class blocktaggenerator extends BlockTagsProvider {
                         blockregistry.MUD_BRICK_SIMPLE_RAILING_A.get(),
                         blockregistry.LIMESTONE_STAIRS.get(),
                         blockregistry.DEEPSLATE_PILLAR.get(),
-                        blockregistry.AMPHORA.get()
+                        blockregistry.AMPHORA.get(),
+                        blockregistry.PLUTUS_CHEST.get()
                 );
 
 
