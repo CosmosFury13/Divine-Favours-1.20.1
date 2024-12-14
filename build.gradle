@@ -151,6 +151,7 @@ dependencies {
     implementation fg.deobf("curse.maven:geckolib-388172:5675221")
     implementation fg.deobf("curse.maven:oh-the-trees-youll-grow-962544:5693539")
     implementation fg.deobf("curse.maven:terrablender-563928:5378180")
+    implementation fg.deobf("curse.maven:create-deco-509285:5293982")
 
 
 
