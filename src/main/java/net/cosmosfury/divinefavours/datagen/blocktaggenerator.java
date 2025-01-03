@@ -404,66 +404,20 @@ public class blocktaggenerator extends BlockTagsProvider {
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 ;
 
-        this.tag(BlockTags.LOGS_THAT_BURN)
-                .add(blockregistry.OLIVE_LOG.get())
-                .add(blockregistry.OLIVE_WOOD.get())
-                .add(blockregistry.STRIPPED_OLIVE_LOG.get())
-                .add(blockregistry.STRIPPED_OLIVE_WOOD.get())
-                .add(blockregistry.OLIVE_BEAM.get())
-                .add(blockregistry.HAWTHORNE_LOG.get())
-                .add(blockregistry.HAWTHORNE_WOOD.get())
-                .add(blockregistry.STRIPPED_HAWTHORNE_LOG.get())
-                .add(blockregistry.STRIPPED_HAWTHORNE_WOOD.get())
-                .add(blockregistry.HAWTHORNE_BEAM.get());
+        this.tag(BlockTags.LOGS_THAT_BURN);
 
-        this.tag(BlockTags.PLANKS)
-                .add(blockregistry.OLIVE_PLANKS.get())
-                .add(blockregistry.HAWTHORNE_PLANKS.get());
+        this.tag(BlockTags.PLANKS);
+
 
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(blockregistry.OLIVE_LOG.get())
-                .add(blockregistry.OLIVE_WOOD.get())
-                .add(blockregistry.OLIVE_PLANKS.get())
-                .add(blockregistry.STRIPPED_OLIVE_LOG.get())
-                .add(blockregistry.STRIPPED_OLIVE_WOOD.get())
-                .add(blockregistry.OLIVE_BEAM.get())
-                .add(blockregistry.OLIVE_PALISADE.get())
-                .add(blockregistry.SCROLL.get())
-                .add(blockregistry.OLIVE_PLANKS.get())
-                .add(blockregistry.HAWTHORNE_LOG.get())
-                .add(blockregistry.HAWTHORNE_WOOD.get())
-                .add(blockregistry.HAWTHORNE_PLANKS.get())
-                .add(blockregistry.STRIPPED_HAWTHORNE_LOG.get())
-                .add(blockregistry.STRIPPED_HAWTHORNE_WOOD.get())
-                .add(blockregistry.HAWTHORNE_BEAM.get())
-                .add(blockregistry.HAWTHORNE_PALISADE.get())
-                .add(blockregistry.OLIVE_STAIRS.get())
-                .add(blockregistry.OLIVE_SLAB.get())
-                .add(blockregistry.OLIVE_BUTTON.get())
-                .add(blockregistry.OLIVE_PRESSURE_PLATE.get())
-                .add(blockregistry.OLIVE_FENCE.get())
-                .add(blockregistry.OLIVE_FENCE_GATE.get())
-                .add(blockregistry.OLIVE_DOOR.get())
-                .add(blockregistry.OLIVE_TRAPDOOR.get())
-                .add(blockregistry.HAWTHORNE_STAIRS.get())
-                .add(blockregistry.HAWTHORNE_SLAB.get())
-                .add(blockregistry.HAWTHORNE_BUTTON.get())
-                .add(blockregistry.HAWTHORNE_PRESSURE_PLATE.get())
-                .add(blockregistry.HAWTHORNE_FENCE.get())
-                .add(blockregistry.HAWTHORNE_FENCE_GATE.get())
-                .add(blockregistry.HAWTHORNE_DOOR.get())
-                .add(blockregistry.HAWTHORNE_TRAPDOOR.get());
+                .add(blockregistry.SCROLL.get());
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(blockregistry.SALT_BLOCK.get());
 
 
-        this.tag(BlockTags.FENCES)
-                .add(blockregistry.HAWTHORNE_FENCE.get())
-                .add(blockregistry.OLIVE_FENCE.get());
-        this.tag(BlockTags.FENCE_GATES)
-                .add(blockregistry.HAWTHORNE_FENCE_GATE.get())
-                .add(blockregistry.OLIVE_FENCE_GATE.get());
+        this.tag(BlockTags.FENCES);
+        this.tag(BlockTags.FENCE_GATES);
 
 
     }

@@ -23,9 +23,7 @@ public class itemtaggenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
 
 
-        this.tag(ItemTags.PLANKS)
-                .add(blockregistry.OLIVE_PLANKS.get().asItem())
-                .add(blockregistry.HAWTHORNE_PLANKS.get().asItem());
+        this.tag(ItemTags.PLANKS);
 
 
     }

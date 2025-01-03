@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lower_half=true": {
+      "model": "divinefavours:block/copycat_pillar"
+    },
+    "lower_half=false": {
+      "model": "divinefavours:block/copycat_pillar_upper"
+    }
+  }
+}

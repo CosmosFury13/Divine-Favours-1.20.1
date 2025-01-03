@@ -25,8 +25,8 @@ public class biomemodifiers {
     public static final ResourceKey<BiomeModifier> ADD_JADE_ORE = registerKey("add_jade_ore");
     public static final ResourceKey<BiomeModifier> ADD_MOONSTONE_ORE = registerKey("add_moonstone_ore");
 
-    public static final ResourceKey<BiomeModifier> ADD_TREE_OLIVE = registerKey("add_tree_olive");
-    public static final ResourceKey<BiomeModifier> ADD_TREE_HAWTHORNE = registerKey("add_tree_hawthorne");
+//    public static final ResourceKey<BiomeModifier> ADD_TREE_OLIVE = registerKey("add_tree_olive");
+//    public static final ResourceKey<BiomeModifier> ADD_TREE_HAWTHORNE = registerKey("add_tree_hawthorne");
 
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
@@ -83,15 +83,15 @@ public class biomemodifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(placedfeatures.MOONSTONE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_TREE_OLIVE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_FOREST),
-                HolderSet.direct(placedFeatures.getOrThrow(placedfeatures.OLIVE_PLACED_KEY)),
-                GenerationStep.Decoration.VEGETAL_DECORATION));
-
-        context.register(ADD_TREE_HAWTHORNE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_TAIGA),
-                HolderSet.direct(placedFeatures.getOrThrow(placedfeatures.HAWTHORNE_PLACED_KEY)),
-                GenerationStep.Decoration.VEGETAL_DECORATION));
+//        context.register(ADD_TREE_OLIVE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+//                biomes.getOrThrow(BiomeTags.IS_FOREST),
+//                HolderSet.direct(placedFeatures.getOrThrow(placedfeatures.OLIVE_PLACED_KEY)),
+//                GenerationStep.Decoration.VEGETAL_DECORATION));
+//
+//        context.register(ADD_TREE_HAWTHORNE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+//                biomes.getOrThrow(BiomeTags.IS_TAIGA),
+//                HolderSet.direct(placedFeatures.getOrThrow(placedfeatures.HAWTHORNE_PLACED_KEY)),
+//                GenerationStep.Decoration.VEGETAL_DECORATION));
 
     }
 

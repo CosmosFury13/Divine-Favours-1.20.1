@@ -2,8 +2,8 @@ package net.cosmosfury.divinefavours.block;
 
 import net.cosmosfury.divinefavours.DivineFavours;
 import net.cosmosfury.divinefavours.item.itemregistry;
-import net.cosmosfury.divinefavours.worldgen.tree.hawthornetreegrower;
-import net.cosmosfury.divinefavours.worldgen.tree.olivetreegrower;
+//import net.cosmosfury.divinefavours.worldgen.tree.hawthornetreegrower;
+//import net.cosmosfury.divinefavours.worldgen.tree.olivetreegrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -12,6 +12,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.OakTreeGrower;
@@ -80,158 +81,6 @@ public class blockregistry {
     public static final RegistryObject<Block> MOUNTAIN_ASH = registerBlock("mountain_ash",
             () -> new mountainash(BlockBehaviour.Properties.copy(Blocks.REDSTONE_WIRE).sound(SoundType.STONE).noOcclusion().strength(0.0f, 0.75f)
             ));
-    public static final RegistryObject<Block> OLIVE_PLANKS = registerBlock("olive_planks",
-            () -> new Block(BlockBehaviour.Properties.copy(OAK_PLANKS)) {
-                @Override
-                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return true;
-                }
-
-                @Override
-                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 20;
-                }
-
-                @Override
-                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 5;
-                }}
-    );
-
-
-    public static final RegistryObject<Block> OLIVE_LOG = registerBlock("olive_log",
-            () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
-    public static final RegistryObject<Block> STRIPPED_OLIVE_LOG = registerBlock("stripped_olive_log",
-            () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3)));
-    public static final RegistryObject<Block> OLIVE_BEAM = registerBlock("olive_beam",
-            () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3)));
-    public static final RegistryObject<Block> OLIVE_PALISADE = registerBlock("olive_palisade",
-            () -> new palisade(BlockBehaviour.Properties.of().noOcclusion().mapColor(OAK_PLANKS.defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
-    public static final RegistryObject<Block> OLIVE_WOOD = registerBlock("olive_wood",
-            () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> STRIPPED_OLIVE_WOOD = registerBlock("stripped_olive_wood",
-            () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3)));
-
-    public static final RegistryObject<Block> OLIVE_LEAVES = registerBlock("olive_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES))
-            {
-                @Override
-                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return true;
-                }
-
-                @Override
-                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 60;
-                }
-
-                @Override
-                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 30;
-                }
-            });
-
-    public static final RegistryObject<Block> OLIVE_SAPLING = registerBlock("olive_sapling",
-            () -> new SaplingBlock(new olivetreegrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> OLIVE_STAIRS = registerBlock("olive_stairs",
-            () -> new StairBlock(() -> blockregistry.OLIVE_PLANKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(OAK_PLANKS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> OLIVE_SLAB = registerBlock("olive_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(OAK_PLANKS).sound(SoundType.WOOD)));
-
-    public static final RegistryObject<Block> OLIVE_BUTTON = registerBlock("olive_button",
-            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
-                    BlockSetType.OAK, 10, true));
-    public static final RegistryObject<Block> OLIVE_PRESSURE_PLATE = registerBlock("olive_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD),
-                    BlockSetType.OAK));
-
-    public static final RegistryObject<Block> OLIVE_FENCE = registerBlock("olive_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> OLIVE_FENCE_GATE = registerBlock("olive_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD), SoundEvents.WOODEN_DOOR_OPEN, SoundEvents.WOODEN_DOOR_CLOSE));
-
-
-    public static final RegistryObject<Block> OLIVE_DOOR = registerBlock("olive_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> OLIVE_TRAPDOOR = registerBlock("olive_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
-
-    public static final RegistryObject<Block> HAWTHORNE_LEAVES = registerBlock("hawthorne_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES))
-            {
-                @Override
-                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return true;
-                }
-
-                @Override
-                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 60;
-                }
-
-                @Override
-                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 30;
-                }
-            });
-
-    public static final RegistryObject<Block> HAWTHORNE_SAPLING = registerBlock("hawthorne_sapling",
-            () -> new SaplingBlock(new hawthornetreegrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> HAWTHORNE_LOG = registerBlock("hawthorne_log",
-            () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
-    public static final RegistryObject<Block> HAWTHORNE_PLANKS = registerBlock("hawthorne_planks",
-            () -> new Block(BlockBehaviour.Properties.copy(OAK_PLANKS)) {
-                @Override
-                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return true;
-                }
-
-                @Override
-                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 20;
-                }
-
-                @Override
-                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 5;
-                }}
-    );
-
-
-    public static final RegistryObject<Block> STRIPPED_HAWTHORNE_LOG = registerBlock("stripped_hawthorne_log",
-            () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3)));
-    public static final RegistryObject<Block> HAWTHORNE_BEAM = registerBlock("hawthorne_beam",
-            () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3)));
-    public static final RegistryObject<Block> HAWTHORNE_PALISADE = registerBlock("hawthorne_palisade",
-            () -> new palisade(BlockBehaviour.Properties.of().noOcclusion().mapColor(OAK_PLANKS.defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
-    public static final RegistryObject<Block> HAWTHORNE_WOOD = registerBlock("hawthorne_wood",
-            () -> new log(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> STRIPPED_HAWTHORNE_WOOD = registerBlock("stripped_hawthorne_wood",
-            () -> new log(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3)));
-    public static final RegistryObject<Block> HAWTHORNE_STAIRS = registerBlock("hawthorne_stairs",
-            () -> new StairBlock(() -> blockregistry.OLIVE_PLANKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(OAK_PLANKS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> HAWTHORNE_SLAB = registerBlock("hawthorne_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(OAK_PLANKS).sound(SoundType.WOOD)));
-
-    public static final RegistryObject<Block> HAWTHORNE_BUTTON = registerBlock("hawthorne_button",
-            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
-                    BlockSetType.OAK, 10, true));
-    public static final RegistryObject<Block> HAWTHORNE_PRESSURE_PLATE = registerBlock("hawthorne_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD),
-                    BlockSetType.OAK));
-
-    public static final RegistryObject<Block> HAWTHORNE_FENCE = registerBlock("hawthorne_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> HAWTHORNE_FENCE_GATE = registerBlock("hawthorne_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD), SoundEvents.WOODEN_DOOR_OPEN, SoundEvents.WOODEN_DOOR_CLOSE));
-
-
-    public static final RegistryObject<Block> HAWTHORNE_DOOR = registerBlock("hawthorne_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> HAWTHORNE_TRAPDOOR = registerBlock("hawthorne_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
 
     public static final RegistryObject<Block> BRAZIER_MITHRIL = registerBlock("brazier_mithril",
             () -> new brazier(BlockBehaviour.Properties.of()
@@ -667,6 +516,16 @@ public class blockregistry {
     public static final RegistryObject<Block> PLUTUS_CHEST = registerBlock("plutus_chest",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(3.5f).noOcclusion()
                     .isViewBlocking((state, world, pos) -> false)));
+
+    public static final RegistryObject<Block> COPYCATPILLAR = registerBlock("copycat_pillar",
+            () -> new copycatpillar(BlockBehaviour.Properties.of().strength(1.5f).noOcclusion()) {
+                @Override
+                public boolean canConnectTexturesToward(BlockAndTintGetter blockAndTintGetter, BlockPos blockPos, BlockPos blockPos1, BlockState blockState) {
+                    return false;
+                }
+            });
+
+
 
     //public static final RegistryObject<Block> OFFERING_CHEST = registerBlock("offering_chest",
     //        () -> new ChestBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)

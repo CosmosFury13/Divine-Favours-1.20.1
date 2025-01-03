@@ -41,8 +41,8 @@ public class configuredfeatures {
 
 
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OLIVE_KEY = registerKey("olive");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> HAWTHORNE_KEY = registerKey("hawthorne");
+//    public static final ResourceKey<ConfiguredFeature<?, ?>> OLIVE_KEY = registerKey("olive");
+//    public static final ResourceKey<ConfiguredFeature<?, ?>> HAWTHORNE_KEY = registerKey("hawthorne");
 
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
@@ -83,22 +83,22 @@ public class configuredfeatures {
 
 
 
-        register(context, OLIVE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(blockregistry.OLIVE_LOG.get()),
-                new FancyTrunkPlacer(3, 11, 0),
-
-                BlockStateProvider.simple(blockregistry.OLIVE_LEAVES.get()),
-                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
-
-                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
-
-        register(context, HAWTHORNE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(blockregistry.HAWTHORNE_LOG.get()),
-                new FancyTrunkPlacer(3, 11, 0),
-
-                BlockStateProvider.simple(blockregistry.HAWTHORNE_LEAVES.get()),
-                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
-                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
+//        register(context, OLIVE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+//                BlockStateProvider.simple(blockregistry.OLIVE_LOG.get()),
+//                new FancyTrunkPlacer(3, 11, 0),
+//
+//                BlockStateProvider.simple(blockregistry.OLIVE_LEAVES.get()),
+//                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
+//
+//                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
+//
+//        register(context, HAWTHORNE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+//                BlockStateProvider.simple(blockregistry.HAWTHORNE_LOG.get()),
+//                new FancyTrunkPlacer(3, 11, 0),
+//
+//                BlockStateProvider.simple(blockregistry.HAWTHORNE_LEAVES.get()),
+//                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
+//                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).build());
 
 
     }

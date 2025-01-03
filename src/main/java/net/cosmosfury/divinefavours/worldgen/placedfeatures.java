@@ -71,13 +71,13 @@ public class placedfeatures {
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
 
-        register(context, OLIVE_PLACED_KEY, configuredFeatures.getOrThrow(configuredfeatures.OLIVE_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.000001f, 1),
-                        blockregistry.OLIVE_SAPLING.get()));
-
-        register(context, HAWTHORNE_PLACED_KEY, configuredFeatures.getOrThrow(configuredfeatures.HAWTHORNE_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.0000001f, 1),
-                        blockregistry.HAWTHORNE_SAPLING.get()));
+//        register(context, OLIVE_PLACED_KEY, configuredFeatures.getOrThrow(configuredfeatures.OLIVE_KEY),
+//                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.000001f, 1),
+//                        blockregistry.OLIVE_SAPLING.get()));
+//
+//        register(context, HAWTHORNE_PLACED_KEY, configuredFeatures.getOrThrow(configuredfeatures.HAWTHORNE_KEY),
+//                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.0000001f, 1),
+//                        blockregistry.HAWTHORNE_SAPLING.get()));
     }
 
 
