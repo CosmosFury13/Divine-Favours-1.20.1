@@ -517,13 +517,7 @@ public class blockregistry {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(3.5f).noOcclusion()
                     .isViewBlocking((state, world, pos) -> false)));
 
-    public static final RegistryObject<Block> COPYCATPILLAR = registerBlock("copycat_pillar",
-            () -> new copycatpillar(BlockBehaviour.Properties.of().strength(1.5f).noOcclusion()) {
-                @Override
-                public boolean canConnectTexturesToward(BlockAndTintGetter blockAndTintGetter, BlockPos blockPos, BlockPos blockPos1, BlockState blockState) {
-                    return false;
-                }
-            });
+
 
 
 
